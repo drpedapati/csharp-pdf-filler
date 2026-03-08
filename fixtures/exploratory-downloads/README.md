@@ -104,6 +104,16 @@ The machine-readable manifest for this folder is:
   - Source page: `https://www.cms.gov/cms-l564-request-employment-information`
   - Why it is useful: official CMS employer information form with checkboxes, segmented identifiers, and signature fields
 
+- `insurance/ca-dwc-form1.pdf`
+  - Direct PDF: `https://www.dir.ca.gov/dwc/DWCForm1.pdf`
+  - Source page: `https://www.dir.ca.gov/dwc/forms.html`
+  - Why it is useful: California workers-comp claim form with JavaScript, push buttons, and signature-heavy layout
+
+- `insurance/ut-medicaid-pa-exception.pdf`
+  - Direct PDF: `https://medicaid-documents.dhhs.utah.gov/Documents/pdfs/Forms/Prior%20Authorization%20Exception%20Form-Fillable.pdf`
+  - Source page: `https://medicaid.utah.gov/forms-providers/`
+  - Why it is useful: compact Utah Medicaid prior-authorization exception form with a small but clean AcroForm field set
+
 - `insurance/va-5655-financial-status-report.pdf`
   - Direct PDF: `https://www.va.gov/vaforms/va/pdf/VA5655.pdf`
   - Source page: `https://www.va.gov/find-forms/about-form-5655/`
@@ -114,6 +124,24 @@ The machine-readable manifest for this folder is:
   - Direct PDF: `https://www.va.gov/vaforms/medical/pdf/vha-10-0426-fill.pdf`
   - Source page: `https://www.va.gov/find-forms/about-form-10-0426/`
   - Why it is useful: non-USCIS government XFA form with medical authorization semantics
+  - Important note: the new implementation should reject this as XFA even though the old Syncfusion snapshot currently treats it as supported
+
+- `insurance/irs-w4-2026.pdf`
+  - Direct PDF: `https://www.irs.gov/pub/irs-pdf/fw4.pdf`
+  - Source page: `https://www.irs.gov/forms-pubs/about-form-w-4`
+  - Why it is useful: IRS withholding certificate delivered as XFA
+  - Important note: the new implementation should reject this as XFA even though the old Syncfusion snapshot currently treats it as supported
+
+- `insurance/irs-2848.pdf`
+  - Direct PDF: `https://www.irs.gov/pub/irs-pdf/f2848.pdf`
+  - Source page: `https://www.irs.gov/forms-pubs/about-form-2848`
+  - Why it is useful: IRS power-of-attorney form delivered as XFA with repeated representative sections and signature-related fields
+  - Important note: the new implementation should reject this as XFA even though the old Syncfusion snapshot currently treats it as supported
+
+- `insurance/va-21-526ez.pdf`
+  - Direct PDF: `https://www.vba.va.gov/pubs/forms/VBA-21-526EZ-ARE.pdf`
+  - Source page: `https://www.va.gov/forms/21-526ez/`
+  - Why it is useful: large VA disability benefits application delivered as XFA with a dense field tree
   - Important note: the new implementation should reject this as XFA even though the old Syncfusion snapshot currently treats it as supported
 
 - `insurance/cms1500-health-insurance-claim-form.pdf`

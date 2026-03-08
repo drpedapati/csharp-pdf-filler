@@ -153,6 +153,24 @@
     "notes": "Official CMS employer information form with checkboxes, segmented identifiers, and signature fields."
   },
   {
+    "id": "ca-dwc-form1",
+    "category": "insurance",
+    "relativePath": "insurance/ca-dwc-form1.pdf",
+    "directPdfUrl": "https://www.dir.ca.gov/dwc/DWCForm1.pdf",
+    "sourcePageUrl": "https://www.dir.ca.gov/dwc/forms.html",
+    "expectation": "structural_match_old",
+    "notes": "California workers-comp claim form with JavaScript, push buttons, and signature-heavy layout."
+  },
+  {
+    "id": "ut-medicaid-pa-exception",
+    "category": "insurance",
+    "relativePath": "insurance/ut-medicaid-pa-exception.pdf",
+    "directPdfUrl": "https://medicaid-documents.dhhs.utah.gov/Documents/pdfs/Forms/Prior%20Authorization%20Exception%20Form-Fillable.pdf",
+    "sourcePageUrl": "https://medicaid.utah.gov/forms-providers/",
+    "expectation": "structural_match_old",
+    "notes": "Compact Utah Medicaid prior-authorization exception form with a small but clean AcroForm field set."
+  },
+  {
     "id": "va-5655-financial-status-report",
     "category": "insurance",
     "relativePath": "insurance/va-5655-financial-status-report.pdf",
@@ -169,6 +187,33 @@
     "sourcePageUrl": "https://www.va.gov/find-forms/about-form-10-0426/",
     "expectation": "new_rejects_xfa",
     "notes": "VA healthcare release form; a non-USCIS government XFA case with medical authorization semantics."
+  },
+  {
+    "id": "irs-w4-2026",
+    "category": "insurance",
+    "relativePath": "insurance/irs-w4-2026.pdf",
+    "directPdfUrl": "https://www.irs.gov/pub/irs-pdf/fw4.pdf",
+    "sourcePageUrl": "https://www.irs.gov/forms-pubs/about-form-w-4",
+    "expectation": "new_rejects_xfa",
+    "notes": "IRS withholding certificate delivered as XFA; useful as a non-USCIS, non-VA government XFA negative."
+  },
+  {
+    "id": "irs-2848",
+    "category": "insurance",
+    "relativePath": "insurance/irs-2848.pdf",
+    "directPdfUrl": "https://www.irs.gov/pub/irs-pdf/f2848.pdf",
+    "sourcePageUrl": "https://www.irs.gov/forms-pubs/about-form-2848",
+    "expectation": "new_rejects_xfa",
+    "notes": "IRS power-of-attorney form delivered as XFA with repeated representative sections and signature-related fields."
+  },
+  {
+    "id": "va-21-526ez",
+    "category": "insurance",
+    "relativePath": "insurance/va-21-526ez.pdf",
+    "directPdfUrl": "https://www.vba.va.gov/pubs/forms/VBA-21-526EZ-ARE.pdf",
+    "sourcePageUrl": "https://www.va.gov/forms/21-526ez/",
+    "expectation": "new_rejects_xfa",
+    "notes": "Large VA disability benefits application delivered as XFA with a dense hierarchical field tree."
   },
   {
     "id": "cms1500-health-insurance-claim-form",
