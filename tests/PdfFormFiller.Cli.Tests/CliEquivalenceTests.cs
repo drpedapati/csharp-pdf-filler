@@ -292,6 +292,72 @@ public sealed class CliEquivalenceTests
     }
 
     [Fact]
+    public void Fill_ExploratoryChoiceFields_WithPlaceholderOptions_MatchOldCli()
+    {
+        CliArtifacts artifacts = RequireCliArtifacts();
+
+        AssertExploratoryFillMatchesOldCli(
+            artifacts,
+            GetWorkspacePath("fixtures", "exploratory-downloads", "legal", "ao088b-subpoena-produce-documents.pdf"),
+            new Dictionary<string, object?>(StringComparer.OrdinalIgnoreCase)
+            {
+                ["District Information"] = "         Middle District of Alabama",
+                ["Plaintiff"] = "Example Plaintiff",
+            }
+        );
+
+        AssertExploratoryFillMatchesOldCli(
+            artifacts,
+            GetWorkspacePath("fixtures", "exploratory-downloads", "legal", "illinois-financial-affidavit.pdf"),
+            new Dictionary<string, object?>(StringComparer.OrdinalIgnoreCase)
+            {
+                ["2 - County"] = "Adams",
+                ["1 - Name of person completing Affidavit"] = "Jordan Example",
+            }
+        );
+
+        AssertExploratoryFillMatchesOldCli(
+            artifacts,
+            GetWorkspacePath("fixtures", "exploratory-downloads", "legal", "texas-15th-court-civil-docketing-statement.pdf"),
+            new Dictionary<string, object?>(StringComparer.OrdinalIgnoreCase)
+            {
+                ["AntAtty01.CounselType"] = "Appointed Attorney",
+                ["Other01.MannerServed"] = "Certified Mail",
+                ["Ant01.Name"] = "Jordan Example",
+            }
+        );
+    }
+
+    [Fact]
+    public void Fill_ExploratoryCorpus_RepresentativeValuesMatchOldCli()
+    {
+        CliArtifacts artifacts = RequireCliArtifacts();
+        ExploratoryPdfFixture[] fixtures = LoadExploratoryCatalog()
+            .Where(fixture => string.Equals(fixture.Expectation, "structural_match_old", StringComparison.Ordinal))
+            .OrderBy(fixture => fixture.RelativePath, StringComparer.OrdinalIgnoreCase)
+            .ToArray();
+
+        Assert.Equal(19, fixtures.Length);
+        int exercisedFixtureCount = 0;
+
+        foreach (ExploratoryPdfFixture fixture in fixtures)
+        {
+            string pdfPath = GetWorkspacePath("fixtures", "exploratory-downloads", fixture.RelativePath);
+            FormInspection inspection = ParseInspectionWithCli(artifacts.NewCliDllPath, pdfPath);
+            Dictionary<string, object?> values = CreateExploratoryRepresentativeValues(inspection);
+            if (values.Count == 0)
+            {
+                continue;
+            }
+
+            AssertExploratoryFillMatchesOldCli(artifacts, pdfPath, values);
+            exercisedFixtureCount++;
+        }
+
+        Assert.Equal(7, exercisedFixtureCount);
+    }
+
+    [Fact]
     public void Inspect_ExploratoryCorpus_MatchesOldCli_Structurally()
     {
         CliArtifacts artifacts = RequireCliArtifacts();
@@ -827,6 +893,164 @@ public sealed class CliEquivalenceTests
         }
 
         return JsonSerializer.Serialize(values, new JsonSerializerOptions { WriteIndented = true });
+    }
+
+    private static Dictionary<string, object?> CreateExploratoryRepresentativeValues(FormInspection inspection)
+    {
+        Dictionary<string, object?> values = new(StringComparer.OrdinalIgnoreCase);
+
+        FormFieldInfo? choiceField = inspection.Fields.FirstOrDefault(
+            field => !field.ReadOnly
+                && NormalizeKind(field.Kind) is "combo" or "list"
+                && TrySelectRepresentativeChoice(field, out _)
+        );
+        if (choiceField is not null && TrySelectRepresentativeChoice(choiceField, out string? selectedChoice))
+        {
+            values[choiceField.Name] = selectedChoice;
+        }
+
+        return values;
+    }
+
+    private static bool TrySelectRepresentativeChoice(FormFieldInfo field, out string? selectedChoice)
+    {
+        string currentValue = field.CurrentValue switch
+        {
+            string text => text,
+            JsonElement element when element.ValueKind == JsonValueKind.String => element.GetString() ?? string.Empty,
+            _ => string.Empty,
+        };
+        string normalizedCurrentValue = currentValue.Trim();
+
+        foreach (string choice in field.Choices)
+        {
+            if (string.IsNullOrWhiteSpace(choice))
+            {
+                continue;
+            }
+
+            string trimmedChoice = choice.Trim();
+            if (trimmedChoice.Length == 0)
+            {
+                continue;
+            }
+
+            if (string.Equals(trimmedChoice, normalizedCurrentValue, StringComparison.OrdinalIgnoreCase))
+            {
+                continue;
+            }
+
+            if (string.Equals(trimmedChoice, "select", StringComparison.OrdinalIgnoreCase)
+                || string.Equals(trimmedChoice, "choose", StringComparison.OrdinalIgnoreCase)
+                || string.Equals(trimmedChoice, "none", StringComparison.OrdinalIgnoreCase))
+            {
+                continue;
+            }
+
+            selectedChoice = choice;
+            return true;
+        }
+
+        foreach (string choice in field.Choices)
+        {
+            if (string.IsNullOrWhiteSpace(choice))
+            {
+                continue;
+            }
+
+            string trimmedChoice = choice.Trim();
+            if (trimmedChoice.Length == 0)
+            {
+                continue;
+            }
+
+            if (string.Equals(trimmedChoice, normalizedCurrentValue, StringComparison.OrdinalIgnoreCase))
+            {
+                continue;
+            }
+
+            selectedChoice = choice;
+            return true;
+        }
+
+        selectedChoice = null;
+        return false;
+    }
+
+    private static void AssertExploratoryFillMatchesOldCli(
+        CliArtifacts artifacts,
+        string pdfPath,
+        IReadOnlyDictionary<string, object?> values)
+    {
+        string valuesPath = Path.Combine(Path.GetTempPath(), $"exploratory-values-{Path.GetFileNameWithoutExtension(pdfPath)}-{Guid.NewGuid():N}.json");
+        string oldOutputPath = Path.Combine(Path.GetTempPath(), $"old-exploratory-{Path.GetFileNameWithoutExtension(pdfPath)}-{Guid.NewGuid():N}.pdf");
+        string newOutputPath = Path.Combine(Path.GetTempPath(), $"new-exploratory-{Path.GetFileNameWithoutExtension(pdfPath)}-{Guid.NewGuid():N}.pdf");
+
+        try
+        {
+            File.WriteAllText(valuesPath, JsonSerializer.Serialize(values, new JsonSerializerOptions { WriteIndented = true }));
+
+            CliInvocationResult oldFillResult = RunCli(
+                artifacts.OldCliDllPath,
+                ["fill", "--pdf", pdfPath, "--values", valuesPath, "--out", oldOutputPath, "--json"],
+                artifacts.SyncfusionLicenseKey
+            );
+            CliInvocationResult newFillResult = RunCli(
+                artifacts.NewCliDllPath,
+                ["fill", "--pdf", pdfPath, "--values", valuesPath, "--out", newOutputPath, "--json"]
+            );
+
+            Assert.Equal(oldFillResult.ExitCode, newFillResult.ExitCode);
+
+            FillResultSnapshot expectedFill = CreateFillResultSnapshot(ParseJson<FillResult>(oldFillResult.StandardOutput));
+            FillResultSnapshot actualFill = CreateFillResultSnapshot(ParseJson<FillResult>(newFillResult.StandardOutput));
+            string expectedFillJson = JsonSerializer.Serialize(expectedFill);
+            string actualFillJson = JsonSerializer.Serialize(actualFill);
+            Assert.True(
+                string.Equals(expectedFillJson, actualFillJson, StringComparison.Ordinal),
+                $"Exploratory fill result mismatch for {pdfPath}{Environment.NewLine}Expected: {expectedFillJson}{Environment.NewLine}Actual: {actualFillJson}"
+            );
+
+            FormInspectionSnapshot oldCliSnapshotForOldOutput = CreateExploratoryInspectionSnapshot(
+                ParseInspectionWithCli(artifacts.OldCliDllPath, oldOutputPath, artifacts.SyncfusionLicenseKey)
+            );
+            FormInspectionSnapshot oldCliSnapshotForNewOutput = CreateExploratoryInspectionSnapshot(
+                ParseInspectionWithCli(artifacts.OldCliDllPath, newOutputPath, artifacts.SyncfusionLicenseKey)
+            );
+            FormInspectionSnapshot newCliSnapshotForOldOutput = CreateExploratoryInspectionSnapshot(
+                ParseInspectionWithCli(artifacts.NewCliDllPath, oldOutputPath)
+            );
+            FormInspectionSnapshot newCliSnapshotForNewOutput = CreateExploratoryInspectionSnapshot(
+                ParseInspectionWithCli(artifacts.NewCliDllPath, newOutputPath)
+            );
+
+            string oldCliSnapshotForOldOutputJson = JsonSerializer.Serialize(oldCliSnapshotForOldOutput);
+            string oldCliSnapshotForNewOutputJson = JsonSerializer.Serialize(oldCliSnapshotForNewOutput);
+            string newCliSnapshotForOldOutputJson = JsonSerializer.Serialize(newCliSnapshotForOldOutput);
+            string newCliSnapshotForNewOutputJson = JsonSerializer.Serialize(newCliSnapshotForNewOutput);
+
+            Assert.True(
+                string.Equals(oldCliSnapshotForOldOutputJson, oldCliSnapshotForNewOutputJson, StringComparison.Ordinal),
+                $"Old CLI exploratory inspect mismatch for {pdfPath}{Environment.NewLine}Expected: {oldCliSnapshotForOldOutputJson}{Environment.NewLine}Actual: {oldCliSnapshotForNewOutputJson}"
+            );
+            Assert.True(
+                string.Equals(newCliSnapshotForOldOutputJson, newCliSnapshotForNewOutputJson, StringComparison.Ordinal),
+                $"New CLI exploratory inspect mismatch for {pdfPath}{Environment.NewLine}Expected: {newCliSnapshotForOldOutputJson}{Environment.NewLine}Actual: {newCliSnapshotForNewOutputJson}"
+            );
+
+            EncryptedDocumentSnapshot? oldEncryption = ReadEncryptedDocumentSnapshot(oldOutputPath);
+            EncryptedDocumentSnapshot? newEncryption = ReadEncryptedDocumentSnapshot(newOutputPath);
+            Assert.True(
+                oldEncryption == newEncryption,
+                $"Encryption mismatch for exploratory fill output {pdfPath}{Environment.NewLine}Expected: {JsonSerializer.Serialize(oldEncryption)}{Environment.NewLine}Actual: {JsonSerializer.Serialize(newEncryption)}"
+            );
+        }
+        finally
+        {
+            File.Delete(valuesPath);
+            File.Delete(oldOutputPath);
+            File.Delete(newOutputPath);
+        }
     }
 
     private sealed record CliArtifacts(string NewCliDllPath, string OldCliDllPath, string SyncfusionLicenseKey);

@@ -252,6 +252,96 @@ public sealed class PdfFormServiceTests
     }
 
     [Fact]
+    public void Fill_Ao088b_DistrictInformation_TrimmedDisplayValue_PersistsExactRawOption()
+    {
+        string pdfPath = GetWorkspacePath("fixtures", "exploratory-downloads", "legal", "ao088b-subpoena-produce-documents.pdf");
+        string valuesPath = CreateValuesFile(new Dictionary<string, object?>
+        {
+            ["District Information"] = "Middle District of Alabama",
+            ["Plaintiff"] = "Jordan Example",
+        });
+        string outputPath = Path.Combine(Path.GetTempPath(), $"{Guid.NewGuid():N}.pdf");
+
+        try
+        {
+            FillResult result = _service.Fill(pdfPath, valuesPath, outputPath, flatten: false);
+            FormInspection inspection = _service.Inspect(outputPath);
+
+            Assert.Equal(2, result.AppliedFields);
+            Assert.Empty(result.SkippedFields);
+            Assert.Empty(result.UnusedInputKeys);
+            Assert.Equal(
+                "         Middle District of Alabama",
+                inspection.Fields.Single(field => field.Name == "District Information").CurrentValue
+            );
+            Assert.Equal("Jordan Example", inspection.Fields.Single(field => field.Name == "Plaintiff").CurrentValue);
+        }
+        finally
+        {
+            File.Delete(valuesPath);
+            File.Delete(outputPath);
+        }
+    }
+
+    [Fact]
+    public void Fill_Ao088b_DistrictInformation_CustomEditableValue_IsPreserved()
+    {
+        string pdfPath = GetWorkspacePath("fixtures", "exploratory-downloads", "legal", "ao088b-subpoena-produce-documents.pdf");
+        string valuesPath = CreateValuesFile(new Dictionary<string, object?>
+        {
+            ["District Information"] = "Custom District Name",
+            ["Plaintiff"] = "Jordan Example",
+        });
+        string outputPath = Path.Combine(Path.GetTempPath(), $"{Guid.NewGuid():N}.pdf");
+
+        try
+        {
+            FillResult result = _service.Fill(pdfPath, valuesPath, outputPath, flatten: false);
+            FormInspection inspection = _service.Inspect(outputPath);
+
+            Assert.Equal(2, result.AppliedFields);
+            Assert.Empty(result.SkippedFields);
+            Assert.Empty(result.UnusedInputKeys);
+            Assert.Equal("Custom District Name", inspection.Fields.Single(field => field.Name == "District Information").CurrentValue);
+            Assert.Equal("Jordan Example", inspection.Fields.Single(field => field.Name == "Plaintiff").CurrentValue);
+        }
+        finally
+        {
+            File.Delete(valuesPath);
+            File.Delete(outputPath);
+        }
+    }
+
+    [Fact]
+    public void Fill_Texas15th_InvalidNonEditableComboValue_IsSkipped()
+    {
+        string pdfPath = GetWorkspacePath("fixtures", "exploratory-downloads", "legal", "texas-15th-court-civil-docketing-statement.pdf");
+        string valuesPath = CreateValuesFile(new Dictionary<string, object?>
+        {
+            ["Appellate Court"] = "Not A Real Court",
+            ["Ant01.Name"] = "Jordan Example",
+        });
+        string outputPath = Path.Combine(Path.GetTempPath(), $"{Guid.NewGuid():N}.pdf");
+
+        try
+        {
+            FillResult result = _service.Fill(pdfPath, valuesPath, outputPath, flatten: false);
+            FormInspection inspection = _service.Inspect(outputPath);
+
+            Assert.Equal(1, result.AppliedFields);
+            Assert.Equal(["Appellate Court"], result.SkippedFields);
+            Assert.Empty(result.UnusedInputKeys);
+            Assert.Equal("Select ", inspection.Fields.Single(field => field.Name == "Appellate Court").CurrentValue);
+            Assert.Equal("Jordan Example", inspection.Fields.Single(field => field.Name == "Ant01.Name").CurrentValue);
+        }
+        finally
+        {
+            File.Delete(valuesPath);
+            File.Delete(outputPath);
+        }
+    }
+
+    [Fact]
     public void Fill_AllReferenceFixtures_MatchReferenceOutputs()
     {
         string referenceRoot = GetWorkspacePath("fixtures", "reference-fills");
@@ -563,6 +653,13 @@ public sealed class PdfFormServiceTests
 
         string path = Path.Combine(Path.GetTempPath(), $"{Guid.NewGuid():N}.json");
         File.WriteAllText(path, values.ToJsonString(new JsonSerializerOptions { WriteIndented = true }));
+        return path;
+    }
+
+    private static string CreateValuesFile(IReadOnlyDictionary<string, object?> values)
+    {
+        string path = Path.Combine(Path.GetTempPath(), $"{Guid.NewGuid():N}.json");
+        File.WriteAllText(path, JsonSerializer.Serialize(values, new JsonSerializerOptions { WriteIndented = true }));
         return path;
     }
 

@@ -382,72 +382,20 @@ public sealed class PdfFormService : IPdfFormService
 
     private static IReadOnlyList<string> ReadOptions(PdfArray? optionsArray)
     {
-        if (optionsArray is null)
-        {
-            return [];
-        }
-
-        List<string> options = [];
-        for (int i = 0; i < optionsArray.Elements.Count; i++)
-        {
-            PdfArray? optionPair = SafeGetArray(optionsArray, i);
-            if (optionPair is not null)
-            {
-                string exportValue = GetArrayStringOrName(optionPair, 0);
-                string displayValue = optionPair.Elements.Count > 1 ? GetArrayStringOrName(optionPair, 1) : string.Empty;
-                string selectedValue = !string.IsNullOrWhiteSpace(exportValue) ? exportValue : displayValue;
-                if (!string.IsNullOrWhiteSpace(selectedValue))
-                {
-                    options.Add(selectedValue);
-                }
-
-                continue;
-            }
-
-            string option = GetArrayStringOrName(optionsArray, i);
-            if (!string.IsNullOrWhiteSpace(option))
-            {
-                options.Add(option);
-            }
-        }
-
-        return options.Distinct(StringComparer.OrdinalIgnoreCase).ToArray();
+        return ReadChoiceOptions(optionsArray)
+            .Select(option => GetChoiceOptionValue(option, preserveWhitespace: false))
+            .Where(option => !string.IsNullOrWhiteSpace(option))
+            .Distinct(StringComparer.OrdinalIgnoreCase)
+            .ToArray();
     }
 
     private static IReadOnlyList<string> ReadOptionsForDisplay(PdfArray? optionsArray)
     {
-        if (optionsArray is null)
-        {
-            return [];
-        }
-
-        List<string> options = [];
-        for (int i = 0; i < optionsArray.Elements.Count; i++)
-        {
-            PdfArray? optionPair = SafeGetArray(optionsArray, i);
-            if (optionPair is not null)
-            {
-                string exportValue = GetArrayStringOrName(optionPair, 0, preserveStringWhitespace: true);
-                string displayValue = optionPair.Elements.Count > 1
-                    ? GetArrayStringOrName(optionPair, 1, preserveStringWhitespace: true)
-                    : string.Empty;
-                string selectedValue = !string.IsNullOrEmpty(exportValue) ? exportValue : displayValue;
-                if (!string.IsNullOrWhiteSpace(selectedValue))
-                {
-                    options.Add(selectedValue);
-                }
-
-                continue;
-            }
-
-            string option = GetArrayStringOrName(optionsArray, i, preserveStringWhitespace: true);
-            if (!string.IsNullOrWhiteSpace(option))
-            {
-                options.Add(option);
-            }
-        }
-
-        return options.Distinct(StringComparer.OrdinalIgnoreCase).ToArray();
+        return ReadChoiceOptions(optionsArray)
+            .Select(option => GetChoiceOptionValue(option, preserveWhitespace: true))
+            .Where(option => !string.IsNullOrWhiteSpace(option))
+            .Distinct(StringComparer.OrdinalIgnoreCase)
+            .ToArray();
     }
 
     private static object? GetChoiceCurrentValue(PdfAcroField field)
@@ -472,15 +420,14 @@ public sealed class PdfFormService : IPdfFormService
                 return resolvedValue;
             }
 
-            IReadOnlyList<string> choices = ReadOptions(TryGetArray(field.Elements, "/Opt"));
-            bool exactChoiceMatch = choices.Any(choice => string.Equals(choice, resolvedValue, StringComparison.Ordinal));
+            IReadOnlyList<ChoiceOption> choices = ReadChoiceOptions(TryGetArray(field.Elements, "/Opt"));
+            bool exactChoiceMatch = choices.Any(choice => ChoiceValueMatches(choice, resolvedValue, normalizeCandidate: false));
             if (exactChoiceMatch)
             {
                 return resolvedValue;
             }
 
-            bool normalizedChoiceMatch = choices.Any(choice =>
-                string.Equals(NormalizeScalarValue(choice).Trim(), normalizedResolvedValue, StringComparison.Ordinal));
+            bool normalizedChoiceMatch = choices.Any(choice => ChoiceValueMatches(choice, normalizedResolvedValue, normalizeCandidate: true));
             if (normalizedChoiceMatch && char.IsWhiteSpace(resolvedValue[0]))
             {
                 return normalizedResolvedValue;
@@ -697,19 +644,24 @@ public sealed class PdfFormService : IPdfFormService
             return false;
         }
 
-        IReadOnlyList<string> choices = ReadOptions(TryGetArray(field.Elements, "/Opt"));
-        int matchIndex = FindChoiceIndex(choices, requestedValue);
-        if (matchIndex >= 0)
+        IReadOnlyList<ChoiceOption> choices = ReadChoiceOptions(TryGetArray(field.Elements, "/Opt"));
+        ChoiceOption? matchedOption = FindChoiceOption(choices, requestedValue);
+        if (matchedOption is not null)
         {
-            field.SelectedIndex = matchIndex;
+            field.SelectedIndex = matchedOption.RawIndex;
             // XFA shadow combos can render correctly but retain a placeholder /V unless we
             // also persist the matched export value explicitly.
-            field.Elements.SetString("/V", choices[matchIndex]);
+            field.Elements.SetString("/V", matchedOption.StoredValue);
             return true;
         }
 
-        field.Elements.SetString("/V", requestedValue);
-        return true;
+        if (field.Flags.HasFlag(PdfAcroFieldFlags.Edit))
+        {
+            field.Elements.SetString("/V", requestedValue);
+            return true;
+        }
+
+        return false;
     }
 
     private static bool TrySetListValue(PdfListBoxField field, JsonElement value)
@@ -720,14 +672,15 @@ public sealed class PdfFormService : IPdfFormService
             return false;
         }
 
-        IReadOnlyList<string> choices = ReadOptions(TryGetArray(field.Elements, "/Opt"));
-        int matchIndex = FindChoiceIndex(choices, requestedValue);
-        if (matchIndex < 0)
+        IReadOnlyList<ChoiceOption> choices = ReadChoiceOptions(TryGetArray(field.Elements, "/Opt"));
+        ChoiceOption? matchedOption = FindChoiceOption(choices, requestedValue);
+        if (matchedOption is null)
         {
             return false;
         }
 
-        field.SelectedIndex = matchIndex;
+        field.SelectedIndex = matchedOption.RawIndex;
+        field.Elements.SetString("/V", matchedOption.StoredValue);
         return true;
     }
 
@@ -766,18 +719,87 @@ public sealed class PdfFormService : IPdfFormService
         return true;
     }
 
-    private static int FindChoiceIndex(IReadOnlyList<string> choices, string requestedValue)
+    private static ChoiceOption? FindChoiceOption(IReadOnlyList<ChoiceOption> choices, string requestedValue)
     {
-        string normalizedRequestedValue = NormalizeScalarValue(requestedValue);
         for (int i = 0; i < choices.Count; i++)
         {
-            if (StringComparer.OrdinalIgnoreCase.Equals(NormalizeScalarValue(choices[i]), normalizedRequestedValue))
+            if (ChoiceValueMatches(choices[i], requestedValue, normalizeCandidate: false))
             {
-                return i;
+                return choices[i];
             }
         }
 
-        return -1;
+        string normalizedRequestedValue = NormalizeScalarValue(requestedValue);
+        for (int i = 0; i < choices.Count; i++)
+        {
+            if (ChoiceValueMatches(choices[i], normalizedRequestedValue, normalizeCandidate: true))
+            {
+                return choices[i];
+            }
+        }
+
+        return null;
+    }
+
+    private static IReadOnlyList<ChoiceOption> ReadChoiceOptions(PdfArray? optionsArray)
+    {
+        if (optionsArray is null)
+        {
+            return [];
+        }
+
+        List<ChoiceOption> options = [];
+        for (int i = 0; i < optionsArray.Elements.Count; i++)
+        {
+            PdfArray? optionPair = SafeGetArray(optionsArray, i);
+            if (optionPair is not null)
+            {
+                string exportValue = optionPair.Elements.Count > 0
+                    ? GetArrayStringOrName(optionPair, 0, preserveStringWhitespace: true)
+                    : string.Empty;
+                string displayValue = optionPair.Elements.Count > 1
+                    ? GetArrayStringOrName(optionPair, 1, preserveStringWhitespace: true)
+                    : string.Empty;
+                string storedValue = !string.IsNullOrEmpty(exportValue) ? exportValue : displayValue;
+                options.Add(new ChoiceOption(i, exportValue, displayValue, storedValue));
+                continue;
+            }
+
+            string option = GetArrayStringOrName(optionsArray, i, preserveStringWhitespace: true);
+            options.Add(new ChoiceOption(i, option, string.Empty, option));
+        }
+
+        return options;
+    }
+
+    private static bool ChoiceValueMatches(ChoiceOption option, string candidate, bool normalizeCandidate)
+    {
+        if (string.IsNullOrWhiteSpace(candidate))
+        {
+            return false;
+        }
+
+        string compareValue = normalizeCandidate ? NormalizeScalarValue(candidate) : candidate;
+        return ChoiceValueEquals(option.ExportValue, compareValue, normalizeCandidate)
+            || ChoiceValueEquals(option.DisplayValue, compareValue, normalizeCandidate)
+            || ChoiceValueEquals(GetChoiceOptionValue(option, preserveWhitespace: !normalizeCandidate), compareValue, normalizeCandidate);
+    }
+
+    private static bool ChoiceValueEquals(string value, string candidate, bool normalizeValue)
+    {
+        if (string.IsNullOrWhiteSpace(value))
+        {
+            return false;
+        }
+
+        string compareValue = normalizeValue ? NormalizeScalarValue(value) : value;
+        return string.Equals(compareValue, candidate, StringComparison.OrdinalIgnoreCase);
+    }
+
+    private static string GetChoiceOptionValue(ChoiceOption option, bool preserveWhitespace)
+    {
+        string value = !string.IsNullOrEmpty(option.ExportValue) ? option.ExportValue : option.DisplayValue;
+        return preserveWhitespace ? value : NormalizeScalarValue(value);
     }
 
     private static IReadOnlyList<RadioStateTarget> ReadRadioStateTargets(PdfRadioButtonField field)
@@ -1299,6 +1321,8 @@ public sealed class PdfFormService : IPdfFormService
             return null;
         }
     }
+
+    private sealed record ChoiceOption(int RawIndex, string ExportValue, string DisplayValue, string StoredValue);
 
     private sealed record RadioStateTarget(string StateName, PdfDictionary? Widget);
 
