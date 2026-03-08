@@ -231,6 +231,67 @@ public sealed class CliEquivalenceTests
     }
 
     [Fact]
+    public void Fill_ExperimentalXfa_RepresentativeFixturesMatchOldCliStructurally()
+    {
+        CliArtifacts artifacts = RequireCliArtifacts();
+        string[] pdfPaths =
+        [
+            GetWorkspacePath("fixtures", "exploratory-downloads", "insurance", "irs-w4-2026.pdf"),
+            GetWorkspacePath("fixtures", "exploratory-downloads", "insurance", "dol-ca-17-duty-status-report.pdf"),
+        ];
+
+        foreach (string pdfPath in pdfPaths)
+        {
+            string valuesPath = Path.Combine(Path.GetTempPath(), $"xfa-values-{Guid.NewGuid():N}.json");
+            string oldOutputPath = Path.Combine(Path.GetTempPath(), $"old-xfa-{Path.GetFileNameWithoutExtension(pdfPath)}-{Guid.NewGuid():N}.pdf");
+            string newOutputPath = Path.Combine(Path.GetTempPath(), $"new-xfa-{Path.GetFileNameWithoutExtension(pdfPath)}-{Guid.NewGuid():N}.pdf");
+
+            try
+            {
+                FormInspection sourceInspection = ParseInspectionWithCli(artifacts.OldCliDllPath, pdfPath, artifacts.SyncfusionLicenseKey);
+                File.WriteAllText(valuesPath, CreateExperimentalXfaValuesJson(sourceInspection));
+
+                CliInvocationResult oldFillResult = RunCli(
+                    artifacts.OldCliDllPath,
+                    ["fill", "--pdf", pdfPath, "--values", valuesPath, "--out", oldOutputPath, "--json"],
+                    artifacts.SyncfusionLicenseKey
+                );
+                CliInvocationResult newFillResult = RunCli(
+                    artifacts.NewCliDllPath,
+                    ["fill", "--pdf", pdfPath, "--values", valuesPath, "--out", newOutputPath, "--experimental-xfa", "--json"]
+                );
+
+                Assert.Equal(0, oldFillResult.ExitCode);
+                Assert.Equal(0, newFillResult.ExitCode);
+
+                ExperimentalFillResultSnapshot expectedFill = CreateExperimentalFillResultSnapshot(
+                    ParseJson<FillResult>(oldFillResult.StandardOutput)
+                );
+                ExperimentalFillResultSnapshot actualFill = CreateExperimentalFillResultSnapshot(
+                    ParseJson<FillResult>(newFillResult.StandardOutput)
+                );
+
+                Assert.Equal(JsonSerializer.Serialize(expectedFill), JsonSerializer.Serialize(actualFill));
+
+                ExperimentalInspectionSnapshot newCliSnapshotForOldOutput = CreateExperimentalInspectionSnapshot(
+                    ParseInspectionWithCli(artifacts.NewCliDllPath, oldOutputPath)
+                );
+                ExperimentalInspectionSnapshot newCliSnapshotForNewOutput = CreateExperimentalInspectionSnapshot(
+                    ParseInspectionWithCli(artifacts.NewCliDllPath, newOutputPath)
+                );
+
+                Assert.Equal(JsonSerializer.Serialize(newCliSnapshotForOldOutput), JsonSerializer.Serialize(newCliSnapshotForNewOutput));
+            }
+            finally
+            {
+                File.Delete(valuesPath);
+                File.Delete(oldOutputPath);
+                File.Delete(newOutputPath);
+            }
+        }
+    }
+
+    [Fact]
     public void Inspect_ExploratoryCorpus_MatchesOldCli_Structurally()
     {
         CliArtifacts artifacts = RequireCliArtifacts();
@@ -601,8 +662,24 @@ public sealed class CliEquivalenceTests
                 NormalizeExploratoryChoices(field.Choices))).ToArray()
         );
 
+    private static ExperimentalInspectionSnapshot CreateExperimentalInspectionSnapshot(FormInspection inspection) =>
+        new(
+            inspection.FieldCount,
+            inspection.Fields.Select(field => new FormFieldSnapshot(
+                field.Name,
+                NormalizeKind(field.Kind),
+                field.ToolTip,
+                field.ReadOnly,
+                field.Required,
+                JsonSerializer.Serialize(NormalizeExploratoryCurrentValue(field)),
+                NormalizeExploratoryChoices(field.Choices))).ToArray()
+        );
+
     private static FillResultSnapshot CreateFillResultSnapshot(FillResult result) =>
         new(result.FormType, result.Flattened, result.AppliedFields, result.SkippedFields.ToArray(), result.UnusedInputKeys.ToArray());
+
+    private static ExperimentalFillResultSnapshot CreateExperimentalFillResultSnapshot(FillResult result) =>
+        new(result.Flattened, result.AppliedFields, result.SkippedFields.ToArray(), result.UnusedInputKeys.ToArray());
 
     private static EncryptedDocumentSnapshot? ReadEncryptedDocumentSnapshot(string pdfPath)
     {
@@ -716,6 +793,42 @@ public sealed class CliEquivalenceTests
         return field.CurrentValue;
     }
 
+    private static string CreateExperimentalXfaValuesJson(FormInspection inspection)
+    {
+        Dictionary<string, object?> values = new(StringComparer.OrdinalIgnoreCase);
+        int textIndex = 1;
+
+        foreach (FormFieldInfo field in inspection.Fields)
+        {
+            if (field.ReadOnly)
+            {
+                continue;
+            }
+
+            switch (field.Kind)
+            {
+                case "checkbox":
+                    values[field.Name] = true;
+                    break;
+                case "radio":
+                case "combo":
+                case "list":
+                    if (field.Choices.Count == 0)
+                    {
+                        continue;
+                    }
+
+                    values[field.Name] = field.Choices[0];
+                    break;
+                case "text":
+                    values[field.Name] = $"XFA {textIndex++}";
+                    break;
+            }
+        }
+
+        return JsonSerializer.Serialize(values, new JsonSerializerOptions { WriteIndented = true });
+    }
+
     private sealed record CliArtifacts(string NewCliDllPath, string OldCliDllPath, string SyncfusionLicenseKey);
 
     private sealed record ExploratoryPdfFixture(
@@ -771,8 +884,20 @@ public sealed class CliEquivalenceTests
         IReadOnlyList<string> Choices
     );
 
+    private sealed record ExperimentalInspectionSnapshot(
+        int FieldCount,
+        IReadOnlyList<FormFieldSnapshot> Fields
+    );
+
     private sealed record FillResultSnapshot(
         string FormType,
+        bool Flattened,
+        int AppliedFields,
+        IReadOnlyList<string> SkippedFields,
+        IReadOnlyList<string> UnusedInputKeys
+    );
+
+    private sealed record ExperimentalFillResultSnapshot(
         bool Flattened,
         int AppliedFields,
         IReadOnlyList<string> SkippedFields,

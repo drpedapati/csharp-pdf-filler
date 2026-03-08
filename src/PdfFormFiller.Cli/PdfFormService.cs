@@ -95,7 +95,7 @@ public sealed class PdfFormService : IPdfFormService
         );
     }
 
-    public FillResult Fill(string pdfPath, string valuesPath, string outputPath, bool flatten)
+    public FillResult Fill(string pdfPath, string valuesPath, string outputPath, bool flatten, bool experimentalXfa = false)
     {
         FontResolverBootstrapper.EnsureConfigured();
 
@@ -116,7 +116,8 @@ public sealed class PdfFormService : IPdfFormService
                 throw new InvalidOperationException("PDF does not contain a form.");
             }
 
-            if (IsXfaForm(acroForm))
+            bool isXfa = IsXfaForm(acroForm);
+            if (isXfa && !experimentalXfa)
             {
                 throw new InvalidOperationException("XFA forms are not supported for fill. Provide a true AcroForm PDF.");
             }
@@ -193,7 +194,7 @@ public sealed class PdfFormService : IPdfFormService
             return new FillResult(
                 fullPdfPath,
                 fullOutputPath,
-                "acroform",
+                isXfa ? "xfa" : "acroform",
                 flatten,
                 appliedFields,
                 skippedFields,
@@ -460,9 +461,32 @@ public sealed class PdfFormService : IPdfFormService
                 return null;
             }
 
-            return resolvedValue.StartsWith("/", StringComparison.Ordinal)
-                ? NormalizeNameValue(resolvedValue)
-                : resolvedValue;
+            if (resolvedValue.StartsWith("/", StringComparison.Ordinal))
+            {
+                return NormalizeNameValue(resolvedValue);
+            }
+
+            string normalizedResolvedValue = NormalizeScalarValue(resolvedValue).Trim();
+            if (normalizedResolvedValue.Length == 0)
+            {
+                return resolvedValue;
+            }
+
+            IReadOnlyList<string> choices = ReadOptions(TryGetArray(field.Elements, "/Opt"));
+            bool exactChoiceMatch = choices.Any(choice => string.Equals(choice, resolvedValue, StringComparison.Ordinal));
+            if (exactChoiceMatch)
+            {
+                return resolvedValue;
+            }
+
+            bool normalizedChoiceMatch = choices.Any(choice =>
+                string.Equals(NormalizeScalarValue(choice).Trim(), normalizedResolvedValue, StringComparison.Ordinal));
+            if (normalizedChoiceMatch && char.IsWhiteSpace(resolvedValue[0]))
+            {
+                return normalizedResolvedValue;
+            }
+
+            return resolvedValue;
         }
 
         string fallbackValue = NormalizeScalarValue(((PdfComboBoxField)field).Value?.ToString());
@@ -671,6 +695,17 @@ public sealed class PdfFormService : IPdfFormService
         if (string.IsNullOrWhiteSpace(requestedValue))
         {
             return false;
+        }
+
+        IReadOnlyList<string> choices = ReadOptions(TryGetArray(field.Elements, "/Opt"));
+        int matchIndex = FindChoiceIndex(choices, requestedValue);
+        if (matchIndex >= 0)
+        {
+            field.SelectedIndex = matchIndex;
+            // XFA shadow combos can render correctly but retain a placeholder /V unless we
+            // also persist the matched export value explicitly.
+            field.Elements.SetString("/V", choices[matchIndex]);
+            return true;
         }
 
         field.Elements.SetString("/V", requestedValue);

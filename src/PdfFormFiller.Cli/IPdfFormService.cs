@@ -6,5 +6,5 @@ public interface IPdfFormService
 
     FormSchema Schema(string pdfPath);
 
-    FillResult Fill(string pdfPath, string valuesPath, string outputPath, bool flatten);
+    FillResult Fill(string pdfPath, string valuesPath, string outputPath, bool flatten, bool experimentalXfa = false);
 }

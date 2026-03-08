@@ -1,6 +1,7 @@
 using System.Reflection;
 using System.Text;
 using System.Text.Json;
+using System.Text.Json.Nodes;
 using PdfSharp.Pdf;
 using PdfSharp.Pdf.IO;
 using PdfSharp.Pdf.Security;
@@ -357,6 +358,68 @@ public sealed class PdfFormServiceTests
         }
     }
 
+    [Fact]
+    public void Fill_XfaFixture_RequiresExperimentalFlag()
+    {
+        string pdfPath = GetWorkspacePath("fixtures", "exploratory-downloads", "insurance", "irs-w4-2026.pdf");
+        string valuesPath = CreateExperimentalValuesFile(pdfPath, maximumFieldCount: 20);
+        string outputPath = Path.Combine(Path.GetTempPath(), $"{Guid.NewGuid():N}.pdf");
+
+        try
+        {
+            InvalidOperationException exception = Assert.Throws<InvalidOperationException>(
+                () => _service.Fill(pdfPath, valuesPath, outputPath, flatten: false)
+            );
+
+            Assert.Equal("XFA forms are not supported for fill. Provide a true AcroForm PDF.", exception.Message);
+        }
+        finally
+        {
+            File.Delete(valuesPath);
+            File.Delete(outputPath);
+        }
+    }
+
+    [Fact]
+    public void Fill_XfaFixture_WithExperimentalFlag_WritesShadowFieldValues()
+    {
+        string pdfPath = GetWorkspacePath("fixtures", "exploratory-downloads", "insurance", "irs-w4-2026.pdf");
+        string valuesPath = CreateExperimentalValuesFile(pdfPath, maximumFieldCount: 20);
+        string outputPath = Path.Combine(Path.GetTempPath(), $"{Guid.NewGuid():N}.pdf");
+
+        try
+        {
+            FillResult result = _service.Fill(pdfPath, valuesPath, outputPath, flatten: false, experimentalXfa: true);
+            FormInspection inspection = _service.Inspect(outputPath);
+            JsonObject values = JsonNode.Parse(File.ReadAllText(valuesPath))!.AsObject();
+
+            Assert.Equal("xfa", result.FormType);
+            Assert.True(result.AppliedFields > 0);
+            Assert.True(File.Exists(outputPath));
+            Assert.True(inspection.IsXfaForm);
+
+            Assert.Equal(
+                "XFA Test 1",
+                inspection.Fields.Single(field => field.Name == "topmostSubform[0].Page1[0].f1_05[0]").CurrentValue
+            );
+            Assert.Equal(
+                "XFA Test 2",
+                inspection.Fields.Single(field => field.Name == "topmostSubform[0].Page1[0].f1_08[0]").CurrentValue
+            );
+            Assert.Equal(
+                true,
+                inspection.Fields.Single(field => field.Name == "topmostSubform[0].Page1[0].c1_1[0]").CurrentValue
+            );
+            Assert.Empty(result.UnusedInputKeys);
+            Assert.True(values.Count >= 3);
+        }
+        finally
+        {
+            File.Delete(valuesPath);
+            File.Delete(outputPath);
+        }
+    }
+
     private static string GetWorkspacePath(params string[] parts) =>
         Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "../../../../..", Path.Combine(parts)));
 
@@ -461,6 +524,47 @@ public sealed class PdfFormServiceTests
     private static string ToHex(string value) => Convert.ToHexString(Encoding.Latin1.GetBytes(value));
 
     private static string NormalizeValue(object? value) => JsonSerializer.Serialize(value);
+
+    private string CreateExperimentalValuesFile(string pdfPath, int maximumFieldCount)
+    {
+        FormInspection inspection = _service.Inspect(pdfPath);
+        JsonObject values = [];
+        int textIndex = 1;
+
+        foreach (FormFieldInfo field in inspection.Fields)
+        {
+            if (field.ReadOnly || values.Count >= maximumFieldCount)
+            {
+                continue;
+            }
+
+            switch (field.Kind)
+            {
+                case "checkbox":
+                    values[field.Name] = true;
+                    break;
+                case "radio":
+                case "combo":
+                case "list":
+                    if (field.Choices.Count == 0)
+                    {
+                        continue;
+                    }
+
+                    values[field.Name] = field.Choices[0];
+                    break;
+                case "text":
+                    values[field.Name] = $"XFA Test {textIndex++}";
+                    break;
+                default:
+                    continue;
+            }
+        }
+
+        string path = Path.Combine(Path.GetTempPath(), $"{Guid.NewGuid():N}.json");
+        File.WriteAllText(path, values.ToJsonString(new JsonSerializerOptions { WriteIndented = true }));
+        return path;
+    }
 
     private static bool IsContractFieldKind(string kind) =>
         kind is "text" or "checkbox" or "combo" or "list" or "radio" or "signature";

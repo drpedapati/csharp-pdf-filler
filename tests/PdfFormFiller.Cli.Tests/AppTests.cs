@@ -106,10 +106,10 @@ public sealed class AppTests
         public FormSchema Schema(string pdfPath) =>
             new(pdfPath, "none", false, false, false, 0, "stub", 0, []);
 
-        public FillResult Fill(string pdfPath, string valuesPath, string outputPath, bool flatten)
+        public FillResult Fill(string pdfPath, string valuesPath, string outputPath, bool flatten, bool experimentalXfa = false)
         {
             FillCallCount++;
-            return new FillResult(pdfPath, outputPath, "none", flatten, 0, [], []);
+            return new FillResult(pdfPath, outputPath, experimentalXfa ? "xfa" : "none", flatten, 0, [], []);
         }
     }
 }

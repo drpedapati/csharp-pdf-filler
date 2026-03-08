@@ -23,6 +23,24 @@ public sealed class CommandLineParserTests
         Assert.Equal(CommandKind.Inspect, result.Options!.Command);
         Assert.Equal("form.pdf", result.Options.PdfPath);
         Assert.True(result.Options.JsonOutput);
+        Assert.False(result.Options.ExperimentalXfa);
+    }
+
+    [Fact]
+    public void Parse_FillExperimentalXfa_ParsesExpectedOptions()
+    {
+        ParseResult result = CommandLineParser.Parse(
+            ["fill", "--pdf", "form.pdf", "--values", "values.json", "--out", "filled.pdf", "--experimental-xfa"]
+        );
+
+        Assert.False(result.ShowHelp);
+        Assert.Null(result.Error);
+        Assert.NotNull(result.Options);
+        Assert.Equal(CommandKind.Fill, result.Options!.Command);
+        Assert.Equal("form.pdf", result.Options.PdfPath);
+        Assert.Equal("values.json", result.Options.ValuesPath);
+        Assert.Equal("filled.pdf", result.Options.OutputPath);
+        Assert.True(result.Options.ExperimentalXfa);
     }
 
     [Fact]

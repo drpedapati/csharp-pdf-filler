@@ -122,7 +122,13 @@ public static class App
 
     private static int RunFill(IPdfFormService service, CliOptions options)
     {
-        FillResult result = service.Fill(options.PdfPath!, options.ValuesPath!, options.OutputPath!, options.Flatten);
+        FillResult result = service.Fill(
+            options.PdfPath!,
+            options.ValuesPath!,
+            options.OutputPath!,
+            options.Flatten,
+            options.ExperimentalXfa
+        );
         if (options.JsonOutput)
         {
             WriteJson(result);
@@ -135,6 +141,10 @@ public static class App
         Console.WriteLine($"  Form type: {result.FormType}");
         Console.WriteLine($"  Applied fields: {result.AppliedFields}");
         Console.WriteLine($"  Flattened: {result.Flattened}");
+        if (options.ExperimentalXfa)
+        {
+            Console.WriteLine("  Experimental XFA mode: enabled");
+        }
         if (result.SkippedFields.Count > 0)
         {
             Console.WriteLine($"  Skipped fields: {result.SkippedFields.Count}");

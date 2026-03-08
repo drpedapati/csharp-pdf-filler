@@ -15,7 +15,8 @@ public sealed record CliOptions(
     string? OutputPath,
     string? LicenseKey,
     bool JsonOutput,
-    bool Flatten
+    bool Flatten,
+    bool ExperimentalXfa
 );
 
 public sealed record ParseResult(CliOptions? Options, string? Error, bool ShowHelp, int ExitCode);
@@ -31,11 +32,12 @@ public static class CommandLineParser
         Commands:
           inspect --pdf <file> [--json] [--license-key <key>]
           schema  --pdf <file> [--license-key <key>]
-          fill    --pdf <file> --values <file.json> --out <filled.pdf> [--flatten] [--json] [--license-key <key>]
+          fill    --pdf <file> --values <file.json> --out <filled.pdf> [--flatten] [--experimental-xfa] [--json] [--license-key <key>]
 
         Notes:
           - The tool rejects PDFs that are not real AcroForms.
           - XFA forms are detected and rejected for fill.
+          - --experimental-xfa enables best-effort XFA filling via shadow AcroForm fields for comparison and visual review only.
           - --flatten is off by default. Leave output editable for human review.
           - Use --flatten only for final non-editable output after human review.
           - --license-key is accepted for compatibility but is not required.
@@ -81,6 +83,7 @@ public static class CommandLineParser
         string? licenseKey = null;
         bool jsonOutput = false;
         bool flatten = false;
+        bool experimentalXfa = false;
 
         for (int i = 1; i < args.Length; i++)
         {
@@ -117,6 +120,9 @@ public static class CommandLineParser
                 case "--flatten":
                     flatten = true;
                     break;
+                case "--experimental-xfa":
+                    experimentalXfa = true;
+                    break;
                 case "--help":
                 case "-h":
                     return new ParseResult(null, null, true, 0);
@@ -144,7 +150,7 @@ public static class CommandLineParser
         }
 
         return new ParseResult(
-            new CliOptions(command, pdfPath, valuesPath, outputPath, licenseKey, jsonOutput, flatten),
+            new CliOptions(command, pdfPath, valuesPath, outputPath, licenseKey, jsonOutput, flatten, experimentalXfa),
             null,
             false,
             0
