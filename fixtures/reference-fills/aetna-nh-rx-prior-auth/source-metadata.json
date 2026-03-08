@@ -1,0 +1,21 @@
+{
+  "slug": "aetna-nh-rx-prior-auth",
+  "payer": "Aetna",
+  "category": "pharmacy",
+  "source_url": "https://www.aetna.com/content/dam/aetna/pdfs/aetnacom/healthcare-professionals/documents-forms/nh-prescription-drug-prior-authorization-form.pdf",
+  "pdf_path": "aetna-nh-rx-prior-auth.pdf",
+  "compatibility_class": "roundtrip-fill-ok",
+  "inspect_exit_code": "0",
+  "inspect_status": "inspect-ok",
+  "form_type": "acroform",
+  "field_count": "68",
+  "supported_fillable_field_count": "67",
+  "validation_message": "PDF contains a supported AcroForm.",
+  "fill_exit_code": "0",
+  "fill_status": "roundtrip-fill-ok",
+  "selected_input_fields": "10",
+  "applied_fields": "10",
+  "skipped_fields": "0",
+  "unused_input_keys": "0",
+  "message": ""
+}

@@ -1,0 +1,21 @@
+{
+  "slug": "optumrx-tenncare-compound-prior-auth",
+  "payer": "OptumRx",
+  "category": "pharmacy",
+  "source_url": "https://contenthub-aem.optumrx.com/content/dam/contenthub/onboarding/assets/Tenncare/home-page/pa-forms/Compound%20PA%20Form.pdf",
+  "pdf_path": "optumrx-tenncare-compound-prior-auth.pdf",
+  "compatibility_class": "unsupported",
+  "inspect_exit_code": "1",
+  "inspect_status": "inspect-unsupported",
+  "form_type": "acroform",
+  "field_count": "0",
+  "supported_fillable_field_count": "0",
+  "validation_message": "Form exists but contains no fields.",
+  "fill_exit_code": "",
+  "fill_status": "",
+  "selected_input_fields": "",
+  "applied_fields": "",
+  "skipped_fields": "",
+  "unused_input_keys": "",
+  "message": "Form exists but contains no fields."
+}

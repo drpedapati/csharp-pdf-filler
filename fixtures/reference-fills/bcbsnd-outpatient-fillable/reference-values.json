@@ -1,0 +1,15 @@
+{
+  "Additional Contact Name": "Sample 1",
+  "Additional Contact Phone Number": "Sample 2",
+  "Address": "Sample 3",
+  "Address Line 1": "Sample 4",
+  "Address Line 2 Optional": "Sample 5",
+  "Authorization (AUTH-) number of previous request": "Sample 6",
+  "City": "Sample 7",
+  "City_2": "Sample 8",
+  "Code ICD10CM": "Sample 9",
+  "Code ICD10CM_10": "Sample 10",
+  "Place of Service": "Ambulance (Land)",
+  "Relationship to Subscriber": "Self",
+  "Request Type": "0"
+}

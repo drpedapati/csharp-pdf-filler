@@ -1,0 +1,766 @@
+{
+  "PdfPath": "aetna-il-rx-prior-auth.pdf",
+  "FormType": "acroform",
+  "IsXfaForm": false,
+  "IsSupportedAcroForm": true,
+  "CanFillValues": true,
+  "SupportedFillableFieldCount": 92,
+  "ValidationMessage": "PDF contains a supported AcroForm.",
+  "FieldCount": 93,
+  "Fields": [
+    {
+      "Name": "Additional comments 1",
+      "Kind": "text",
+      "ToolTip": "Additional comments, if any",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Additional comments 2",
+      "Kind": "text",
+      "ToolTip": "Additional comments, if any",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Additional comments 3",
+      "Kind": "text",
+      "ToolTip": "Additional comments, if any",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Adverse Event / Specific Failure 1",
+      "Kind": "text",
+      "ToolTip": "Adverse Event / Specific Failure ",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Adverse Event / Specific Failure 2",
+      "Kind": "text",
+      "ToolTip": "Adverse Event / Specific Failure ",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Adverse Event / Specific Failure 3",
+      "Kind": "text",
+      "ToolTip": "Adverse Event / Specific Failure ",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Approved",
+      "Kind": "radio",
+      "ToolTip": "Approved",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": [
+        "Approved"
+      ]
+    },
+    {
+      "Name": "Approved by (name and credentials)",
+      "Kind": "text",
+      "ToolTip": "Approved by (name and credentials)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Contact Area Code",
+      "Kind": "text",
+      "ToolTip": "Contact Phone",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Contact City",
+      "Kind": "text",
+      "ToolTip": "City",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Contact Email",
+      "Kind": "text",
+      "ToolTip": "Contact Email (optional):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Contact Fax Code",
+      "Kind": "text",
+      "ToolTip": "Contact Fax",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Contact Fax Number",
+      "Kind": "text",
+      "ToolTip": "Contact Fax",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Contact Fax Prefix",
+      "Kind": "text",
+      "ToolTip": "Contact Fax",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Contact Line Number",
+      "Kind": "text",
+      "ToolTip": "Contact Phone",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Contact Name",
+      "Kind": "text",
+      "ToolTip": "Contact Name",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Contact Prefix",
+      "Kind": "text",
+      "ToolTip": "Contact Phone",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Contact State",
+      "Kind": "text",
+      "ToolTip": "State",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Contact Street Address",
+      "Kind": "text",
+      "ToolTip": "Contact Street Address",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Contact Suite/Rm",
+      "Kind": "text",
+      "ToolTip": "Suite/Rm",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Contact ZIP Code",
+      "Kind": "text",
+      "ToolTip": "ZIP Code",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "DAW",
+      "Kind": "checkbox",
+      "ToolTip": "DAW",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "DEA",
+      "Kind": "text",
+      "ToolTip": "DEA (required for controlled substance requests only):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Denied",
+      "Kind": "radio",
+      "ToolTip": " Denied",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": [
+        "Denied"
+      ]
+    },
+    {
+      "Name": "Denied by (name and credentials)",
+      "Kind": "text",
+      "ToolTip": "Denied by (name and credentials)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Diagnosis",
+      "Kind": "text",
+      "ToolTip": "Diagnosis (specific):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "DOB",
+      "Kind": "text",
+      "ToolTip": "DOB",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Dosing Schedule",
+      "Kind": "text",
+      "ToolTip": "Dosing Schedule",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Dosing Schedule 1",
+      "Kind": "text",
+      "ToolTip": "Dosing Schedule",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Dosing Schedule 2",
+      "Kind": "text",
+      "ToolTip": "Dosing Schedule",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Dosing Schedule 3",
+      "Kind": "text",
+      "ToolTip": "Dosing Schedule",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Drug Name",
+      "Kind": "text",
+      "ToolTip": "Drug Name",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Drug Name 1",
+      "Kind": "text",
+      "ToolTip": "Drug Name",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Drug Name 2",
+      "Kind": "text",
+      "ToolTip": "Drug Name",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Drug Name 3",
+      "Kind": "text",
+      "ToolTip": "Drug Name",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Duration",
+      "Kind": "text",
+      "ToolTip": "Duration",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Duration 1",
+      "Kind": "text",
+      "ToolTip": "Duration",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Duration 2",
+      "Kind": "text",
+      "ToolTip": "Duration",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Duration 3",
+      "Kind": "text",
+      "ToolTip": "Duration",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Effective Date",
+      "Kind": "text",
+      "ToolTip": "Effective Date",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Expedited Review Request",
+      "Kind": "checkbox",
+      "ToolTip": "Expedited Review Request: I hereby certify that a standard review period may seriously jeopardize the life or health of the patient or the patient\u0090s ability to regain maximum function.",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Facility Provider ID / NPI",
+      "Kind": "text",
+      "ToolTip": "Facility Provider ID / NPI",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Has the patient already started the medication?",
+      "Kind": "radio",
+      "ToolTip": "Has the patient already started the medication?",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "Name": "Health Plan Provider ID if accessible",
+      "Kind": "text",
+      "ToolTip": "Health Plan Provider ID (if accessible)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "ICD#",
+      "Kind": "text",
+      "ToolTip": "Diagnosis ICD#:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "If so, when?",
+      "Kind": "text",
+      "ToolTip": "If so, when?",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Ingredients within drug",
+      "Kind": "text",
+      "ToolTip": "Ingredients within drug",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Initial Authorization Request",
+      "Kind": "checkbox",
+      "ToolTip": "Initial Authorization Request",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Insurer Contact and Submission Info",
+      "Kind": "text",
+      "ToolTip": "Insurer Contact and Submission Info",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Is patient hospitalized?",
+      "Kind": "radio",
+      "ToolTip": "Is patient hospitalized?",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "Name": "LOB",
+      "Kind": "text",
+      "ToolTip": "Limitation of Benefits (LOB):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "NPI",
+      "Kind": "text",
+      "ToolTip": "NPI",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Other Pertinent Information 1",
+      "Kind": "text",
+      "ToolTip": "Other Pertinent Information (Optional: To be filled out if other information in the prescribing provider\u0027s professional opinion is necessary, such as relevant diagnostic labs, measures, response to treatment, etc.)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Other Pertinent Information 2",
+      "Kind": "text",
+      "ToolTip": "Other Pertinent Information (Optional: To be filled out if other information in the prescribing provider\u0027s professional opinion is necessary, such as relevant diagnostic labs, measures, response to treatment, etc.)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Other Pertinent Information 3",
+      "Kind": "text",
+      "ToolTip": "Other Pertinent Information (Optional: To be filled out if other information in the prescribing provider\u0027s professional opinion is necessary, such as relevant diagnostic labs, measures, response to treatment, etc.)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Patient Area Code",
+      "Kind": "text",
+      "ToolTip": "Phone Number",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Patient City",
+      "Kind": "text",
+      "ToolTip": "City",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Patient Health Plan Group Number",
+      "Kind": "text",
+      "ToolTip": "Patient Health Plan Group # (if applicable):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Patient Health Plan ID",
+      "Kind": "text",
+      "ToolTip": "Patient Health Plan ID",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Patient Line Number",
+      "Kind": "text",
+      "ToolTip": "Phone Number",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Patient Name",
+      "Kind": "text",
+      "ToolTip": "Patient Name",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Patient Prefix",
+      "Kind": "text",
+      "ToolTip": "Phone Number",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Patient Sex",
+      "Kind": "text",
+      "ToolTip": "Sex",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Patient State",
+      "Kind": "text",
+      "ToolTip": "State",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Patient Street Address",
+      "Kind": "text",
+      "ToolTip": "Patient Street Address",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Patient Unit/Apt",
+      "Kind": "text",
+      "ToolTip": "Unit/Apt",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Patient ZIP Code",
+      "Kind": "text",
+      "ToolTip": "ZIP Code",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Pharmacy Area Code",
+      "Kind": "text",
+      "ToolTip": "Pharmacy Phone",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Pharmacy Line Number",
+      "Kind": "text",
+      "ToolTip": "Pharmacy Phone",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Pharmacy Name",
+      "Kind": "text",
+      "ToolTip": "Pharmacy Name",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Pharmacy Prefix",
+      "Kind": "text",
+      "ToolTip": "Pharmacy Phone",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Place of infusion / injection if applicable",
+      "Kind": "text",
+      "ToolTip": "Place of infusion / injection (if applicable)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Prescribing Provider\u0027s Name",
+      "Kind": "text",
+      "ToolTip": "Prescribing Provider\u0027s Name",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Prescribing Provider\u0027s Signature",
+      "Kind": "signature",
+      "ToolTip": "Prescribing Provider\u0027s Signature",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Provider Area Code",
+      "Kind": "text",
+      "ToolTip": "Provider\u0090s Direct Contact Phone Number",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Provider Initials",
+      "Kind": "text",
+      "ToolTip": "Initials",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Provider Line Number",
+      "Kind": "text",
+      "ToolTip": "Provider\u0090s Direct Contact Phone Number",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Provider Name",
+      "Kind": "text",
+      "ToolTip": "Provider Name",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Provider Prefix",
+      "Kind": "text",
+      "ToolTip": "Provider\u0090s Direct Contact Phone Number",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Rationale for Prior Authorization 1",
+      "Kind": "text",
+      "ToolTip": "Rationale for Prior Authorization (e.g., history of present illness, past medical history, current medications, etc.; you may also attach chart notes to support the request if you believe it will assist in the review process)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Rationale for Prior Authorization 2",
+      "Kind": "text",
+      "ToolTip": "Rationale for Prior Authorization (e.g., history of present illness, past medical history, current medications, etc.; you may also attach chart notes to support the request if you believe it will assist in the review process)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Rationale for Prior Authorization 3",
+      "Kind": "text",
+      "ToolTip": "Rationale for Prior Authorization (e.g., history of present illness, past medical history, current medications, etc.; you may also attach chart notes to support the request if you believe it will assist in the review process)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Reason for Denial",
+      "Kind": "text",
+      "ToolTip": "Reason for Denial",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Renewal Request",
+      "Kind": "checkbox",
+      "ToolTip": "Renewal Request",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Request Date",
+      "Kind": "text",
+      "ToolTip": "Request Date",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Reviewed by (name and credentials)",
+      "Kind": "text",
+      "ToolTip": "Reviewed by (name and credentials)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Specialty",
+      "Kind": "text",
+      "ToolTip": "Specialty",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Standard Review Request",
+      "Kind": "checkbox",
+      "ToolTip": "Standard Review Request",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Strength",
+      "Kind": "text",
+      "ToolTip": "Strength",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Strength 1",
+      "Kind": "text",
+      "ToolTip": "Strength",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Strength 2",
+      "Kind": "text",
+      "ToolTip": "Strength",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Strength 3",
+      "Kind": "text",
+      "ToolTip": "Strength",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Submission Date",
+      "Kind": "text",
+      "ToolTip": "Date",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    }
+  ]
+}

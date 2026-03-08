@@ -1,0 +1,556 @@
+{
+  "PdfPath": "aetna-nh-rx-prior-auth.pdf",
+  "FormType": "acroform",
+  "IsXfaForm": false,
+  "IsSupportedAcroForm": true,
+  "CanFillValues": true,
+  "SupportedFillableFieldCount": 67,
+  "ValidationMessage": "PDF contains a supported AcroForm.",
+  "FieldCount": 68,
+  "Fields": [
+    {
+      "Name": "CB-1.0.0",
+      "Kind": "checkbox",
+      "ToolTip": "Initial Request",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "CB-2",
+      "Kind": "checkbox",
+      "ToolTip": "Continuation/Renewal Request",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "CB-3",
+      "Kind": "checkbox",
+      "ToolTip": "Check if Expedited Review/Urgent Request:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "CB-30",
+      "Kind": "checkbox",
+      "ToolTip": "Yes",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "CB-31",
+      "Kind": "checkbox",
+      "ToolTip": "No",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "CB-33",
+      "Kind": "checkbox",
+      "ToolTip": "Alternate therapies contraindicated or previously tried (please provide more information in Section F)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "CB-34",
+      "Kind": "checkbox",
+      "ToolTip": "Complex patient with one or more chronic conditions (including, for example, psychiatric condition, diabetes) is stable on current drug(s); high risk of significant adverse clinical outcome with medication change (specify anticipated significant adverse clinical outcome in space below)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "CB-35",
+      "Kind": "checkbox",
+      "ToolTip": "Medical need for increase in current dosage, strength and / or frequency (specify in space below: (1) dosage, strength(s) and / or frequency(s) tried; (2) medical reason)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "CB-36",
+      "Kind": "checkbox",
+      "ToolTip": "Absence of appropriate formulation or indication of the drug (specify in space below)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "CB-37",
+      "Kind": "checkbox",
+      "ToolTip": "Other (specify in space below)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "CB-4",
+      "Kind": "checkbox",
+      "ToolTip": "Yes",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "CB-5",
+      "Kind": "checkbox",
+      "ToolTip": "No",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Signature3",
+      "Kind": "signature",
+      "ToolTip": "Signature:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text10",
+      "Kind": "text",
+      "ToolTip": "Phone #:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text11",
+      "Kind": "text",
+      "ToolTip": "Address:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text12",
+      "Kind": "text",
+      "ToolTip": "Secure Fax #:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text13",
+      "Kind": "text",
+      "ToolTip": "Specialty:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text14",
+      "Kind": "text",
+      "ToolTip": "Prescribing Provider NPI #:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text15",
+      "Kind": "text",
+      "ToolTip": "Prescribing ProviderDEA #:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text16",
+      "Kind": "text",
+      "ToolTip": "Prescriber Point of Contact (POC) Name (if different than provider):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text17",
+      "Kind": "text",
+      "ToolTip": "POC Phone #:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text18",
+      "Kind": "text",
+      "ToolTip": "POC Secure Fax #:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text19",
+      "Kind": "text",
+      "ToolTip": "POC Email (not required):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text21",
+      "Kind": "text",
+      "ToolTip": "Date: (MM/DD/YYYY)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text22",
+      "Kind": "text",
+      "ToolTip": "Primary Diagnosis Related to Medication Request:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text23",
+      "Kind": "text",
+      "ToolTip": "Medication Requested:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text24",
+      "Kind": "text",
+      "ToolTip": "Strength:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text25",
+      "Kind": "text",
+      "ToolTip": "Quantity:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text26",
+      "Kind": "text",
+      "ToolTip": "Dosing Schedule:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text27",
+      "Kind": "text",
+      "ToolTip": "Length of Therapy:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text28",
+      "Kind": "text",
+      "ToolTip": "Date of Prescription: (MM/DD/YYYY)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text29",
+      "Kind": "text",
+      "ToolTip": "lf yes, date started: (MM/DD/YYYY)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text32",
+      "Kind": "text",
+      "ToolTip": "If yes, rationale for DAW:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text38",
+      "Kind": "text",
+      "ToolTip": "Required Explanation from Above:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text39",
+      "Kind": "text",
+      "ToolTip": "Drug Allergies:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text4",
+      "Kind": "text",
+      "ToolTip": "By initialing here, I, as the treating provider, attest to the fact that this request meets the URAC (Utilization Review Accreditation Commission) health accreditation standards for urgent care in that adherence to the standard timelines: a) could seriously jeopardize the life or health of the patient or the ability of the patient to regain maximum function; or b) would subject the patient to severe pain that cannot be adequately managed without the treatment being requested.",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text40",
+      "Kind": "text",
+      "ToolTip": "Height:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text41",
+      "Kind": "text",
+      "ToolTip": "Weight:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text42",
+      "Kind": "text",
+      "ToolTip": "Lab/Test Name and Results",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text43",
+      "Kind": "text",
+      "ToolTip": "Date (MM/DD/YYYY)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text44",
+      "Kind": "text",
+      "ToolTip": "Lab/Test Name and Results",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text45",
+      "Kind": "text",
+      "ToolTip": "Date (MM/DD/YYYY)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text46",
+      "Kind": "text",
+      "ToolTip": "Lab/Test Name and Results",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text47",
+      "Kind": "text",
+      "ToolTip": "Date (MM/DD/YYYY)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text48",
+      "Kind": "text",
+      "ToolTip": "Lab/Test Name and Results",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text49",
+      "Kind": "text",
+      "ToolTip": "Date (MM/DD/YYYY)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text5",
+      "Kind": "text",
+      "ToolTip": "Patient\u0090s Full Name (including Jr, Sr, III, etc):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text50",
+      "Kind": "text",
+      "ToolTip": "Medication/Therapy Name",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text51",
+      "Kind": "text",
+      "ToolTip": "Strength (as relevant)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text52",
+      "Kind": "text",
+      "ToolTip": "Dosing Schedule (as relevant)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text53",
+      "Kind": "text",
+      "ToolTip": "Date Prescribed/Started (MM/DD/YYYY)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text54",
+      "Kind": "text",
+      "ToolTip": "Date Stopped (MM/DD/YYYY)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text55",
+      "Kind": "text",
+      "ToolTip": "Description of Adverse Reaction or Failure",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text56",
+      "Kind": "text",
+      "ToolTip": "Medication/Therapy Name",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text57",
+      "Kind": "text",
+      "ToolTip": "Strength (as relevant)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text58",
+      "Kind": "text",
+      "ToolTip": "Dosing Schedule (as relevant)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text59",
+      "Kind": "text",
+      "ToolTip": "Date Prescribed/Started (MM/DD/YYYY)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text6",
+      "Kind": "text",
+      "ToolTip": "DOB: (MM/DD/YYYY)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text60",
+      "Kind": "text",
+      "ToolTip": "Date Stopped (MM/DD/YYYY)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text61",
+      "Kind": "text",
+      "ToolTip": "Description of Adverse Reaction or Failure",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text62",
+      "Kind": "text",
+      "ToolTip": "Therapy",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text63",
+      "Kind": "text",
+      "ToolTip": "Description of Contraindication",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text64",
+      "Kind": "text",
+      "ToolTip": "Therapy",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text65",
+      "Kind": "text",
+      "ToolTip": "Description of Contraindication",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text66",
+      "Kind": "text",
+      "ToolTip": "Additional information (prescribing providers may provide additional information to support this request):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text7",
+      "Kind": "text",
+      "ToolTip": "Member ID #:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text8",
+      "Kind": "text",
+      "ToolTip": "Group #:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text9",
+      "Kind": "text",
+      "ToolTip": "Prescribing Provider:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    }
+  ]
+}

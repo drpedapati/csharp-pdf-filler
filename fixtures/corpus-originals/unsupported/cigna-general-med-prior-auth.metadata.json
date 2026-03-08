@@ -1,0 +1,21 @@
+{
+  "slug": "cigna-general-med-prior-auth",
+  "payer": "Cigna",
+  "category": "medical",
+  "source_url": "https://static.cigna.com/assets/chcp/pdf/resourceLibrary/prescription/GeneralMedPriorAuth.pdf",
+  "pdf_path": "cigna-general-med-prior-auth.pdf",
+  "compatibility_class": "unsupported",
+  "inspect_exit_code": "1",
+  "inspect_status": "inspect-unsupported",
+  "form_type": "acroform",
+  "field_count": "0",
+  "supported_fillable_field_count": "0",
+  "validation_message": "Form exists but contains no fields.",
+  "fill_exit_code": "",
+  "fill_status": "",
+  "selected_input_fields": "",
+  "applied_fields": "",
+  "skipped_fields": "",
+  "unused_input_keys": "",
+  "message": "Form exists but contains no fields."
+}

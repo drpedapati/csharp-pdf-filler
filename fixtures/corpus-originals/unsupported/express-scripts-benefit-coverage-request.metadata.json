@@ -1,0 +1,21 @@
+{
+  "slug": "express-scripts-benefit-coverage-request",
+  "payer": "ExpressScripts",
+  "category": "pharmacy",
+  "source_url": "https://www.express-scripts.com/pdf/forms/Benefit-Coverage-Request-Form.pdf",
+  "pdf_path": "express-scripts-benefit-coverage-request.pdf",
+  "compatibility_class": "unsupported",
+  "inspect_exit_code": "1",
+  "inspect_status": "inspect-unsupported",
+  "form_type": "none",
+  "field_count": "0",
+  "supported_fillable_field_count": "0",
+  "validation_message": "PDF does not contain a form.",
+  "fill_exit_code": "",
+  "fill_status": "",
+  "selected_input_fields": "",
+  "applied_fields": "",
+  "skipped_fields": "",
+  "unused_input_keys": "",
+  "message": "PDF does not contain a form."
+}

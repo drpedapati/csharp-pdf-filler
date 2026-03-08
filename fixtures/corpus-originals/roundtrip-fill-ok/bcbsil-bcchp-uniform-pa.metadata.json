@@ -1,0 +1,21 @@
+{
+  "slug": "bcbsil-bcchp-uniform-pa",
+  "payer": "BCBSIL",
+  "category": "pharmacy",
+  "source_url": "https://www.bcbsil.com/docs/provider/il/education/forms/il-bcchp-uniform-pa-form.pdf",
+  "pdf_path": "bcbsil-bcchp-uniform-pa.pdf",
+  "compatibility_class": "roundtrip-fill-ok",
+  "inspect_exit_code": "0",
+  "inspect_status": "inspect-ok",
+  "form_type": "acroform",
+  "field_count": "48",
+  "supported_fillable_field_count": "47",
+  "validation_message": "PDF contains a supported AcroForm.",
+  "fill_exit_code": "0",
+  "fill_status": "roundtrip-fill-ok",
+  "selected_input_fields": "12",
+  "applied_fields": "12",
+  "skipped_fields": "0",
+  "unused_input_keys": "0",
+  "message": ""
+}

@@ -1,0 +1,21 @@
+{
+  "slug": "anthem-ny-medical-injectables",
+  "payer": "Anthem",
+  "category": "medical",
+  "source_url": "https://providers.anthem.com/docs/gpp/NY_ABC_CAID_MedicalInjectablesPAForm.pdf",
+  "pdf_path": "anthem-ny-medical-injectables.pdf",
+  "compatibility_class": "unsupported",
+  "inspect_exit_code": "1",
+  "inspect_status": "inspect-unsupported",
+  "form_type": "none",
+  "field_count": "0",
+  "supported_fillable_field_count": "0",
+  "validation_message": "PDF does not contain a form.",
+  "fill_exit_code": "",
+  "fill_status": "",
+  "selected_input_fields": "",
+  "applied_fields": "",
+  "skipped_fields": "",
+  "unused_input_keys": "",
+  "message": "PDF does not contain a form."
+}

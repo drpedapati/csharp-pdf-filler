@@ -1,0 +1,21 @@
+{
+  "slug": "aetna-il-rx-prior-auth",
+  "payer": "Aetna",
+  "category": "pharmacy",
+  "source_url": "https://www.aetna.com/content/dam/aetna/pdfs/health-care-professionals/GR-69025-7-IL-Approved-Remediation-IL-DOI-Form-PA-Rx-Drug-Form.pdf",
+  "pdf_path": "aetna-il-rx-prior-auth.pdf",
+  "compatibility_class": "roundtrip-fill-ok",
+  "inspect_exit_code": "0",
+  "inspect_status": "inspect-ok",
+  "form_type": "acroform",
+  "field_count": "93",
+  "supported_fillable_field_count": "92",
+  "validation_message": "PDF contains a supported AcroForm.",
+  "fill_exit_code": "0",
+  "fill_status": "roundtrip-fill-ok",
+  "selected_input_fields": "13",
+  "applied_fields": "13",
+  "skipped_fields": "0",
+  "unused_input_keys": "0",
+  "message": ""
+}

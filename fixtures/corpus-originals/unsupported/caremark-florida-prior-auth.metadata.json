@@ -1,0 +1,21 @@
+{
+  "slug": "caremark-florida-prior-auth",
+  "payer": "Caremark",
+  "category": "pharmacy",
+  "source_url": "https://www.caremark.com/content/dam/enterprise/caremark/pdfs/pa-state-requirements/Florida_Prior_Authorization_Form.pdf",
+  "pdf_path": "caremark-florida-prior-auth.pdf",
+  "compatibility_class": "unsupported",
+  "inspect_exit_code": "1",
+  "inspect_status": "inspect-unsupported",
+  "form_type": "acroform",
+  "field_count": "0",
+  "supported_fillable_field_count": "0",
+  "validation_message": "Form exists but contains no fields.",
+  "fill_exit_code": "",
+  "fill_status": "",
+  "selected_input_fields": "",
+  "applied_fields": "",
+  "skipped_fields": "",
+  "unused_input_keys": "",
+  "message": "Form exists but contains no fields."
+}

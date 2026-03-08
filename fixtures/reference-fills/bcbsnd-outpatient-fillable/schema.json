@@ -1,0 +1,946 @@
+{
+  "PdfPath": "bcbsnd-outpatient-fillable.pdf",
+  "FormType": "acroform",
+  "IsXfaForm": false,
+  "IsSupportedAcroForm": true,
+  "CanFillValues": true,
+  "SupportedFillableFieldCount": 112,
+  "ValidationMessage": "PDF contains a supported AcroForm.",
+  "FieldCount": 112,
+  "Fields": [
+    {
+      "Name": "Additional Contact Name",
+      "Kind": "text",
+      "ToolTip": "Additional Contact Name",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Additional Contact Phone Number",
+      "Kind": "text",
+      "ToolTip": "Additional Contact Phone Number",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Address",
+      "Kind": "text",
+      "ToolTip": "Address",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Address Line 1",
+      "Kind": "text",
+      "ToolTip": "Address Line 1",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Address Line 2 Optional",
+      "Kind": "text",
+      "ToolTip": "Address Line 2 (Optional)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Authorization (AUTH-) number of previous request",
+      "Kind": "text",
+      "ToolTip": "Authorization (AUTH-) number of previous request",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "City",
+      "Kind": "text",
+      "ToolTip": "City",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "City_2",
+      "Kind": "text",
+      "ToolTip": "City",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Code ICD10CM",
+      "Kind": "text",
+      "ToolTip": "Code (ICD-10-CM)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Code ICD10CM_10",
+      "Kind": "text",
+      "ToolTip": "Code (ICD-10-CM)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Code ICD10CM_11",
+      "Kind": "text",
+      "ToolTip": "Code (ICD-10-CM)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Code ICD10CM_12",
+      "Kind": "text",
+      "ToolTip": "Code (ICD-10-CM)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Code ICD10CM_13",
+      "Kind": "text",
+      "ToolTip": "Code (ICD-10-CM)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Code ICD10CM_14",
+      "Kind": "text",
+      "ToolTip": "Code (ICD-10-CM)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Code ICD10CM_15",
+      "Kind": "text",
+      "ToolTip": "Code (ICD-10-CM)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Code ICD10CM_16",
+      "Kind": "text",
+      "ToolTip": "Code (ICD-10-CM)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Code ICD10CM_17",
+      "Kind": "text",
+      "ToolTip": "Code (ICD-10-CM)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Code ICD10CM_18",
+      "Kind": "text",
+      "ToolTip": "Code (ICD-10-CM)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Code ICD10CM_19",
+      "Kind": "text",
+      "ToolTip": "Code (ICD-10-CM)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Code ICD10CM_2",
+      "Kind": "text",
+      "ToolTip": "Code (ICD-10-CM)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Code ICD10CM_20",
+      "Kind": "text",
+      "ToolTip": "Code (ICD-10-CM)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Code ICD10CM_21",
+      "Kind": "text",
+      "ToolTip": "Code (ICD-10-CM)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Code ICD10CM_22",
+      "Kind": "text",
+      "ToolTip": "Code (ICD-10-CM)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Code ICD10CM_23",
+      "Kind": "text",
+      "ToolTip": "Code (ICD-10-CM)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Code ICD10CM_3",
+      "Kind": "text",
+      "ToolTip": "Code (ICD-10-CM)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Code ICD10CM_4",
+      "Kind": "text",
+      "ToolTip": "Code (ICD-10-CM)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Code ICD10CM_5",
+      "Kind": "text",
+      "ToolTip": "Code (ICD-10-CM)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Code ICD10CM_6",
+      "Kind": "text",
+      "ToolTip": "Code (ICD-10-CM)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Code ICD10CM_7",
+      "Kind": "text",
+      "ToolTip": "Code (ICD-10-CM)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Code ICD10CM_8",
+      "Kind": "text",
+      "ToolTip": "Code (ICD-10-CM)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Code ICD10CM_9",
+      "Kind": "text",
+      "ToolTip": "Code (ICD-10-CM)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Completed by Contact Phone Number Required",
+      "Kind": "text",
+      "ToolTip": "Completed by Contact Phone Number (Required)",
+      "ReadOnly": false,
+      "Required": true,
+      "Choices": []
+    },
+    {
+      "Name": "Completed by Name Required",
+      "Kind": "text",
+      "ToolTip": "Completed by Name (Required)",
+      "ReadOnly": false,
+      "Required": true,
+      "Choices": []
+    },
+    {
+      "Name": "Description",
+      "Kind": "text",
+      "ToolTip": "Description",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Description_10",
+      "Kind": "text",
+      "ToolTip": "Description",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Description_11",
+      "Kind": "text",
+      "ToolTip": "Description",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Description_12",
+      "Kind": "text",
+      "ToolTip": "Description",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Description_13",
+      "Kind": "text",
+      "ToolTip": "Description",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Description_14",
+      "Kind": "text",
+      "ToolTip": "Description",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Description_15",
+      "Kind": "text",
+      "ToolTip": "Description",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Description_16",
+      "Kind": "text",
+      "ToolTip": "Description",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Description_17",
+      "Kind": "text",
+      "ToolTip": "Description",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Description_18",
+      "Kind": "text",
+      "ToolTip": "Description",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Description_19",
+      "Kind": "text",
+      "ToolTip": "Description",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Description_2",
+      "Kind": "text",
+      "ToolTip": "Description",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Description_20",
+      "Kind": "text",
+      "ToolTip": "Description",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Description_21",
+      "Kind": "text",
+      "ToolTip": "Description",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Description_22",
+      "Kind": "text",
+      "ToolTip": "Description",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Description_23",
+      "Kind": "text",
+      "ToolTip": "Description",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Description_3",
+      "Kind": "text",
+      "ToolTip": "Description",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Description_4",
+      "Kind": "text",
+      "ToolTip": "Description",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Description_5",
+      "Kind": "text",
+      "ToolTip": "Description",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Description_6",
+      "Kind": "text",
+      "ToolTip": "Description",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Description_7",
+      "Kind": "text",
+      "ToolTip": "Description",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Description_8",
+      "Kind": "text",
+      "ToolTip": "Description",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Description_9",
+      "Kind": "text",
+      "ToolTip": "Description",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "End of Care Date If applicable",
+      "Kind": "text",
+      "ToolTip": "End of Care Date (If applicable)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Fax Number Required",
+      "Kind": "text",
+      "ToolTip": "Fax Number (Required)",
+      "ReadOnly": false,
+      "Required": true,
+      "Choices": []
+    },
+    {
+      "Name": "Fax Number Required_2",
+      "Kind": "text",
+      "ToolTip": "Fax Number (Required)",
+      "ReadOnly": false,
+      "Required": true,
+      "Choices": []
+    },
+    {
+      "Name": "Member ID including alphanumeric prefix",
+      "Kind": "text",
+      "ToolTip": "Member ID (including alpha-numeric prefix)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "NPI",
+      "Kind": "text",
+      "ToolTip": "NPI",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "NPI_2",
+      "Kind": "text",
+      "ToolTip": "NPI",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Patient Date of Birth",
+      "Kind": "text",
+      "ToolTip": "Patient Date of Birth",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Patient First Name",
+      "Kind": "text",
+      "ToolTip": "Patient First Name",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Patient Last Name",
+      "Kind": "text",
+      "ToolTip": "Patient Last Name",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Phone Number Required",
+      "Kind": "text",
+      "ToolTip": "Phone Number (Required)",
+      "ReadOnly": false,
+      "Required": true,
+      "Choices": []
+    },
+    {
+      "Name": "Place of Service",
+      "Kind": "radio",
+      "ToolTip": "Place of Service",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": [
+        "Ambulance (Land)",
+        "Ambulance (Air or Water)",
+        "Hospice",
+        "Office",
+        "Ambulatory Surgical Center",
+        "Partial Hospitalization",
+        "Home",
+        "outpatient hospital",
+        "outpatient surgical"
+      ]
+    },
+    {
+      "Name": "Previously Approved Services",
+      "Kind": "text",
+      "ToolTip": "Previously Approved Services",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Quantity Requested",
+      "Kind": "text",
+      "ToolTip": "Quantity Requested",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Quantity Requested_10",
+      "Kind": "text",
+      "ToolTip": "Quantity Requested",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Quantity Requested_11",
+      "Kind": "text",
+      "ToolTip": "Quantity Requested",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Quantity Requested_12",
+      "Kind": "text",
+      "ToolTip": "Quantity Requested",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Quantity Requested_13",
+      "Kind": "text",
+      "ToolTip": "Quantity Requested",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Quantity Requested_2",
+      "Kind": "text",
+      "ToolTip": "Quantity Requested",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Quantity Requested_3",
+      "Kind": "text",
+      "ToolTip": "Quantity Requested",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Quantity Requested_4",
+      "Kind": "text",
+      "ToolTip": "Quantity Requested",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Quantity Requested_5",
+      "Kind": "text",
+      "ToolTip": "Quantity Requested",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Quantity Requested_6",
+      "Kind": "text",
+      "ToolTip": "Quantity Requested",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Quantity Requested_7",
+      "Kind": "text",
+      "ToolTip": "Quantity Requested",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Quantity Requested_8",
+      "Kind": "text",
+      "ToolTip": "Quantity Requested",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Quantity Requested_9",
+      "Kind": "text",
+      "ToolTip": "Quantity Requested",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Quantity Type DaysUnits",
+      "Kind": "text",
+      "ToolTip": "Quantity Type (Days/Units)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Quantity Type DaysUnits_10",
+      "Kind": "text",
+      "ToolTip": "Quantity Type (Days/Units)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Quantity Type DaysUnits_11",
+      "Kind": "text",
+      "ToolTip": "Quantity Type (Days/Units)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Quantity Type DaysUnits_12",
+      "Kind": "text",
+      "ToolTip": "Quantity Type (Days/Units)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Quantity Type DaysUnits_13",
+      "Kind": "text",
+      "ToolTip": "Quantity Type (Days/Units)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Quantity Type DaysUnits_2",
+      "Kind": "text",
+      "ToolTip": "Quantity Type (Days/Units)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Quantity Type DaysUnits_3",
+      "Kind": "text",
+      "ToolTip": "Quantity Type (Days/Units)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Quantity Type DaysUnits_4",
+      "Kind": "text",
+      "ToolTip": "Quantity Type (Days/Units)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Quantity Type DaysUnits_5",
+      "Kind": "text",
+      "ToolTip": "Quantity Type (Days/Units)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Quantity Type DaysUnits_6",
+      "Kind": "text",
+      "ToolTip": "Quantity Type (Days/Units)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Quantity Type DaysUnits_7",
+      "Kind": "text",
+      "ToolTip": "Quantity Type (Days/Units)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Quantity Type DaysUnits_8",
+      "Kind": "text",
+      "ToolTip": "Quantity Type (Days/Units)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Quantity Type DaysUnits_9",
+      "Kind": "text",
+      "ToolTip": "Quantity Type (Days/Units)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Relationship to Subscriber",
+      "Kind": "radio",
+      "ToolTip": "Relationship to Subscriber",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": [
+        "Self",
+        "Spouse",
+        "Child",
+        "Other"
+      ]
+    },
+    {
+      "Name": "Request Type",
+      "Kind": "radio",
+      "ToolTip": "Request Type",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "Name": "Requesting Provider First Name",
+      "Kind": "text",
+      "ToolTip": "Requesting Provider First Name",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Requesting Provider Last Name",
+      "Kind": "text",
+      "ToolTip": "Requesting Provider Last Name",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Service Provider First and Last Name or Facility Name",
+      "Kind": "text",
+      "ToolTip": "Service Provider First and Last Name or Facility Name",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Service Type",
+      "Kind": "radio",
+      "ToolTip": "Service Type",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": [
+        "Dental Accident",
+        "Applied Behavior Analysis Therapy",
+        "Oral Surgery",
+        "Infertility",
+        "Private Duty Nursing",
+        "Anesthesia",
+        "Prosthetic Device",
+        "Partial Hospitalization (Psychiatric)",
+        "Surgical",
+        "Chemotherapy",
+        "Partial Hospitalization (Substance Abuse)",
+        "Home Health Care",
+        "Transplants",
+        "Durable Medical Equipment Rental",
+        "Medical",
+        "Pharmacy",
+        "Durable Medical Equipment Purchase",
+        "Diagnostic Lab",
+        "Hospice"
+      ]
+    },
+    {
+      "Name": "SpecialtyTaxonomy Code Optional",
+      "Kind": "text",
+      "ToolTip": "Specialty/Taxonomy Code (Optional)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Start Care Date",
+      "Kind": "text",
+      "ToolTip": "Start Care Date",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Start Date of Concurrent Care Request",
+      "Kind": "text",
+      "ToolTip": "Start Date of Concurrent Care Request",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Start of Care Date",
+      "Kind": "text",
+      "ToolTip": "Start of Care Date",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "State",
+      "Kind": "text",
+      "ToolTip": "State",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "State_2",
+      "Kind": "text",
+      "ToolTip": "State",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Suite",
+      "Kind": "text",
+      "ToolTip": "Suite",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "TIN Optional",
+      "Kind": "text",
+      "ToolTip": "TIN (Optional)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "TIN Optional_2",
+      "Kind": "text",
+      "ToolTip": "TIN (Optional)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Todays Date",
+      "Kind": "text",
+      "ToolTip": "Today\u0090s Date",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Zip",
+      "Kind": "text",
+      "ToolTip": "Zip",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Zip_2",
+      "Kind": "text",
+      "ToolTip": "Zip",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    }
+  ]
+}

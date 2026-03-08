@@ -1,0 +1,796 @@
+{
+  "PdfPath": "uhc-tx-commercial-prior-auth.pdf",
+  "FormType": "acroform",
+  "IsXfaForm": false,
+  "IsSupportedAcroForm": true,
+  "CanFillValues": true,
+  "SupportedFillableFieldCount": 96,
+  "ValidationMessage": "PDF contains a supported AcroForm.",
+  "FieldCount": 98,
+  "Fields": [
+    {
+      "Name": "Cardiac Rehab",
+      "Kind": "checkbox",
+      "ToolTip": "Check box if cardiac rehab is requested",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Clear Form",
+      "Kind": "PdfLoadedButtonField",
+      "ToolTip": "Clear Form",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Clinical Reason for Urgency",
+      "Kind": "text",
+      "ToolTip": "Clinical Reason for Urgency:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Day Surgery",
+      "Kind": "checkbox",
+      "ToolTip": "Check if day surgery is requested",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Diagnosis Description ICD Version Number",
+      "Kind": "text",
+      "ToolTip": "Diagnosis Description ICD Version Number",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Durable Medical Equipment or Supplies Requested, include any HCPCS Codes",
+      "Kind": "text",
+      "ToolTip": "Durable Medical Equipment or Supplies Requested, include any HCPCS Codes",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Durable Medical Equipment Requested Checkbox",
+      "Kind": "checkbox",
+      "ToolTip": "Check box if durable medical equipment is requested",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Duration of Durable Medical Equipment Use",
+      "Kind": "text",
+      "ToolTip": "Duration of Durable Medical Equipment Use",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Duration of Home Health Visits",
+      "Kind": "text",
+      "ToolTip": "Duration of Home Health Visits",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Duration of Therapy Sessions",
+      "Kind": "text",
+      "ToolTip": "Duration of Therapy Sessions",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Frequency of Home Health Visits",
+      "Kind": "text",
+      "ToolTip": "Frequency of Home Health Visits",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Frequency of Therapy Sessions",
+      "Kind": "text",
+      "ToolTip": "Frequency of Therapy Sessions",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Group Number",
+      "Kind": "text",
+      "ToolTip": "Group Number:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Home",
+      "Kind": "checkbox",
+      "ToolTip": "Yes, a signed doctor\u0027s order for home health visits is attached",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Home Health Visits Requested Checkbox",
+      "Kind": "checkbox",
+      "ToolTip": "Check box if home health visits are requested",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Inpatient",
+      "Kind": "checkbox",
+      "ToolTip": "Check if inpatient service is requested",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Issuer Fax Number",
+      "Kind": "text",
+      "ToolTip": "Issuer Fax Number",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Issuer Name",
+      "Kind": "text",
+      "ToolTip": "Issuer Name:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Issuer Phone Number",
+      "Kind": "text",
+      "ToolTip": "Issuer Phone Number",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "MD Signed Order for Durable Medical Equipment Attached",
+      "Kind": "checkbox",
+      "ToolTip": "Check box if a signed doctor\u0027s order for durable medical equipment is attached",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "MD Signed Order for Durable Medical Equipment Not Attached",
+      "Kind": "checkbox",
+      "ToolTip": "Check box if a signed doctor\u0027s order for durable medical equipment is not attached",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "MD Signed Order for Home Health Visits Attached",
+      "Kind": "checkbox",
+      "ToolTip": "Check box if a signed doctor\u0027s order for home health visits is attached",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "MD Signed Order for Home Health Visits Not Attached",
+      "Kind": "checkbox",
+      "ToolTip": "Check box if a signed doctor\u0027s order for home health visits is not attached",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Medicaid Only: Title 19 Certification Attached",
+      "Kind": "checkbox",
+      "ToolTip": "Medicaid only: check box if a Title 19 Certification for durable medical equipment is attached",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Medicaid Only: Title 19 Certification Not Attached",
+      "Kind": "checkbox",
+      "ToolTip": "Medicaid only: check box if a Title 19 Certification for durable medical equipment is not attached",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Member or Medicaid ID Number",
+      "Kind": "text",
+      "ToolTip": "Member or Medicaid ID Number",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Mental Health or Substance Abuse",
+      "Kind": "checkbox",
+      "ToolTip": "Check box if mental health or substance abuse therapy is requested",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Number of Home Health Visits",
+      "Kind": "text",
+      "ToolTip": "Number of Home Health Visits",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Number of Therapy Sessions",
+      "Kind": "text",
+      "ToolTip": "Number of Therapy Sessions",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Nursing Assessment for Home Health Visits Attached",
+      "Kind": "checkbox",
+      "ToolTip": "Check box if a nursing assessment for home health visits is attached",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Nursing Assessment for Home Health Visits Not Attached",
+      "Kind": "checkbox",
+      "ToolTip": "Check box if a nursing assessment for home health visits is not attached",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Observation",
+      "Kind": "checkbox",
+      "ToolTip": "Check if observation is requested",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Occupational Therapy",
+      "Kind": "checkbox",
+      "ToolTip": "Check box if occupational therapy is requested",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Other Home Health Visit Information",
+      "Kind": "text",
+      "ToolTip": "Other Home Health Visit Information",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Other Service Defined",
+      "Kind": "text",
+      "ToolTip": "If other service is checked, define other service requested",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Other Service Requested",
+      "Kind": "checkbox",
+      "ToolTip": "Check if other service is requested",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Other Therapy Session Information",
+      "Kind": "text",
+      "ToolTip": "Other Therapy Session Information",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Outpatient",
+      "Kind": "checkbox",
+      "ToolTip": "Check if outpatient service is requested",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Paitent Gender - Female",
+      "Kind": "checkbox",
+      "ToolTip": "Check box if patient\u0027s gender is female",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Paitent Gender - Male",
+      "Kind": "checkbox",
+      "ToolTip": "Check box if patient\u0027s gender is male",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Paitent Gender - Other",
+      "Kind": "checkbox",
+      "ToolTip": "Check box if patient\u0027s gender is other",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Paitent Gender - Unkown",
+      "Kind": "checkbox",
+      "ToolTip": "Check box if patient\u0027s gender is unknown",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Patient Date of Birth",
+      "Kind": "text",
+      "ToolTip": "Patient Date of Birth",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Patient Name",
+      "Kind": "text",
+      "ToolTip": "Patient Name",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Patient Phone Number",
+      "Kind": "text",
+      "ToolTip": "Patient Phone Number",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Physical Therapy",
+      "Kind": "checkbox",
+      "ToolTip": "Check box if physical therapy is requested",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Planned Service or Procedure Code Row 1",
+      "Kind": "text",
+      "ToolTip": "Planned Service or Procedure Code Row 1",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Planned Service or Procedure Code Row 2",
+      "Kind": "text",
+      "ToolTip": "Planned Service or Procedure Code Row 2",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Planned Service or Procedure Code Row 3",
+      "Kind": "text",
+      "ToolTip": "Planned Service or Procedure Code Row 3",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Planned Service or Procedure Code Row 4",
+      "Kind": "text",
+      "ToolTip": "Planned Service or Procedure Code Row 4",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Planned Service or Procedure Diagnosis Code Row 1",
+      "Kind": "text",
+      "ToolTip": "Planned Service or Procedure Diagnosis Code Row 1",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Planned Service or Procedure Diagnosis Code Row 2",
+      "Kind": "text",
+      "ToolTip": "Planned Service or Procedure Diagnosis Code Row 2",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Planned Service or Procedure Diagnosis Code Row 3",
+      "Kind": "text",
+      "ToolTip": "Planned Service or Procedure Diagnosis Code Row 3",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Planned Service or Procedure Diagnosis Code Row 4",
+      "Kind": "text",
+      "ToolTip": "Planned Service or Procedure Diagnosis Code Row 4",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Planned Service or Procedure Diagnosis Description Row 1",
+      "Kind": "text",
+      "ToolTip": "Planned Service or Procedure Diagnosis Description Row 1",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Planned Service or Procedure Diagnosis Description Row 2",
+      "Kind": "text",
+      "ToolTip": "Planned Service or Procedure Diagnosis Description Row 2",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Planned Service or Procedure Diagnosis Description Row 3",
+      "Kind": "text",
+      "ToolTip": "Planned Service or Procedure Diagnosis Description Row 3",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Planned Service or Procedure Diagnosis Description Row 4",
+      "Kind": "text",
+      "ToolTip": "Planned Service or Procedure Diagnosis Description Row 4",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Planned Service or Procedure End Date Row 1",
+      "Kind": "text",
+      "ToolTip": "Planned Service or Procedure End Date Row 1",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Planned Service or Procedure End Date Row 2",
+      "Kind": "text",
+      "ToolTip": "Planned Service or Procedure End Date Row 2",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Planned Service or Procedure End Date Row 3",
+      "Kind": "text",
+      "ToolTip": "Planned Service or Procedure End Date Row 3",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Planned Service or Procedure End Date Row 4",
+      "Kind": "text",
+      "ToolTip": "Planned Service or Procedure End Date Row 4",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Planned Service or Procedure Row 1",
+      "Kind": "text",
+      "ToolTip": "Planned Service or Procedure Row 1",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Planned Service or Procedure Row 2",
+      "Kind": "text",
+      "ToolTip": "Planned Service or Procedure Row 2",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Planned Service or Procedure Row 3",
+      "Kind": "text",
+      "ToolTip": "Planned Service or Procedure Row 3",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Planned Service or Procedure Row 4",
+      "Kind": "text",
+      "ToolTip": "Planned Service or Procedure Row 4",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Planned Service or Procedure Start Date Row 1",
+      "Kind": "text",
+      "ToolTip": "Planned Service or Procedure Start Date Row 1",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Planned Service or Procedure Start Date Row 2",
+      "Kind": "text",
+      "ToolTip": "Planned Service or Procedure Start Date Row 2",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Planned Service or Procedure Start Date Row 3",
+      "Kind": "text",
+      "ToolTip": "Start Date_Row_3",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Planned Service or Procedure Start Date Row 4",
+      "Kind": "text",
+      "ToolTip": "Planned Service or Procedure Start Date Row 4",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Previous Authorization Number",
+      "Kind": "text",
+      "ToolTip": "Previous Authorization Number",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Primary Care Provider Fax Number",
+      "Kind": "text",
+      "ToolTip": "Primary Care Provider Fax Number",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Primary Care Provider Name see instructions",
+      "Kind": "text",
+      "ToolTip": "Primary Care Provider Name (see instructions):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Primary Care Provider Phone Number",
+      "Kind": "text",
+      "ToolTip": "Primary Care Provider Phone Number",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Print",
+      "Kind": "PdfLoadedButtonField",
+      "ToolTip": "For a blank form, print prior filling out",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Provider Office",
+      "Kind": "checkbox",
+      "ToolTip": "Check if provider office service is requested",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Request Type - Extension/Renewal/Amendment",
+      "Kind": "checkbox",
+      "ToolTip": "Check box if this is an extension, renewal or amended request",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Request Type - Initial",
+      "Kind": "checkbox",
+      "ToolTip": "Check box if this is an initial request",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Requesting Provider Direct Phone Number",
+      "Kind": "text",
+      "ToolTip": "Requesting Provider Direct Phone Number",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Requesting Provider or Facility Contact Name",
+      "Kind": "text",
+      "ToolTip": "Requesting Provider or Facility Contact Name:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Requesting Provider or Facility Contact Phone Number",
+      "Kind": "text",
+      "ToolTip": "Requesting Provider or Facility Contact Phone Number",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Requesting Provider or Facility Fax Number",
+      "Kind": "text",
+      "ToolTip": "Requesting Provider or Facility Fax Number",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Requesting Provider or Facility Name",
+      "Kind": "text",
+      "ToolTip": "Requesting Provider or Facility Name",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Requesting Provider or Facility NPI Number",
+      "Kind": "text",
+      "ToolTip": "Requesting Provider or Facility NPI Number",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Requesting Provider or Facility Phone Number",
+      "Kind": "text",
+      "ToolTip": "Requesting Provider or Facility Phone Number",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Requesting Provider or Facility Specialty",
+      "Kind": "text",
+      "ToolTip": "Requesting Provider or Facility Specialty:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Requesting Provider\u0027s Signature and Date if required",
+      "Kind": "text",
+      "ToolTip": "Requesting Provider\u0090s Signature and Date (if required):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Review Type - Non-Urgent",
+      "Kind": "checkbox",
+      "ToolTip": "Check box if review is non-urgent",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Review Type - Urgent",
+      "Kind": "checkbox",
+      "ToolTip": "Check box if review is urgent",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "SECTION VI  CLINICAL DOCUMENTATION SEE INSTRUCTIONS PAGE SECTION VI",
+      "Kind": "text",
+      "ToolTip": "SECTION VI \u0084 CLINICAL DOCUMENTATION (SEE INSTRUCTIONS PAGE, SECTION VI",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Service Provider or Facility Fax Number",
+      "Kind": "text",
+      "ToolTip": "Service Provider or Facility Fax Number",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Service Provider or Facility Name",
+      "Kind": "text",
+      "ToolTip": "Service Provider or Facility Name",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Service Provider or Facility NPI Number",
+      "Kind": "text",
+      "ToolTip": "Service Provider or Facility NPI Number",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Service Provider or Facility Phone Number",
+      "Kind": "text",
+      "ToolTip": "Service Provider or Facility Phone Number",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Service Provider or Facility Specialty",
+      "Kind": "text",
+      "ToolTip": "Service Provider or Facility Specialty",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Speech Therapy",
+      "Kind": "checkbox",
+      "ToolTip": "Check box if speech therapy is requested",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Submission Date",
+      "Kind": "text",
+      "ToolTip": "Submission Date",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Subscriber Name if different",
+      "Kind": "text",
+      "ToolTip": "Subscriber Name (if different):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    }
+  ]
+}

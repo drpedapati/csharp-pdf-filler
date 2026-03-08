@@ -1,0 +1,1028 @@
+{
+  "PdfPath": "bcbstx-rx-standard-pa.pdf",
+  "FormType": "acroform",
+  "IsXfaForm": false,
+  "IsSupportedAcroForm": true,
+  "CanFillValues": true,
+  "SupportedFillableFieldCount": 126,
+  "ValidationMessage": "PDF contains a supported AcroForm.",
+  "FieldCount": 127,
+  "Fields": [
+    {
+      "Name": "Address",
+      "Kind": "text",
+      "ToolTip": "Address:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Address_2",
+      "Kind": "text",
+      "ToolTip": "Address:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Approximate date therapy initiated",
+      "Kind": "text",
+      "ToolTip": "Approximate date therapy initiated",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "City",
+      "Kind": "text",
+      "ToolTip": "City:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "City_2",
+      "Kind": "text",
+      "ToolTip": "City:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Compound Drug Name",
+      "Kind": "text",
+      "ToolTip": "Compound Drug Name:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Contact Phone",
+      "Kind": "text",
+      "ToolTip": "Contact Phone:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Continuation of therapy approximate date therapy initiated",
+      "Kind": "checkbox",
+      "ToolTip": "Continuation of therapy (approximate date therapy initiated",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Date",
+      "Kind": "text",
+      "ToolTip": "Date:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "DateRow1",
+      "Kind": "text",
+      "ToolTip": "Date_Row_1",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "DateRow2",
+      "Kind": "text",
+      "ToolTip": "Date_Row_2",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "DateRow3",
+      "Kind": "text",
+      "ToolTip": "Date_Row_3",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Dates Started and Stopped or Approximate DurationRow1",
+      "Kind": "text",
+      "ToolTip": "Dates Started and Stopped or Approximate Duration_Row_1",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Dates Started and Stopped or Approximate DurationRow2",
+      "Kind": "text",
+      "ToolTip": "Dates Started and Stopped or Approximate Duration_Row_2",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Dates Started and Stopped or Approximate DurationRow3",
+      "Kind": "text",
+      "ToolTip": "Dates Started and Stopped or Approximate Duration_Row_3",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Dates Started and Stopped or Approximate DurationRow4",
+      "Kind": "text",
+      "ToolTip": "Dates Started and Stopped or Approximate Duration_Row_4",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Dates Started and Stopped or Approximate DurationRow5",
+      "Kind": "text",
+      "ToolTip": "Dates Started and Stopped or Approximate Duration_Row_5",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Date_2",
+      "Kind": "text",
+      "ToolTip": "Date",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Days Supply",
+      "Kind": "text",
+      "ToolTip": "Days\u0090 Supply:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Describe Response Reason for Failure or AllergyRow1",
+      "Kind": "text",
+      "ToolTip": "Describe Response, Reason for Failure, or Allergy_Row_1",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Describe Response Reason for Failure or AllergyRow2",
+      "Kind": "text",
+      "ToolTip": "Describe Response, Reason for Failure, or Allergy_Row_2",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Describe Response Reason for Failure or AllergyRow3",
+      "Kind": "text",
+      "ToolTip": "Describe Response, Reason for Failure, or Allergy_Row_3",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Describe Response Reason for Failure or AllergyRow4",
+      "Kind": "text",
+      "ToolTip": "Describe Response, Reason for Failure, or Allergy_Row_4",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Describe Response Reason for Failure or AllergyRow5",
+      "Kind": "text",
+      "ToolTip": "Describe Response, Reason for Failure, or Allergy_Row_5",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "DOB",
+      "Kind": "text",
+      "ToolTip": "DOB:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Doses per administration",
+      "Kind": "text",
+      "ToolTip": "Doses per administration",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Drug Allergies",
+      "Kind": "text",
+      "ToolTip": "Drug Allergies:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Drug NameRow1",
+      "Kind": "text",
+      "ToolTip": "Drug Name_Row_1",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Drug NameRow2",
+      "Kind": "text",
+      "ToolTip": "Drug Name_Row_2",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Drug NameRow3",
+      "Kind": "text",
+      "ToolTip": "Drug Name_Row_3",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Drug NameRow4",
+      "Kind": "text",
+      "ToolTip": "Drug Name_Row_4",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Drug NameRow5",
+      "Kind": "text",
+      "ToolTip": "Drug Name_Row_5",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Expected Duration of Use",
+      "Kind": "text",
+      "ToolTip": "Expected Duration of Use:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Expected Therapy Duration",
+      "Kind": "text",
+      "ToolTip": "Expected Therapy Duration:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "ExpeditedUrgent Review Requested By checking this box and signing and dating below I certify that applying the",
+      "Kind": "checkbox",
+      "ToolTip": "Expedited/Urgent Review Requested: By checking this box and signing and dating below, I certify that applying the",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Fax",
+      "Kind": "text",
+      "ToolTip": "Fax:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Fax_2",
+      "Kind": "text",
+      "ToolTip": "Fax:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Female",
+      "Kind": "checkbox",
+      "ToolTip": "Female",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "FrequencyRow1",
+      "Kind": "text",
+      "ToolTip": "Frequency_Row_1",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "FrequencyRow2",
+      "Kind": "text",
+      "ToolTip": "Frequency_Row_2",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "FrequencyRow3",
+      "Kind": "text",
+      "ToolTip": "Frequency_Row_3",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "FrequencyRow4",
+      "Kind": "text",
+      "ToolTip": "Frequency_Row_4",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "FrequencyRow5",
+      "Kind": "text",
+      "ToolTip": "Frequency_Row_5",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Group",
+      "Kind": "text",
+      "ToolTip": "Group #:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "HCPCS Code",
+      "Kind": "text",
+      "ToolTip": "HCPCS Code",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "HCPCS Code If applicable",
+      "Kind": "text",
+      "ToolTip": "HCPCS Code (If applicable):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Height if applicable",
+      "Kind": "text",
+      "ToolTip": "Height (if applicable):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "ICD Code",
+      "Kind": "text",
+      "ToolTip": "ICD Code:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "ICD Version",
+      "Kind": "text",
+      "ToolTip": "ICD Version:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "IngredientRow1",
+      "Kind": "text",
+      "ToolTip": "Ingredient_Row_1",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "IngredientRow1_2",
+      "Kind": "text",
+      "ToolTip": "Ingredient_Row_1",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "IngredientRow2",
+      "Kind": "text",
+      "ToolTip": "Ingredient_Row_2",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "IngredientRow2_2",
+      "Kind": "text",
+      "ToolTip": "Ingredient_Row_2",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "IngredientRow3",
+      "Kind": "text",
+      "ToolTip": "Ingredient_Row_3",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "IngredientRow3_2",
+      "Kind": "text",
+      "ToolTip": "Ingredient_Row_3",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "IngredientRow4",
+      "Kind": "text",
+      "ToolTip": "Ingredient_Row_4",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "IngredientRow4_2",
+      "Kind": "text",
+      "ToolTip": "Ingredient_Row_4",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "IngredientRow5",
+      "Kind": "text",
+      "ToolTip": "Ingredient_Row_5",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "IngredientRow5_2",
+      "Kind": "text",
+      "ToolTip": "Ingredient_Row_5",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "IngredientRow6",
+      "Kind": "text",
+      "ToolTip": "Ingredient_Row_6",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "IngredientRow6_2",
+      "Kind": "text",
+      "ToolTip": "Ingredient_Row_6",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Issuer Name if different from Section I",
+      "Kind": "text",
+      "ToolTip": "Issuer Name (if different from Section I):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Male",
+      "Kind": "checkbox",
+      "ToolTip": "Male",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Member or Medicaid ID",
+      "Kind": "text",
+      "ToolTip": "Member or Medicaid ID #:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Name",
+      "Kind": "text",
+      "ToolTip": "Name:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Name_2",
+      "Kind": "text",
+      "ToolTip": "Name:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "NDC",
+      "Kind": "text",
+      "ToolTip": "NDC",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "NDC Row1",
+      "Kind": "text",
+      "ToolTip": "NDC #_Row_1",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "NDC Row1_2",
+      "Kind": "text",
+      "ToolTip": "NDC #_Row_1",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "NDC Row2",
+      "Kind": "text",
+      "ToolTip": "NDC #_Row_2",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "NDC Row2_2",
+      "Kind": "text",
+      "ToolTip": "NDC #_Row_2",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "NDC Row3",
+      "Kind": "text",
+      "ToolTip": "NDC #_Row_3",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "NDC Row3_2",
+      "Kind": "text",
+      "ToolTip": "NDC #_Row_3",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "NDC Row4",
+      "Kind": "text",
+      "ToolTip": "NDC #_Row_4",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "NDC Row4_2",
+      "Kind": "text",
+      "ToolTip": "NDC #_Row_4",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "NDC Row5",
+      "Kind": "text",
+      "ToolTip": "NDC #_Row_5",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "NDC Row5_2",
+      "Kind": "text",
+      "ToolTip": "NDC #_Row_5",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "NDC Row6",
+      "Kind": "text",
+      "ToolTip": "NDC #_Row_6",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "NDC Row6_2",
+      "Kind": "text",
+      "ToolTip": "NDC #_Row_6",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "New therapy",
+      "Kind": "checkbox",
+      "ToolTip": "New therapy",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "NPI",
+      "Kind": "text",
+      "ToolTip": "NPI #:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Office Contact Name",
+      "Kind": "text",
+      "ToolTip": "Office Contact Name:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Other",
+      "Kind": "checkbox",
+      "ToolTip": "Other",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Patient is adhering to the drug therapy regimen",
+      "Kind": "checkbox",
+      "ToolTip": "Patient is adhering to the drug therapy regimen",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Patients diagnosis related to this request",
+      "Kind": "text",
+      "ToolTip": "Patient\u0090s diagnosis related to this request:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Phone",
+      "Kind": "text",
+      "ToolTip": "Phone:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Phone_2",
+      "Kind": "text",
+      "ToolTip": "Phone:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Phone_3",
+      "Kind": "text",
+      "ToolTip": "Phone:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Quantity",
+      "Kind": "text",
+      "ToolTip": "Quantity:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "QuantityRow1",
+      "Kind": "text",
+      "ToolTip": "Quantity_Row_1",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "QuantityRow1_2",
+      "Kind": "text",
+      "ToolTip": "Quantity_Row_1",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "QuantityRow2",
+      "Kind": "text",
+      "ToolTip": "Quantity_Row_2",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "QuantityRow2_2",
+      "Kind": "text",
+      "ToolTip": "Quantity_Row_2",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "QuantityRow3",
+      "Kind": "text",
+      "ToolTip": "Quantity_Row_3",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "QuantityRow3_2",
+      "Kind": "text",
+      "ToolTip": "Quantity_Row_3",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "QuantityRow4",
+      "Kind": "text",
+      "ToolTip": "Quantity_Row_4",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "QuantityRow4_2",
+      "Kind": "text",
+      "ToolTip": "Quantity_Row_4",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "QuantityRow5",
+      "Kind": "text",
+      "ToolTip": "Quantity_Row_5",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "QuantityRow5_2",
+      "Kind": "text",
+      "ToolTip": "Quantity_Row_5",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "QuantityRow6",
+      "Kind": "text",
+      "ToolTip": "Quantity_Row_6",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "QuantityRow6_2",
+      "Kind": "text",
+      "ToolTip": "Quantity_Row_6",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Requested Device Name",
+      "Kind": "text",
+      "ToolTip": "Requested Device Name:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Requested Drug Name",
+      "Kind": "text",
+      "ToolTip": "Requested Drug Name:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Route of Administration",
+      "Kind": "text",
+      "ToolTip": "Route of Administration:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Section IX  Justification See the Additional Information and Instructions section",
+      "Kind": "text",
+      "ToolTip": "Section IX \u0085 Justification (See the \u008DAdditional Information and Instructions\u008E section",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Signature of Prescriber or Prescribers Designee",
+      "Kind": "signature",
+      "ToolTip": "Signature of Prescriber or Prescriber\u0090s Designee",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Specialty",
+      "Kind": "text",
+      "ToolTip": "Specialty:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "State",
+      "Kind": "text",
+      "ToolTip": "State:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "State_2",
+      "Kind": "text",
+      "ToolTip": "State:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Strength",
+      "Kind": "text",
+      "ToolTip": "Strength:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "StrengthRow1",
+      "Kind": "text",
+      "ToolTip": "Strength_Row_1",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "StrengthRow2",
+      "Kind": "text",
+      "ToolTip": "Strength_Row_2",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "StrengthRow3",
+      "Kind": "text",
+      "ToolTip": "Strength_Row_3",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "StrengthRow4",
+      "Kind": "text",
+      "ToolTip": "Strength_Row_4",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "StrengthRow5",
+      "Kind": "text",
+      "ToolTip": "Strength_Row_5",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Submitted to",
+      "Kind": "text",
+      "ToolTip": "Submitted to:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "TestRow1",
+      "Kind": "text",
+      "ToolTip": "Test_Row_1",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "TestRow2",
+      "Kind": "text",
+      "ToolTip": "Test_Row_2",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "TestRow3",
+      "Kind": "text",
+      "ToolTip": "Test_Row_3",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "The drug therapy regimen is effective",
+      "Kind": "checkbox",
+      "ToolTip": "The drug therapy regimen is effective",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Unknown",
+      "Kind": "checkbox",
+      "ToolTip": "Unknown",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "ValueRow1",
+      "Kind": "text",
+      "ToolTip": "Value_Row_1",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "ValueRow2",
+      "Kind": "text",
+      "ToolTip": "Value_Row_2",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "ValueRow3",
+      "Kind": "text",
+      "ToolTip": "Value_Row_3",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Weight if applicable",
+      "Kind": "text",
+      "ToolTip": "Weight (if applicable):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "ZIP Code",
+      "Kind": "text",
+      "ToolTip": "ZIP Code:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "ZIP Code_2",
+      "Kind": "text",
+      "ToolTip": "ZIP Code:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    }
+  ]
+}

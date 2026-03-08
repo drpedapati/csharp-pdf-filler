@@ -1,0 +1,9 @@
+{
+  "PdfPath": "bcbsks-prior-authorization-request.pdf",
+  "OutputPath": "fixtures/reference-fills/bcbsks-prior-authorization-request/reference-filled.pdf",
+  "FormType": "acroform",
+  "Flattened": false,
+  "AppliedFields": 10,
+  "SkippedFields": [],
+  "UnusedInputKeys": []
+}

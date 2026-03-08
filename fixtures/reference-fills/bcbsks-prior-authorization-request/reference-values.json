@@ -1,0 +1,12 @@
+{
+  "Sec1_provider_addr_city": "Sample 1",
+  "Sec1_provider_addr_state": "Sample 2",
+  "Sec1_provider_addr_street": "Sample 3",
+  "Sec1_provider_addr_zip": "Sample 4",
+  "Sec1_provider_addr_zip+4": "Sample 5",
+  "Sec1_provider_charges": "Sample 6",
+  "Sec1_provider_cptcodes": "Sample 7",
+  "Sec1_provider_ein": "Sample 8",
+  "Sec1_provider_fax_area": "Sample 9",
+  "Sec1_provider_fax_prefix": "Sample 10"
+}

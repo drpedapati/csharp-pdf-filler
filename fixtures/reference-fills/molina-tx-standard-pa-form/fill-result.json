@@ -1,0 +1,9 @@
+{
+  "PdfPath": "molina-tx-standard-pa-form.pdf",
+  "OutputPath": "fixtures/reference-fills/molina-tx-standard-pa-form/reference-filled.pdf",
+  "FormType": "acroform",
+  "Flattened": false,
+  "AppliedFields": 40,
+  "SkippedFields": [],
+  "UnusedInputKeys": []
+}

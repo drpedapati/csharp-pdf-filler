@@ -1,0 +1,35 @@
+{
+  "total_pdfs": 24,
+  "compatibility_counts": {
+    "roundtrip-fill-ok": 11,
+    "unsupported": 13
+  },
+  "roundtrip_slugs": [
+    "aetna-il-rx-prior-auth",
+    "aetna-ma-imaging-prior-auth",
+    "aetna-nh-rx-prior-auth",
+    "anthem-va-pharmacy-prior-auth",
+    "bcbsil-bcchp-uniform-pa",
+    "bcbsks-prior-authorization-request",
+    "bcbsnd-inpatient-fillable",
+    "bcbsnd-outpatient-fillable",
+    "bcbstx-rx-standard-pa",
+    "molina-tx-standard-pa-form",
+    "uhc-tx-commercial-prior-auth"
+  ],
+  "unsupported_slugs": [
+    "anthem-ny-medical-injectables",
+    "bcbsla-general-prior-auth",
+    "bcbsri-cymbalta-pa-guide",
+    "bcbstx-health-services-standard-pa",
+    "caremark-florida-prior-auth",
+    "caremark-minnesota-state-pa",
+    "cigna-arizona-prior-auth",
+    "cigna-general-med-prior-auth",
+    "express-scripts-benefit-coverage-request",
+    "humana-state-specific-prior-auth",
+    "optumrx-general-prior-auth",
+    "optumrx-tenncare-compound-prior-auth",
+    "uhc-co-pharmacy-pa"
+  ]
+}

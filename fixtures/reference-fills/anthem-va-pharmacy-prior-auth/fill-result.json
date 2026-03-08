@@ -1,0 +1,9 @@
+{
+  "PdfPath": "anthem-va-pharmacy-prior-auth.pdf",
+  "OutputPath": "fixtures/reference-fills/anthem-va-pharmacy-prior-auth/reference-filled.pdf",
+  "FormType": "acroform",
+  "Flattened": false,
+  "AppliedFields": 22,
+  "SkippedFields": [],
+  "UnusedInputKeys": []
+}

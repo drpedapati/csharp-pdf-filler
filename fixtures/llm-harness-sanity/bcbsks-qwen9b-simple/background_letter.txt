@@ -1,0 +1,25 @@
+Prior Authorization Request Summary
+
+Requesting provider: Alice Carter, MD
+NPI: 1234567890
+EIN: 12-3456789
+Office address: 7420 West 129th Street, Overland Park, KS 66213-1456
+Office phone: 913-555-1288
+Office fax: 913-555-1289
+
+Patient: Maria Lewis
+Date of birth: 05/14/1982
+Member ID: KSM123456789
+Group number: GRP908172
+
+Requested service: MRI lumbar spine without contrast
+CPT code: 72148
+ICD-10 code: M54.16
+Place of service: Outpatient hospital
+Estimated charges: 1450.00
+
+Clinical history:
+Maria Lewis has had worsening low back pain with left-sided radiculopathy for three months despite supervised physical therapy, naproxen, and a home exercise program. Exam shows positive straight leg raise on the left and sensory change in the L5 distribution. Lumbar spine MRI without contrast is requested to evaluate for nerve root compression and guide treatment.
+
+Authorized by: Alice Carter, MD
+Authorization date: 03/07/2026

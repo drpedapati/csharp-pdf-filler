@@ -1,0 +1,20 @@
+{
+  "Additional comments 1": "Sample 1",
+  "Additional comments 2": "Sample 2",
+  "Additional comments 3": "Sample 3",
+  "Adverse Event / Specific Failure 1": "Sample 4",
+  "Adverse Event / Specific Failure 2": "Sample 5",
+  "Adverse Event / Specific Failure 3": "Sample 6",
+  "Approved": "Approved",
+  "Approved by (name and credentials)": "Sample 7",
+  "Contact Area Code": "Sample 8",
+  "Contact City": "Sample 9",
+  "Contact Email": "Sample 10",
+  "DAW": true,
+  "Denied": "Denied",
+  "Expedited Review Request": true,
+  "Has the patient already started the medication?": "Yes",
+  "Initial Authorization Request": true,
+  "Renewal Request": true,
+  "Standard Review Request": true
+}

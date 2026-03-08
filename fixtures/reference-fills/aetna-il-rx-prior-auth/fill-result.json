@@ -1,0 +1,9 @@
+{
+  "PdfPath": "aetna-il-rx-prior-auth.pdf",
+  "OutputPath": "fixtures/reference-fills/aetna-il-rx-prior-auth/reference-filled.pdf",
+  "FormType": "acroform",
+  "Flattened": false,
+  "AppliedFields": 18,
+  "SkippedFields": [],
+  "UnusedInputKeys": []
+}

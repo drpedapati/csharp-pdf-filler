@@ -1,0 +1,9 @@
+{
+  "PdfPath": "aetna-ma-imaging-prior-auth.pdf",
+  "OutputPath": "fixtures/reference-fills/aetna-ma-imaging-prior-auth/reference-filled.pdf",
+  "FormType": "acroform",
+  "Flattened": false,
+  "AppliedFields": 178,
+  "SkippedFields": [],
+  "UnusedInputKeys": []
+}

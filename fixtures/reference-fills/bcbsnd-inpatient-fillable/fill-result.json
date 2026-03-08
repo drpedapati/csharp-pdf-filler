@@ -1,0 +1,9 @@
+{
+  "PdfPath": "bcbsnd-inpatient-fillable.pdf",
+  "OutputPath": "fixtures/reference-fills/bcbsnd-inpatient-fillable/reference-filled.pdf",
+  "FormType": "acroform",
+  "Flattened": false,
+  "AppliedFields": 13,
+  "SkippedFields": [],
+  "UnusedInputKeys": []
+}

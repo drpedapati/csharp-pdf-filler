@@ -1,0 +1,9 @@
+{
+  "PdfPath": "uhc-tx-commercial-prior-auth.pdf",
+  "OutputPath": "fixtures/reference-fills/uhc-tx-commercial-prior-auth/reference-filled.pdf",
+  "FormType": "acroform",
+  "Flattened": false,
+  "AppliedFields": 40,
+  "SkippedFields": [],
+  "UnusedInputKeys": []
+}

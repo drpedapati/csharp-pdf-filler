@@ -1,0 +1,19 @@
+{
+  "9Digit Health Plan Member ID": "Sample 1",
+  "9Digit Health Plan Member ID  required": "Sample 2",
+  "Contact Email optional": "Sample 3",
+  "Contact Fax": "Sample 4",
+  "Contact Name": "Sample 5",
+  "Contact Phone": "Sample 6",
+  "Date": "Sample 7",
+  "Date Started": "Sample 8",
+  "Day Supply": "Sample 9",
+  "Diagnosis ICD10 if available": "Sample 10",
+  "Has the patient already started the medication": "YES",
+  "Initial Authorization Request": true,
+  "Is patient hospitalized": "YES",
+  "Medical Benefit Physician Administered": true,
+  "Pharmacy Benefit": true,
+  "Renewal Request": true,
+  "Unknown": true
+}

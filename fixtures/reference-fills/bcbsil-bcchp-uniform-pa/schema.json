@@ -1,0 +1,402 @@
+{
+  "PdfPath": "bcbsil-bcchp-uniform-pa.pdf",
+  "FormType": "acroform",
+  "IsXfaForm": false,
+  "IsSupportedAcroForm": true,
+  "CanFillValues": true,
+  "SupportedFillableFieldCount": 47,
+  "ValidationMessage": "PDF contains a supported AcroForm.",
+  "FieldCount": 48,
+  "Fields": [
+    {
+      "Name": "9Digit Health Plan Member ID",
+      "Kind": "text",
+      "ToolTip": "9-Digit Health Plan Member ID",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "9Digit Health Plan Member ID  required",
+      "Kind": "text",
+      "ToolTip": "9-Digit Health Plan Member ID # (required",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Contact Email optional",
+      "Kind": "text",
+      "ToolTip": "Contact Email (optional",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Contact Fax",
+      "Kind": "text",
+      "ToolTip": "Contact Fax",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Contact Name",
+      "Kind": "text",
+      "ToolTip": "Contact Name",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Contact Phone",
+      "Kind": "text",
+      "ToolTip": "Contact Phone",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Date",
+      "Kind": "text",
+      "ToolTip": "Date",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Date Started",
+      "Kind": "text",
+      "ToolTip": "Date Started",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Day Supply",
+      "Kind": "text",
+      "ToolTip": "Day Supply",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Diagnosis ICD10 if available",
+      "Kind": "text",
+      "ToolTip": "Diagnosis ICD-10 (if available",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Diagnosis specific",
+      "Kind": "text",
+      "ToolTip": "Diagnosis (specific",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Discharge Date",
+      "Kind": "text",
+      "ToolTip": "Discharge Date",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "DOB",
+      "Kind": "text",
+      "ToolTip": "DOB",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Dosage Form",
+      "Kind": "text",
+      "ToolTip": "Dosage Form",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Dosing Frequency",
+      "Kind": "text",
+      "ToolTip": "Dosing Frequency",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Drug Name",
+      "Kind": "text",
+      "ToolTip": "Drug Name",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Duration of Therapy",
+      "Kind": "text",
+      "ToolTip": "Duration of Therapy",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Facility ProviderTIN if applicable",
+      "Kind": "text",
+      "ToolTip": "Facility Provider/TIN (if applicable",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "goals of therapy and other info",
+      "Kind": "text",
+      "ToolTip": "",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Has the patient already started the medication",
+      "Kind": "radio",
+      "ToolTip": "Has the patient already started the medication",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": [
+        "YES",
+        "NO"
+      ]
+    },
+    {
+      "Name": "HCPCS Code if medical billing",
+      "Kind": "text",
+      "ToolTip": "HCPCS Code (if medical billing",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "if so, list below",
+      "Kind": "text",
+      "ToolTip": "",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Initial Authorization Request",
+      "Kind": "checkbox",
+      "ToolTip": "Initial Authorization Request",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Is patient hospitalized",
+      "Kind": "radio",
+      "ToolTip": "Is patient hospitalized",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": [
+        "YES",
+        "NO"
+      ]
+    },
+    {
+      "Name": "MCO if applicable",
+      "Kind": "text",
+      "ToolTip": "MCO (if applicable",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Medical Benefit Physician Administered",
+      "Kind": "checkbox",
+      "ToolTip": "Medical Benefit (Physician Administered",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "NDC if available",
+      "Kind": "text",
+      "ToolTip": "NDC (if available",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "NPI",
+      "Kind": "text",
+      "ToolTip": "NPI",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Page 2 of 2",
+      "Kind": "text",
+      "ToolTip": "Page 2 of 2",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Patient Name",
+      "Kind": "text",
+      "ToolTip": "Patient Name",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Patient Name_2",
+      "Kind": "text",
+      "ToolTip": "Patient Name",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Pharmacy Benefit",
+      "Kind": "checkbox",
+      "ToolTip": "Pharmacy Benefit",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Pharmacy Fax",
+      "Kind": "text",
+      "ToolTip": "Pharmacy Fax",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Pharmacy Name",
+      "Kind": "text",
+      "ToolTip": "Pharmacy Name",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Pharmacy NPI optional",
+      "Kind": "text",
+      "ToolTip": "Pharmacy NPI (optional",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Pharmacy Phone",
+      "Kind": "text",
+      "ToolTip": "Pharmacy Phone",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Place of infusioninjection if applicable",
+      "Kind": "text",
+      "ToolTip": "Place of infusion/injection (if applicable",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Please attach chart notes to support the request",
+      "Kind": "text",
+      "ToolTip": "",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Provider Name",
+      "Kind": "text",
+      "ToolTip": "Provider Name",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Provider Name_2",
+      "Kind": "text",
+      "ToolTip": "Provider Name",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Provider Signature",
+      "Kind": "signature",
+      "ToolTip": "Provider Signature",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Quantity",
+      "Kind": "text",
+      "ToolTip": "Quantity",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "reason for discontinuation or contradiction",
+      "Kind": "text",
+      "ToolTip": "",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Renewal Request",
+      "Kind": "checkbox",
+      "ToolTip": "Renewal Request",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Specialty",
+      "Kind": "text",
+      "ToolTip": "Specialty",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Start Date of this Request",
+      "Kind": "text",
+      "ToolTip": "Start Date of this Request",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Strength",
+      "Kind": "text",
+      "ToolTip": "Strength",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Unknown",
+      "Kind": "checkbox",
+      "ToolTip": "Unknown",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    }
+  ]
+}

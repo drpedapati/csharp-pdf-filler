@@ -1,0 +1,748 @@
+{
+  "PdfPath": "molina-tx-standard-pa-form.pdf",
+  "FormType": "acroform",
+  "IsXfaForm": false,
+  "IsSupportedAcroForm": true,
+  "CanFillValues": true,
+  "SupportedFillableFieldCount": 92,
+  "ValidationMessage": "PDF contains a supported AcroForm.",
+  "FieldCount": 92,
+  "Fields": [
+    {
+      "Name": "2_previous",
+      "Kind": "text",
+      "ToolTip": "Previous Authorization Number:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "2_reason",
+      "Kind": "text",
+      "ToolTip": "Clincial Reason for Urgency:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "3_dob",
+      "Kind": "text",
+      "ToolTip": "Date of Birth (2-digit month/2-digit day/4-digit year):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "3_group",
+      "Kind": "text",
+      "ToolTip": "Group Number:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "3_id",
+      "Kind": "text",
+      "ToolTip": "Member or Medicaid Identification Number:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "3_name",
+      "Kind": "text",
+      "ToolTip": "Section 3: Patient Information: Full Name:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "3_phone",
+      "Kind": "text",
+      "ToolTip": "Phone Number (including 3-digit area code):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "3_sub_name",
+      "Kind": "text",
+      "ToolTip": "Subscriber Full Name (if different):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "4_contact_a",
+      "Kind": "text",
+      "ToolTip": "Contact Full Name:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "4_contact_phone_a",
+      "Kind": "text",
+      "ToolTip": "Contact Phone Number (including 3-digit area code):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "4_fax_a",
+      "Kind": "text",
+      "ToolTip": "Fax Number (including 3-digit area code):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "4_fax_b",
+      "Kind": "text",
+      "ToolTip": "Fax Number (including 3-digit area code):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "4_name_a",
+      "Kind": "text",
+      "ToolTip": "Section 4: Provider Information: Requesting Provider or Facility: Name:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "4_name_b",
+      "Kind": "text",
+      "ToolTip": "Service Provider or Facility: Full Name:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "4_npi_a",
+      "Kind": "text",
+      "ToolTip": "NPI Number:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "4_npi_b",
+      "Kind": "text",
+      "ToolTip": "NPI Number:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "4_pcp_fax",
+      "Kind": "text",
+      "ToolTip": "Fax Number (including 3-digit area code):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "4_pcp_name",
+      "Kind": "text",
+      "ToolTip": "Primary Care Provider Full Name (see instructions):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "4_pcp_phone",
+      "Kind": "text",
+      "ToolTip": "Primary Care Provider Phone Number (including 3-digit area code):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "4_phone_a",
+      "Kind": "text",
+      "ToolTip": "Phone Number (including 3-digit area code):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "4_phone_b",
+      "Kind": "text",
+      "ToolTip": "Phone Number (including 3-digit area code):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "4_sig_date",
+      "Kind": "text",
+      "ToolTip": "Requesting Provider\u0027s Signature Date (2-digit month/2-digit day/4-digit year):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "4_specialty_a",
+      "Kind": "text",
+      "ToolTip": "Specialty:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "4_specialty_b",
+      "Kind": "text",
+      "ToolTip": "Specialty:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "a-1",
+      "Kind": "checkbox",
+      "ToolTip": "Section 2: General Information: Review Type (select one): Non-Urgent",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "a-2",
+      "Kind": "checkbox",
+      "ToolTip": "Urgent",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "b-1",
+      "Kind": "checkbox",
+      "ToolTip": "Request Type (select one): Initial Request",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "b-2",
+      "Kind": "checkbox",
+      "ToolTip": "Extension/Renewal/Amendment",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "c-1",
+      "Kind": "checkbox",
+      "ToolTip": "Select one: Male",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "c-2",
+      "Kind": "checkbox",
+      "ToolTip": "Female",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "c-3",
+      "Kind": "checkbox",
+      "ToolTip": "Other",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "c-4",
+      "Kind": "checkbox",
+      "ToolTip": "Unknown",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "code1",
+      "Kind": "text",
+      "ToolTip": "Code:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "code2",
+      "Kind": "text",
+      "ToolTip": "Code:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "code3",
+      "Kind": "text",
+      "ToolTip": "Code:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "code4",
+      "Kind": "text",
+      "ToolTip": "Code:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "codeb1",
+      "Kind": "text",
+      "ToolTip": "Code:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "codeb2",
+      "Kind": "text",
+      "ToolTip": "Code:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "codeb3",
+      "Kind": "text",
+      "ToolTip": "Code:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "codeb4",
+      "Kind": "text",
+      "ToolTip": "Code:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "d-1",
+      "Kind": "checkbox",
+      "ToolTip": "Select one: Inpatient",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "d-2",
+      "Kind": "checkbox",
+      "ToolTip": "Outpatient",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "d-3",
+      "Kind": "checkbox",
+      "ToolTip": "Provider Office",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "d-4",
+      "Kind": "checkbox",
+      "ToolTip": "Observation",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "d-5",
+      "Kind": "checkbox",
+      "ToolTip": "Home",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "d-6",
+      "Kind": "checkbox",
+      "ToolTip": "Day Surgery",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "d-7",
+      "Kind": "checkbox",
+      "ToolTip": "Other",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "d-7-1",
+      "Kind": "text",
+      "ToolTip": "Specify Other:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "date",
+      "Kind": "text",
+      "ToolTip": "Section 1: Submission: Date (2-digit month/2-digit day/4-digit year)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "desc1",
+      "Kind": "text",
+      "ToolTip": "Diagnosis Description:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "desc2",
+      "Kind": "text",
+      "ToolTip": "Diagnosis Description:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "desc3",
+      "Kind": "text",
+      "ToolTip": "Diagnosis Description:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "desc4",
+      "Kind": "text",
+      "ToolTip": "Diagnosis Description:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "duration",
+      "Kind": "text",
+      "ToolTip": "Duration:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "duration2",
+      "Kind": "text",
+      "ToolTip": "Duration:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "duration3",
+      "Kind": "text",
+      "ToolTip": "Duration:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "e-1",
+      "Kind": "checkbox",
+      "ToolTip": "Select one: Physical Therapy",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "e-2",
+      "Kind": "checkbox",
+      "ToolTip": "Occupational Therapy",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "e-3",
+      "Kind": "checkbox",
+      "ToolTip": "Speech Therapy",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "e-4",
+      "Kind": "checkbox",
+      "ToolTip": "Cardiac Rehab",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "e-5",
+      "Kind": "checkbox",
+      "ToolTip": "Mental Health/Substance Abuse",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "end1",
+      "Kind": "text",
+      "ToolTip": "End Date (2-digit month/2-digit day/4-digit year):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "end2",
+      "Kind": "text",
+      "ToolTip": "End Date (2-digit month/2-digit day/4-digit year):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "end3",
+      "Kind": "text",
+      "ToolTip": "End Date (2-digit month/2-digit day/4-digit year):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "end4",
+      "Kind": "text",
+      "ToolTip": "End Date (2-digit month/2-digit day/4-digit year):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "equipment",
+      "Kind": "text",
+      "ToolTip": "Equipment/Supplies (include any HCPCS Codes):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "f-1",
+      "Kind": "checkbox",
+      "ToolTip": "Home Health",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "f-1-1-1",
+      "Kind": "checkbox",
+      "ToolTip": "MD Signed Order Attached? Yes",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "f-1-1-2",
+      "Kind": "checkbox",
+      "ToolTip": "No",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "f-1-2-1",
+      "Kind": "checkbox",
+      "ToolTip": "Nursing Assessment Attached? Yes",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "f-1-2-2",
+      "Kind": "checkbox",
+      "ToolTip": "No",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "facility_address",
+      "Kind": "text",
+      "ToolTip": "Section 6: Clinical Documentation (See intructions page, section 6). To expediate authorization, please include address of service provider or facility here:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "frequency",
+      "Kind": "text",
+      "ToolTip": "Frequency:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "frequency2",
+      "Kind": "text",
+      "ToolTip": "Frequency:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "g-1",
+      "Kind": "checkbox",
+      "ToolTip": "DME",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "g-1-1-1",
+      "Kind": "checkbox",
+      "ToolTip": "MD Signed Order Attached? Yes",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "g-1-1-2",
+      "Kind": "checkbox",
+      "ToolTip": "No",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "g-1-2-1",
+      "Kind": "checkbox",
+      "ToolTip": "Medicaid Only: Title 19 Certification Attached? Yes",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "g-1-2-2",
+      "Kind": "checkbox",
+      "ToolTip": "No",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "icd_version",
+      "Kind": "text",
+      "ToolTip": "Diagnosis Descrption (ICD version). Enter version:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "other",
+      "Kind": "text",
+      "ToolTip": "Specify Other:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "other2",
+      "Kind": "text",
+      "ToolTip": "Specify Other:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "service1",
+      "Kind": "text",
+      "ToolTip": "Section 5: Services Requested (with CPT, CDT, or HCPCS Code) and supporting diagnoses (with ICD code): Entry 1 of 4: Planned Service or Procedure:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "service2",
+      "Kind": "text",
+      "ToolTip": "Entry 2 of 4: Planned Service or Procedure:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "service3",
+      "Kind": "text",
+      "ToolTip": "Entry 3 of 4: Planned Service or Procedure:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "service4",
+      "Kind": "text",
+      "ToolTip": "Entry 4 of 4: Planned Service or Procedure:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "sessions",
+      "Kind": "text",
+      "ToolTip": "Number of Sessions:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "start1",
+      "Kind": "text",
+      "ToolTip": "Start Date (2-digit month/2-digit day/4-digit year):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "start2",
+      "Kind": "text",
+      "ToolTip": "Start Date (2-digit month/2-digit day/4-digit year):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "start3",
+      "Kind": "text",
+      "ToolTip": "Start Date (2-digit month/2-digit day/4-digit year):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "start4",
+      "Kind": "text",
+      "ToolTip": "Start Date (2-digit month/2-digit day/4-digit year):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "visits",
+      "Kind": "text",
+      "ToolTip": "Number of Visits:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    }
+  ]
+}

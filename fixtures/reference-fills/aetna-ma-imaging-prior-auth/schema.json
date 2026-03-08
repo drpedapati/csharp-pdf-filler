@@ -1,0 +1,1679 @@
+{
+  "PdfPath": "aetna-ma-imaging-prior-auth.pdf",
+  "FormType": "acroform",
+  "IsXfaForm": false,
+  "IsSupportedAcroForm": true,
+  "CanFillValues": true,
+  "SupportedFillableFieldCount": 207,
+  "ValidationMessage": "PDF contains a supported AcroForm.",
+  "FieldCount": 208,
+  "Fields": [
+    {
+      "Name": "6 months follow up abnormal MRI birads3",
+      "Kind": "checkbox",
+      "ToolTip": "6 months follow up abnormal MRI (birads3)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Abdominal or Pelvic Mass",
+      "Kind": "checkbox",
+      "ToolTip": "Abdominal or Pelvic Mass",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "ABDOMINAL PELVIS",
+      "Kind": "checkbox",
+      "ToolTip": "ABDOMINAL/ PELVIS",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "AbdominalPelvic Trauma",
+      "Kind": "checkbox",
+      "ToolTip": "Abdominal/Pelvic Trauma",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "AbdPelvis Combination Study",
+      "Kind": "radio",
+      "ToolTip": "Abd/Pelvis Combination Study",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "Name": "Abnormal",
+      "Kind": "checkbox",
+      "ToolTip": "Abnormal",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Abnormal neurological exam",
+      "Kind": "checkbox",
+      "ToolTip": "Abnormal neurological exam",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Abnormal plain film bone scan or ultrasound",
+      "Kind": "checkbox",
+      "ToolTip": "Abnormal plain film, bone scan, or ultrasound",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Abnormalinconclusive mammogram or",
+      "Kind": "checkbox",
+      "ToolTip": "Abnormal/inconclusive mammogram or ultrasound",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Abnormal_2",
+      "Kind": "checkbox",
+      "ToolTip": "Abnormal",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Acquired Pediatric Heart Disease",
+      "Kind": "checkbox",
+      "ToolTip": "Acquired Pediatric Heart Disease",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Acute less than 3 months",
+      "Kind": "checkbox",
+      "ToolTip": "Acute (less than 3 months)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Acute Pain less than 48 hrs",
+      "Kind": "checkbox",
+      "ToolTip": "Acute Pain (less than 48 hrs)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Address",
+      "Kind": "text",
+      "ToolTip": "Address:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Anemia",
+      "Kind": "checkbox",
+      "ToolTip": "Anemia",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Ascites",
+      "Kind": "checkbox",
+      "ToolTip": "Ascites",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "AvascularAseptic Necrosis",
+      "Kind": "checkbox",
+      "ToolTip": "Avascular/Aseptic Necrosis",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "BannayanRileyRuvucaba Syndrome",
+      "Kind": "checkbox",
+      "ToolTip": "Bannayan-Riley-Ruvucaba Syndrome",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Brain infection or abscess",
+      "Kind": "checkbox",
+      "ToolTip": "Brain infection or abscess",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "BRAINHEAD",
+      "Kind": "checkbox",
+      "ToolTip": "BRAIN/HEAD",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "BRCA1 and BRCA2 mutation",
+      "Kind": "checkbox",
+      "ToolTip": "BRCA1 and BRCA2 mutation",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Breakthrough seizures",
+      "Kind": "checkbox",
+      "ToolTip": "Breakthrough seizures",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "BREAST MRI DIAGNOSTIC",
+      "Kind": "checkbox",
+      "ToolTip": "BREAST MRI DIAGNOSTIC",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "BREAST MRI SCREENING",
+      "Kind": "checkbox",
+      "ToolTip": "BREAST MRI SCREENING",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Charcot joint",
+      "Kind": "checkbox",
+      "ToolTip": "Charcot joint",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "CHEST",
+      "Kind": "checkbox",
+      "ToolTip": "CHEST",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Chest wall or pleural mass",
+      "Kind": "checkbox",
+      "ToolTip": "Chest wall or pleural mass",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Chest xray or PFT suggestive of",
+      "Kind": "checkbox",
+      "ToolTip": "Chest x-ray or PFT suggestive of pulmonary fibrosis",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Chiropractic Treatment",
+      "Kind": "checkbox",
+      "ToolTip": "Chiropractic Treatment",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Chiropractic treatment",
+      "Kind": "checkbox",
+      "ToolTip": "Chiropractic treatment",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Chronic more than 3 months",
+      "Kind": "checkbox",
+      "ToolTip": "Chronic (more than 3 months)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Chronic Pain more than 48 hours",
+      "Kind": "checkbox",
+      "ToolTip": "Chronic Pain (more than 48 hours)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "City",
+      "Kind": "text",
+      "ToolTip": "City:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "CLEAR FORM",
+      "Kind": "PdfLoadedButtonField",
+      "ToolTip": "CLEAR FORM",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Congenital Heart Disease",
+      "Kind": "checkbox",
+      "ToolTip": "Congenital Heart Disease",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Contact Name",
+      "Kind": "text",
+      "ToolTip": "Contact Name:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "CPT Codes",
+      "Kind": "text",
+      "ToolTip": "CPT Code(s):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "CT",
+      "Kind": "checkbox",
+      "ToolTip": "CT",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "CTA",
+      "Kind": "checkbox",
+      "ToolTip": "CTA",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Date of first office visit for this condition with any provider",
+      "Kind": "text",
+      "ToolTip": "Date of first office visit for this condition with any provider: (MM/DD/YYYY)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Date of most recent office visit for this condition with any provider",
+      "Kind": "text",
+      "ToolTip": "Date of most recent office visit for this condition with any provider: (MM/DD/YYYY)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Date of Service",
+      "Kind": "text",
+      "ToolTip": "Date of Service: (MM/DD/YYYY)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Dense breast tissue",
+      "Kind": "checkbox",
+      "ToolTip": "Dense breast tissue",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Description",
+      "Kind": "text",
+      "ToolTip": "Description:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Description_2",
+      "Kind": "text",
+      "ToolTip": "Description:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "DOB",
+      "Kind": "text",
+      "ToolTip": "DOB: (MM/DD/YYYY)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Endometrial Abnormality",
+      "Kind": "checkbox",
+      "ToolTip": "Endometrial Abnormality",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Evaluate extent of invasive cancer",
+      "Kind": "checkbox",
+      "ToolTip": "Evaluate extent of invasive cancer",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Evaluation axillary node metastasis",
+      "Kind": "checkbox",
+      "ToolTip": "Evaluation axillary node metastasis",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Evaluation of symptomatic patients with breast",
+      "Kind": "checkbox",
+      "ToolTip": "Evaluation of symptomatic patients with breast implants, for detection of implant rupture",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Facility Name",
+      "Kind": "text",
+      "ToolTip": "Facility Name:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Facility Tax ID",
+      "Kind": "text",
+      "ToolTip": "Facility Tax ID:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Failure 2 or more courses antibiotics",
+      "Kind": "checkbox",
+      "ToolTip": "Failure 2 or more courses antibiotics",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Failure single course antibiotics",
+      "Kind": "checkbox",
+      "ToolTip": "Failure single course antibiotics",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Fax",
+      "Kind": "text",
+      "ToolTip": "Fax #:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Fax_2",
+      "Kind": "text",
+      "ToolTip": "Fax #:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Fever of Unknown Origin FUO",
+      "Kind": "checkbox",
+      "ToolTip": "Fever of Unknown Origin [FUO]",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Focal neurological findings",
+      "Kind": "checkbox",
+      "ToolTip": "Focal neurological findings",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Follow up  Trauma",
+      "Kind": "checkbox",
+      "ToolTip": "Follow up \u0084 Trauma",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Follow up trauma",
+      "Kind": "checkbox",
+      "ToolTip": "Follow up trauma",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Follow up treatment",
+      "Kind": "checkbox",
+      "ToolTip": "Follow up treatment (surgery/chemotherapy/radiation)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Fracture evaluation",
+      "Kind": "checkbox",
+      "ToolTip": "Fracture evaluation",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Group",
+      "Kind": "text",
+      "ToolTip": "Group #:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Health Plan",
+      "Kind": "text",
+      "ToolTip": "Health Plan:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Hematuria",
+      "Kind": "checkbox",
+      "ToolTip": "Hematuria",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Hernia",
+      "Kind": "checkbox",
+      "ToolTip": "Hernia",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "History of lobular or ductal carcinoma",
+      "Kind": "checkbox",
+      "ToolTip": "History of lobular or ductal carcinoma in situ on biopsy",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Home Exercise Program",
+      "Kind": "checkbox",
+      "ToolTip": "Home Exercise Program",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Home exercise program",
+      "Kind": "checkbox",
+      "ToolTip": "Home exercise program",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "ICD Diagnosis Codes",
+      "Kind": "text",
+      "ToolTip": "ICD Diagnosis Code(s):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Immunocompromised patient or fungal infection warranting MR",
+      "Kind": "checkbox",
+      "ToolTip": "Immunocompromised patient or fungal infection warranting MR",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Inflammatory Bowel Disease consistent with",
+      "Kind": "checkbox",
+      "ToolTip": "Inflammatory Bowel Disease consistent with Appendicitis, Diverticulitis, or Abscess",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "ischemia pre or post op venous thrombosis",
+      "Kind": "text",
+      "ToolTip": "Describe:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Jaundice Abnormal Liver Function Tests",
+      "Kind": "checkbox",
+      "ToolTip": "Jaundice, Abnormal Liver Function Tests",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Joint infectioninflammation",
+      "Kind": "checkbox",
+      "ToolTip": "Joint infection/inflammation",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Joint locking",
+      "Kind": "checkbox",
+      "ToolTip": "Joint locking",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "KidneyUrethral Obstruction or Calculus",
+      "Kind": "checkbox",
+      "ToolTip": "Kidney/Urethral Obstruction or Calculus",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Known or suspected infection",
+      "Kind": "checkbox",
+      "ToolTip": "Known or suspected infection",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Known or suspected stroke",
+      "Kind": "checkbox",
+      "ToolTip": "Known or suspected stroke",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Known or suspected tumor metastasis",
+      "Kind": "checkbox",
+      "ToolTip": "Known or suspected tumor, metastasis",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Known or suspected tumor on bone scan or xray",
+      "Kind": "checkbox",
+      "ToolTip": "Known or suspected tumor on bone scan or x-ray",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Known or suspected tumor Palpable Neck Mass",
+      "Kind": "checkbox",
+      "ToolTip": "Known or suspected tumor (Palpable Neck Mass)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Known or suspected tumormass or metastasis",
+      "Kind": "checkbox",
+      "ToolTip": "Known or suspected tumor/mass or metastasis",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Lesion on chest xray suggestive of",
+      "Kind": "checkbox",
+      "ToolTip": "Lesion on chest x-ray suggestive of malignancy or metastatic disease",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Lifetime risk 20 or greater as defined by",
+      "Kind": "checkbox",
+      "ToolTip": "Lifetime risk 20% or greater as defined by BRACA PRO or other models",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "LiFraumeni Syndrome Cowden Syndrome",
+      "Kind": "checkbox",
+      "ToolTip": "Li-Fraumeni Syndrome, Cowden Syndrome",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Ligament tendon or fibrocartilage tear",
+      "Kind": "checkbox",
+      "ToolTip": "Ligament, tendon, or fibrocartilage tear",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Lower extremity claudication",
+      "Kind": "checkbox",
+      "ToolTip": "Lower extremity claudication",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Lower extremity edema",
+      "Kind": "checkbox",
+      "ToolTip": "Lower extremity edema",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Lung abscess or inflammatory process",
+      "Kind": "checkbox",
+      "ToolTip": "Lung abscess or inflammatory process",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Mass evaluation post surgery",
+      "Kind": "checkbox",
+      "ToolTip": "Mass evaluation post surgery",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Mediastinal mass",
+      "Kind": "checkbox",
+      "ToolTip": "Mediastinal mass",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Member ID",
+      "Kind": "text",
+      "ToolTip": "Member ID:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Meniscal or labral tear",
+      "Kind": "checkbox",
+      "ToolTip": "Meniscal or labral tear",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "MRA",
+      "Kind": "checkbox",
+      "ToolTip": "MRA",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "MRCP",
+      "Kind": "checkbox",
+      "ToolTip": "MRCP",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "MRI",
+      "Kind": "checkbox",
+      "ToolTip": "MRI",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Neurological Deficits",
+      "Kind": "checkbox",
+      "ToolTip": "Neurological Deficits",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "New mental status changes",
+      "Kind": "checkbox",
+      "ToolTip": "New mental status changes",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "New neurological findings",
+      "Kind": "checkbox",
+      "ToolTip": "New neurological findings",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "New onset of seizures",
+      "Kind": "checkbox",
+      "ToolTip": "New onset of seizures",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "New syncope",
+      "Kind": "checkbox",
+      "ToolTip": "New syncope",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "No antibiotic treatment",
+      "Kind": "checkbox",
+      "ToolTip": "No antibiotic treatment",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "No Prior Treatment",
+      "Kind": "checkbox",
+      "ToolTip": "Check One (Prior Treatment)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "No prior treatment",
+      "Kind": "checkbox",
+      "ToolTip": "Prior Treatment (Check One)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Normal",
+      "Kind": "checkbox",
+      "ToolTip": "Normal",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Normal_2",
+      "Kind": "checkbox",
+      "ToolTip": "Normal",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Not performed",
+      "Kind": "checkbox",
+      "ToolTip": "Not performed",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Not performed in past 2 months",
+      "Kind": "checkbox",
+      "ToolTip": "Not performed in past 2 months",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Not performed in the past 2 months",
+      "Kind": "checkbox",
+      "ToolTip": "Not performed in the past 2 months",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "NPI",
+      "Kind": "text",
+      "ToolTip": "NPI:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "NPI_2",
+      "Kind": "text",
+      "ToolTip": "NPI:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "NSAIDS",
+      "Kind": "checkbox",
+      "ToolTip": "NSAIDS",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "NSAIDS_2",
+      "Kind": "checkbox",
+      "ToolTip": "NSAIDS",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "On awakening",
+      "Kind": "checkbox",
+      "ToolTip": "On awakening",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Oral Steroid",
+      "Kind": "checkbox",
+      "ToolTip": "Oral Steroid",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "OralIntraarticular Steroids",
+      "Kind": "checkbox",
+      "ToolTip": "Oral/Intra-articular Steroids",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Other describe",
+      "Kind": "checkbox",
+      "ToolTip": "Other",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Other describe_2",
+      "Kind": "checkbox",
+      "ToolTip": "Other",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Other describe_3",
+      "Kind": "checkbox",
+      "ToolTip": "Other",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Other describe_4",
+      "Kind": "checkbox",
+      "ToolTip": "Other",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Other describe_5",
+      "Kind": "checkbox",
+      "ToolTip": "Other",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Painful swallowing",
+      "Kind": "checkbox",
+      "ToolTip": "Painful swallowing",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Palpable soft tissue mass",
+      "Kind": "checkbox",
+      "ToolTip": "Palpable soft tissue mass",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Pancreatic or adrenal mass seen on other imaging",
+      "Kind": "checkbox",
+      "ToolTip": "Pancreatic or adrenal mass seen on other imaging",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "paraneoplastic syndrome etc",
+      "Kind": "text",
+      "ToolTip": "Describe:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Patient Name First Last",
+      "Kind": "text",
+      "ToolTip": "Patient Name (First, Last):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Pelvic Floor Dysfunction",
+      "Kind": "checkbox",
+      "ToolTip": "Pelvic Floor Dysfunction",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Persistent infiltratepneumonia despite",
+      "Kind": "checkbox",
+      "ToolTip": "Persistent infiltrate/pneumonia despite 4\u00856 weeks antibiotic therapy",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Persistent Pain",
+      "Kind": "checkbox",
+      "ToolTip": "Persistent Pain",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "PERSISTENT PAIN ANDOR DISABILITY IF YES CHECK REASONS BELOW",
+      "Kind": "checkbox",
+      "ToolTip": "PERSISTENT PAIN AND/OR DISABILITY (IF YES, CHECK REASON(S) BELOW)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Persistent unexplained wheeze",
+      "Kind": "checkbox",
+      "ToolTip": "Persistent unexplained wheeze",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Phone",
+      "Kind": "text",
+      "ToolTip": "Phone #:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Phone_2",
+      "Kind": "text",
+      "ToolTip": "Phone #:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Physical Therapy",
+      "Kind": "checkbox",
+      "ToolTip": "Physical Therapy",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Physical therapy",
+      "Kind": "checkbox",
+      "ToolTip": "Physical therapy",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Physician Name First Last",
+      "Kind": "text",
+      "ToolTip": "Physician Name (First, Last):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Positive Margins PostOP",
+      "Kind": "checkbox",
+      "ToolTip": "Positive Margins Post-OP",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Possible Fracture",
+      "Kind": "checkbox",
+      "ToolTip": "Possible Fracture",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Possible infection or abscess",
+      "Kind": "checkbox",
+      "ToolTip": "Possible infection or abscess",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Pre or postOP evaluation",
+      "Kind": "checkbox",
+      "ToolTip": "Pre- or post-OP evaluation",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Pre or postOP Evaluation",
+      "Kind": "checkbox",
+      "ToolTip": "Pre- or post-OP Evaluation",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Pre or postOP evaluation_2",
+      "Kind": "checkbox",
+      "ToolTip": "Pre- or post-OP evaluation",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Pre or postOP evaluation_3",
+      "Kind": "checkbox",
+      "ToolTip": "Pre- or post-OP evaluation",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Pre or postOP evaluation_4",
+      "Kind": "checkbox",
+      "ToolTip": "Pre- or post-OP evaluation",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Pre or postOP evaluation_5",
+      "Kind": "checkbox",
+      "ToolTip": "Pre- or post-OP evaluation",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Primary Specialty",
+      "Kind": "text",
+      "ToolTip": "Primary Specialty:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Prostate Neoplasm",
+      "Kind": "checkbox",
+      "ToolTip": "Prostate Neoplasm",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Radiation therapy to chest between",
+      "Kind": "checkbox",
+      "ToolTip": "Radiation therapy to chest between ages 10\u008530",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Radiculopathy",
+      "Kind": "checkbox",
+      "ToolTip": "Radiculopathy",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Recent significant head trauma",
+      "Kind": "checkbox",
+      "ToolTip": "Recent significant head trauma",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Recent trauma",
+      "Kind": "checkbox",
+      "ToolTip": "Recent trauma",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Recurrent  4 or more episodesyr",
+      "Kind": "checkbox",
+      "ToolTip": "Recurrent \u0084 (4 or more episodes/yr)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "REQUEST FOR ANNUAL SCREENING FOR BREAST CANCER If yes check reasons below",
+      "Kind": "checkbox",
+      "ToolTip": "REQUEST FOR ANNUAL SCREENING FOR BREAST CANCER (If yes, check reason(s) below)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Requested as part of arthrogram",
+      "Kind": "checkbox",
+      "ToolTip": "Requested as part of arthrogram",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Rotator cuff tear shoulder",
+      "Kind": "checkbox",
+      "ToolTip": "Rotator cuff tear (shoulder)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Salivary gland mass or stone",
+      "Kind": "checkbox",
+      "ToolTip": "Salivary gland mass or stone",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Screening for lung nodules",
+      "Kind": "checkbox",
+      "ToolTip": "Screening for lung nodules",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Significant Hemoptysis",
+      "Kind": "checkbox",
+      "ToolTip": "Significant Hemoptysis",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Significant weight loss 10 of body",
+      "Kind": "checkbox",
+      "ToolTip": "Significant weight loss (10% of body weight over 6 months or less)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Signs or symptom suggestive of lung",
+      "Kind": "checkbox",
+      "ToolTip": "Signs or symptom suggestive of lung cancer (unintentional weight loss, anemia, paraneoplastic syndrome, etc.)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "SINUS FACE NECK ORBIT",
+      "Kind": "checkbox",
+      "ToolTip": "SINUS, FACE, NECK, ORBIT",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Sinusitis",
+      "Kind": "checkbox",
+      "ToolTip": "Sinusitis",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Sinusitis Treatment",
+      "Kind": "checkbox",
+      "ToolTip": "Sinusitis Treatment",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Soft tissue abscess",
+      "Kind": "checkbox",
+      "ToolTip": "Soft tissue abscess",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "SPINE",
+      "Kind": "checkbox",
+      "ToolTip": "SPINE",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Spine Injections",
+      "Kind": "checkbox",
+      "ToolTip": "Spine Injections",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Splintingbracesling",
+      "Kind": "checkbox",
+      "ToolTip": "Splinting/brace/sling",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Staging malignancy",
+      "Kind": "checkbox",
+      "ToolTip": "Staging (malignancy)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Staging of malignancy",
+      "Kind": "checkbox",
+      "ToolTip": "Staging of malignancy",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Standard staging or post therapy followup",
+      "Kind": "checkbox",
+      "ToolTip": "Standard staging or post therapy follow-up for patient with a pathologically proven malignancy",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "State",
+      "Kind": "text",
+      "ToolTip": "State:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Suspected abnormality of pelvic bones or",
+      "Kind": "checkbox",
+      "ToolTip": "Suspected abnormality of pelvic bones or muscular structures",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Suspected acoustic neuroma",
+      "Kind": "checkbox",
+      "ToolTip": "Suspected acoustic neuroma",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Suspected AneurysmDissectionAVM",
+      "Kind": "checkbox",
+      "ToolTip": "Suspected Aneurysm/Dissection/AVM",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Suspected Hemochromatosis",
+      "Kind": "checkbox",
+      "ToolTip": "Suspected Hemochromatosis",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Suspected Multiple Sclerosis not applicable  for CT or for CT or MRI of lumbar region",
+      "Kind": "checkbox",
+      "ToolTip": "Suspected Multiple Sclerosis (not applicable for CT or for CT or MRI of lumbar region)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Suspected Multiple Sclerosis not for CT",
+      "Kind": "checkbox",
+      "ToolTip": "Suspected Multiple Sclerosis (not for CT)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Suspected pituitary adenoma and elevated",
+      "Kind": "checkbox",
+      "ToolTip": "Suspected pituitary adenoma and elevated prolactin (\u003E20 ng/ml)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Suspected Pulmonary Embolus",
+      "Kind": "checkbox",
+      "ToolTip": "Suspected Pulmonary Embolus",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Suspected Recurrence of Breast Cancer",
+      "Kind": "checkbox",
+      "ToolTip": "Suspected Recurrence of Breast Cancer",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Suspected Renal Artery Stenosis",
+      "Kind": "checkbox",
+      "ToolTip": "Suspected Renal Artery Stenosis",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Suspected thyroid mass",
+      "Kind": "checkbox",
+      "ToolTip": "Suspected thyroid mass",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Suspected vascular abnormality",
+      "Kind": "checkbox",
+      "ToolTip": "Suspected vascular abnormality, aneurysm, AVM, congenital anomaly",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Suspected vascular abnormality aneurysm",
+      "Kind": "checkbox",
+      "ToolTip": "Suspected vascular abnormality (aneurysm dissection, thromboembolic disease, A-V malformation or fistula vasculitis, ischemia, pre or post op, venous thr ombosis)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Suspected Vascular Disease Mesenteric",
+      "Kind": "checkbox",
+      "ToolTip": "Suspected Vascular Disease, Mesenteric Ischemia",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Suspectedknown asbestostis or other",
+      "Kind": "checkbox",
+      "ToolTip": "Suspected/known asbestostis or other pneumoconiosis",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Tarsal coalition feet",
+      "Kind": "checkbox",
+      "ToolTip": "Tarsal coalition (feet)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Tax ID",
+      "Kind": "text",
+      "ToolTip": "Tax ID:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Transplant",
+      "Kind": "checkbox",
+      "ToolTip": "Transplant",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Trauma or recent injury",
+      "Kind": "checkbox",
+      "ToolTip": "Trauma or recent injury",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "undefined",
+      "Kind": "text",
+      "ToolTip": "Describe:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "undefined_2",
+      "Kind": "text",
+      "ToolTip": "Describe:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "undefined_3",
+      "Kind": "text",
+      "ToolTip": "Describe:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "undefined_4",
+      "Kind": "text",
+      "ToolTip": "Other (describe):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "undefined_5",
+      "Kind": "text",
+      "ToolTip": "Other (describe):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "undefined_6",
+      "Kind": "text",
+      "ToolTip": "Other (describe):",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "undefined_7",
+      "Kind": "text",
+      "ToolTip": "DOCUMENT EXAM FINDINGS, PRIOR TESTS, RESULTS, AND DATES (INCLUDE TREATMENT DESCRIPTION FOR CONSERVATIVE THERAPY DURATION, PRIOR IMAGING, AND ANY TRAUMA HISTORY) (MM/DD/YYYY)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "undefined_8",
+      "Kind": "text",
+      "ToolTip": "DOCUMENT EXAM FINDINGS, PRIOR TESTS, RESULTS, AND DATES (INCLUDE TREATMENT DESCRIPTION FOR CONSERVATIVE THERAPY DURATION, PRIOR IMAGING, AND ANY TRAUMA HISTORY) (MM/DD/YYYY)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "undefined_9",
+      "Kind": "text",
+      "ToolTip": "DOCUMENT EXAM FINDINGS, PRIOR TESTS, RESULTS, AND DATES (INCLUDE TREATMENT DESCRIPTION FOR CONSERVATIVE THERAPY DURATION, PRIOR IMAGING, AND ANY TRAUMA HISTORY) (MM/DD/YYYY)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Unilateral Muscle wasting",
+      "Kind": "checkbox",
+      "ToolTip": "Unilateral Muscle wasting",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "UPPER LOWER EXTREMITIES",
+      "Kind": "checkbox",
+      "ToolTip": "UPPER/ LOWER EXTREMITIES",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Vascular abnormalities AVM Aneurysm",
+      "Kind": "checkbox",
+      "ToolTip": "Vascular abnormalities (AVM Aneurysm Dissection Stenosis, Obstruction)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Vascular abnormalities AVM Aneurysm Dissection Stenosis Obstruction",
+      "Kind": "checkbox",
+      "ToolTip": "Vascular abnormalities (AVM Aneurysm Dissection Stenosis, Obstruction)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "With exertion",
+      "Kind": "checkbox",
+      "ToolTip": "With exertion",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "With fever",
+      "Kind": "checkbox",
+      "ToolTip": "With fever",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Worst headache of life thunderclap",
+      "Kind": "checkbox",
+      "ToolTip": "Worst headache of life (thunderclap)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Zip",
+      "Kind": "text",
+      "ToolTip": "Zip:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    }
+  ]
+}

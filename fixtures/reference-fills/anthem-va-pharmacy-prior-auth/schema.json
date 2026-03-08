@@ -1,0 +1,612 @@
+{
+  "PdfPath": "anthem-va-pharmacy-prior-auth.pdf",
+  "FormType": "acroform",
+  "IsXfaForm": false,
+  "IsSupportedAcroForm": true,
+  "CanFillValues": true,
+  "SupportedFillableFieldCount": 75,
+  "ValidationMessage": "PDF contains a supported AcroForm.",
+  "FieldCount": 75,
+  "Fields": [
+    {
+      "Name": "Address",
+      "Kind": "text",
+      "ToolTip": "Address",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Address where service was rendered",
+      "Kind": "text",
+      "ToolTip": "Address where service was rendered",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Adverse",
+      "Kind": "checkbox",
+      "ToolTip": "Adverse",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "below",
+      "Kind": "text",
+      "ToolTip": "below",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "City",
+      "Kind": "text",
+      "ToolTip": "City",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "City_2",
+      "Kind": "text",
+      "ToolTip": "City",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Contact direct phone number",
+      "Kind": "text",
+      "ToolTip": "Contact direct phone number ( )",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Date",
+      "Kind": "text",
+      "ToolTip": "Date",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Date of birth",
+      "Kind": "text",
+      "ToolTip": "Date of birth",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Date range of use",
+      "Kind": "text",
+      "ToolTip": "Date range of use",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "DateRow1",
+      "Kind": "text",
+      "ToolTip": "Date_Row_1",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "DateRow1_2",
+      "Kind": "text",
+      "ToolTip": "Date_Row_1",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "DateRow2",
+      "Kind": "text",
+      "ToolTip": "Date_Row_2",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "DateRow2_2",
+      "Kind": "text",
+      "ToolTip": "Date_Row_2",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "DEAlicense",
+      "Kind": "text",
+      "ToolTip": "DEA/license #",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "DEAlicense_2",
+      "Kind": "text",
+      "ToolTip": "DEA/license #",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Describe medical necessity for nonpreferred medication(s) or for prescribing outside of FDA labeling",
+      "Kind": "text",
+      "ToolTip": "Describe medical necessity for nonpreferred medication(s) or for prescribing outside of FDA labeling ",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Diagnosis andor indication",
+      "Kind": "text",
+      "ToolTip": "Diagnosis and/or indication",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Diagnostic tests",
+      "Kind": "text",
+      "ToolTip": "Diagnostic tests",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Drug name and strength requested",
+      "Kind": "text",
+      "ToolTip": "Drug name and strength requested",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Drugs name and strength",
+      "Kind": "text",
+      "ToolTip": "Drug(s) name and strength",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Fax number",
+      "Kind": "text",
+      "ToolTip": "Fax number ( )",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Fax Number",
+      "Kind": "text",
+      "ToolTip": "Fax Number ( )",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Fax number_2",
+      "Kind": "text",
+      "ToolTip": "Fax number ( )",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Female",
+      "Kind": "checkbox",
+      "ToolTip": "",
+      "ReadOnly": false,
+      "Required": true,
+      "Choices": []
+    },
+    {
+      "Name": "First name",
+      "Kind": "text",
+      "ToolTip": "First name:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "HCPCS billing code",
+      "Kind": "text",
+      "ToolTip": "HCPCS billing code",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Height",
+      "Kind": "text",
+      "ToolTip": "Height",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Home",
+      "Kind": "checkbox",
+      "ToolTip": "Home",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Home_2",
+      "Kind": "checkbox",
+      "ToolTip": "Home",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "ICD code",
+      "Kind": "text",
+      "ToolTip": "ICD code",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Inadequate",
+      "Kind": "checkbox",
+      "ToolTip": "Inadequate",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Labs",
+      "Kind": "text",
+      "ToolTip": "Labs",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Last name",
+      "Kind": "text",
+      "ToolTip": "Last name:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Last name First name MI",
+      "Kind": "text",
+      "ToolTip": "Last name First name MI",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "List all current medications including dose and frequency",
+      "Kind": "text",
+      "ToolTip": "List all current medications including dose and frequency ",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Male",
+      "Kind": "checkbox",
+      "ToolTip": "Male",
+      "ReadOnly": false,
+      "Required": true,
+      "Choices": []
+    },
+    {
+      "Name": "Member ID",
+      "Kind": "text",
+      "ToolTip": "Member ID #",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "MI",
+      "Kind": "text",
+      "ToolTip": "MI:",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Name",
+      "Kind": "text",
+      "ToolTip": "Name",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Name_2",
+      "Kind": "text",
+      "ToolTip": "Name",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "No explain why not",
+      "Kind": "checkbox",
+      "ToolTip": "No, explain why not",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "No, explain why not",
+      "Kind": "text",
+      "ToolTip": "No, explain why not",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "NPI required",
+      "Kind": "text",
+      "ToolTip": "NPI# (required)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "NPITax ID required",
+      "Kind": "text",
+      "ToolTip": "NPI#/Tax ID (required)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Nursing facility",
+      "Kind": "checkbox",
+      "ToolTip": "Nursing facility",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Office",
+      "Kind": "checkbox",
+      "ToolTip": "Office",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Office contact name",
+      "Kind": "text",
+      "ToolTip": "Office contact name",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Office contact name_2",
+      "Kind": "text",
+      "ToolTip": "Office contact name",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Other",
+      "Kind": "checkbox",
+      "ToolTip": "Other",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Other pertinent information",
+      "Kind": "text",
+      "ToolTip": "Other pertinent information",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Outpatient",
+      "Kind": "checkbox",
+      "ToolTip": "Outpatient",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Pharmacy NPI",
+      "Kind": "text",
+      "ToolTip": "Pharmacy NPI #",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "ProcedureRow1",
+      "Kind": "text",
+      "ToolTip": "Procedure_Row_1",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "ProcedureRow2",
+      "Kind": "text",
+      "ToolTip": "Procedure_Row_2",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "ResultRow1",
+      "Kind": "text",
+      "ToolTip": "Result_Row_1",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "ResultRow1_2",
+      "Kind": "text",
+      "ToolTip": "Result_Row_1",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "ResultRow2",
+      "Kind": "text",
+      "ToolTip": "Result_Row_2",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "ResultRow2_2",
+      "Kind": "text",
+      "ToolTip": "Result_Row_2",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "SIG dose and frequency",
+      "Kind": "text",
+      "ToolTip": "SIG (dose and frequency)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "SIG dose frequency and duration",
+      "Kind": "text",
+      "ToolTip": "SIG (dose, frequency, and duration)",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Signature1_es_:signer:signature",
+      "Kind": "text",
+      "ToolTip": "",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "State",
+      "Kind": "text",
+      "ToolTip": "State",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "State_2",
+      "Kind": "text",
+      "ToolTip": "State",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Telephone number",
+      "Kind": "text",
+      "ToolTip": "Telephone number ( )",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Telephone Number",
+      "Kind": "text",
+      "ToolTip": "Telephone Number ( )",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Telephone number_2",
+      "Kind": "text",
+      "ToolTip": "Telephone number ( )",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "TestRow1",
+      "Kind": "text",
+      "ToolTip": "Test_Row_1",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "TestRow2",
+      "Kind": "text",
+      "ToolTip": "Test_Row_2",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text1",
+      "Kind": "text",
+      "ToolTip": "",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Text2",
+      "Kind": "text",
+      "ToolTip": "",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Weight",
+      "Kind": "text",
+      "ToolTip": "Weight",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Yes provide this information in the",
+      "Kind": "checkbox",
+      "ToolTip": "Yes, provide this information in the",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "ZIP code",
+      "Kind": "text",
+      "ToolTip": "ZIP code",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "ZIP code_2",
+      "Kind": "text",
+      "ToolTip": "ZIP code",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    }
+  ]
+}

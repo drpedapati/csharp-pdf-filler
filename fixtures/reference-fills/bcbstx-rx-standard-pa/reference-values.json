@@ -1,0 +1,21 @@
+{
+  "Address": "Sample 1",
+  "Address_2": "Sample 2",
+  "Approximate date therapy initiated": "Sample 3",
+  "City": "Sample 4",
+  "City_2": "Sample 5",
+  "Compound Drug Name": "Sample 6",
+  "Contact Phone": "Sample 7",
+  "Continuation of therapy approximate date therapy initiated": true,
+  "Date": "Sample 8",
+  "DateRow1": "Sample 9",
+  "DateRow2": "Sample 10",
+  "ExpeditedUrgent Review Requested By checking this box and signing and dating below I certify that applying the": true,
+  "Female": true,
+  "Male": true,
+  "New therapy": true,
+  "Other": true,
+  "Patient is adhering to the drug therapy regimen": true,
+  "The drug therapy regimen is effective": true,
+  "Unknown": true
+}

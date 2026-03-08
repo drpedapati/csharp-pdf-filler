@@ -1,0 +1,268 @@
+{
+  "PdfPath": "bcbsks-prior-authorization-request.pdf",
+  "FormType": "acroform",
+  "IsXfaForm": false,
+  "IsSupportedAcroForm": true,
+  "CanFillValues": true,
+  "SupportedFillableFieldCount": 31,
+  "ValidationMessage": "PDF contains a supported AcroForm.",
+  "FieldCount": 32,
+  "Fields": [
+    {
+      "Name": "CLEAR DATA",
+      "Kind": "PdfLoadedButtonField",
+      "ToolTip": "Clear all data fields and reset this form",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Sec1_provider_addr_city",
+      "Kind": "text",
+      "ToolTip": "",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Sec1_provider_addr_state",
+      "Kind": "text",
+      "ToolTip": "",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Sec1_provider_addr_street",
+      "Kind": "text",
+      "ToolTip": "",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Sec1_provider_addr_zip",
+      "Kind": "text",
+      "ToolTip": "",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Sec1_provider_addr_zip\u002B4",
+      "Kind": "text",
+      "ToolTip": "",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Sec1_provider_charges",
+      "Kind": "text",
+      "ToolTip": "",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Sec1_provider_cptcodes",
+      "Kind": "text",
+      "ToolTip": "",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Sec1_provider_ein",
+      "Kind": "text",
+      "ToolTip": "",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Sec1_provider_fax_area",
+      "Kind": "text",
+      "ToolTip": "555",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Sec1_provider_fax_prefix",
+      "Kind": "text",
+      "ToolTip": "555",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Sec1_provider_fax_suffix",
+      "Kind": "text",
+      "ToolTip": "1234",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Sec1_provider_icdcodes",
+      "Kind": "text",
+      "ToolTip": "",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Sec1_provider_namefirst",
+      "Kind": "text",
+      "ToolTip": "",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Sec1_provider_namelast",
+      "Kind": "text",
+      "ToolTip": "",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Sec1_provider_npi",
+      "Kind": "text",
+      "ToolTip": "",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Sec1_provider_patientdob_dd",
+      "Kind": "text",
+      "ToolTip": "DD",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Sec1_provider_patientdob_mm",
+      "Kind": "text",
+      "ToolTip": "MM",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Sec1_provider_patientdob_yyyy",
+      "Kind": "text",
+      "ToolTip": "YYYY",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Sec1_provider_patientgroupnumber",
+      "Kind": "text",
+      "ToolTip": "",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Sec1_provider_patientidnumber",
+      "Kind": "text",
+      "ToolTip": "",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Sec1_provider_patientnamefirst",
+      "Kind": "text",
+      "ToolTip": "",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Sec1_provider_patientnamelast",
+      "Kind": "text",
+      "ToolTip": "",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Sec1_provider_phone_area",
+      "Kind": "text",
+      "ToolTip": "555",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Sec1_provider_phone_prefix",
+      "Kind": "text",
+      "ToolTip": "555",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Sec1_provider_phone_suffix",
+      "Kind": "text",
+      "ToolTip": "1234",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Sec1_provider_placeofservice",
+      "Kind": "text",
+      "ToolTip": "",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Sec2_addlinfo_history",
+      "Kind": "text",
+      "ToolTip": "",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Sec2_auth_dd",
+      "Kind": "text",
+      "ToolTip": "DD",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Sec2_auth_mm",
+      "Kind": "text",
+      "ToolTip": "MM",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Sec2_auth_printname",
+      "Kind": "text",
+      "ToolTip": "",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    },
+    {
+      "Name": "Sec2_auth_yyyy",
+      "Kind": "text",
+      "ToolTip": "YYYY",
+      "ReadOnly": false,
+      "Required": false,
+      "Choices": []
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/PdfFormFiller.Cli/PdfFormFiller.Cli.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/PdfFormFiller.Cli.Tests/PdfFormFiller.Cli.Tests.csproj" />
+  </Folder>
+</Solution>

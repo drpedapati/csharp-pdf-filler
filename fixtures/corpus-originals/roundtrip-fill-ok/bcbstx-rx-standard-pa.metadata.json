@@ -1,0 +1,21 @@
+{
+  "slug": "bcbstx-rx-standard-pa",
+  "payer": "BCBSTX",
+  "category": "pharmacy",
+  "source_url": "https://www.bcbstx.com/medicaid/pdf/medicaid-rx-pa-request-form-tx.pdf",
+  "pdf_path": "bcbstx-rx-standard-pa.pdf",
+  "compatibility_class": "roundtrip-fill-ok",
+  "inspect_exit_code": "0",
+  "inspect_status": "inspect-ok",
+  "form_type": "acroform",
+  "field_count": "127",
+  "supported_fillable_field_count": "126",
+  "validation_message": "PDF contains a supported AcroForm.",
+  "fill_exit_code": "0",
+  "fill_status": "roundtrip-fill-ok",
+  "selected_input_fields": "10",
+  "applied_fields": "10",
+  "skipped_fields": "0",
+  "unused_input_keys": "0",
+  "message": ""
+}
