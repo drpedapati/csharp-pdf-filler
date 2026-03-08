@@ -49,10 +49,35 @@ The machine-readable manifest for this folder is:
   - Source page: `https://www.uscourts.gov/forms-rules/forms/subpoena-produce-documents-information-or-objects-or-permit-inspection-premises-a-civil-action`
   - Why it is useful: multi-page subpoena with caption blocks, combo-box court selection, and service/production sections
 
+- `legal/b410-proof-of-claim.pdf`
+  - Direct PDF: `https://www.uscourts.gov/sites/default/files/2025-02/form-410.pdf`
+  - Source page: `https://www.uscourts.gov/forms-rules/forms/proof-claim`
+  - Why it is useful: bankruptcy proof-of-claim form with a long district dropdown and a visible placeholder first option
+
 - `legal/texas-15th-court-civil-docketing-statement.pdf`
   - Direct PDF: `https://www.txcourts.gov/media/1459205/cv_docketingstatement_expanded092024.pdf`
   - Source page: `https://www.txcourts.gov/15thcoa/practice-before-the-court/`
   - Why it is useful: very large appellate form with a dense field tree and repeated legal metadata sections
+
+- `legal/tx-1st-court-civil-docketing-statement.pdf`
+  - Direct PDF: `https://www.txcourts.gov/media/1460741/cv_docketingstatement_expanded.pdf`
+  - Source page: `https://www.txcourts.gov/1stcoa/practice-before-the-court/forms/`
+  - Why it is useful: another large Texas appellate docketing statement with many repeated dropdowns and service-method choices
+
+- `legal/tx-14th-court-civil-docketing-statement.pdf`
+  - Direct PDF: `https://www.txcourts.gov/media/1459226/cv_docketingstatement-092624.pdf`
+  - Source page: `https://www.txcourts.gov/14thcoa/practice-before-the-court/forms/`
+  - Why it is useful: same high-density appellate docketing family from a different court deployment, useful for regression checks on repeated combo fields
+
+- `legal/tx-generic-civil-docketing-statement.pdf`
+  - Direct PDF: `https://www.txcourts.gov/media/1441128/cv_docketingstatement_expanded.pdf`
+  - Source page: `https://www.txcourts.gov/rules-forms/local-rules-forms-standing-orders/`
+  - Why it is useful: statewide civil docketing statement variant with many counsel-type and service-method dropdowns
+
+- `legal/tx-criminal-docketing-statement.pdf`
+  - Direct PDF: `https://www.txcourts.gov/media/1443024/cr_docketingstatement.pdf`
+  - Source page: `https://www.txcourts.gov/rules-forms/local-rules-forms-standing-orders/`
+  - Why it is useful: criminal docketing statement with appellate-court, plea, judgment-type, and service-method dropdowns
 
 - `legal/illinois-financial-affidavit.pdf`
   - Direct PDF: `https://ilcourtsaudio.blob.core.windows.net/antilles-resources/resources/2cb2c0ce-20f8-4eb5-9d23-05664d7f4404/FA%20Financial%20Affidavit.pdf`

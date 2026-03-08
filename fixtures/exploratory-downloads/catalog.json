@@ -63,6 +63,15 @@
     "notes": "Multi-page subpoena with caption blocks, delivery details, and combo-box court selections."
   },
   {
+    "id": "b410-proof-of-claim",
+    "category": "legal",
+    "relativePath": "legal/b410-proof-of-claim.pdf",
+    "directPdfUrl": "https://www.uscourts.gov/sites/default/files/2025-02/form-410.pdf",
+    "sourcePageUrl": "https://www.uscourts.gov/forms-rules/forms/proof-claim",
+    "expectation": "structural_match_old",
+    "notes": "Bankruptcy proof-of-claim form with a long district dropdown and a visible placeholder first option."
+  },
+  {
     "id": "texas-15th-court-civil-docketing-statement",
     "category": "legal",
     "relativePath": "legal/texas-15th-court-civil-docketing-statement.pdf",
@@ -70,6 +79,42 @@
     "sourcePageUrl": "https://www.txcourts.gov/15thcoa/practice-before-the-court/",
     "expectation": "structural_match_old",
     "notes": "Large appellate court form with a very dense field tree and many repeated legal metadata sections."
+  },
+  {
+    "id": "tx-1st-court-civil-docketing-statement",
+    "category": "legal",
+    "relativePath": "legal/tx-1st-court-civil-docketing-statement.pdf",
+    "directPdfUrl": "https://www.txcourts.gov/media/1460741/cv_docketingstatement_expanded.pdf",
+    "sourcePageUrl": "https://www.txcourts.gov/1stcoa/practice-before-the-court/forms/",
+    "expectation": "structural_match_old",
+    "notes": "Texas First Court civil docketing statement with many repeated counsel-type and service-method dropdowns."
+  },
+  {
+    "id": "tx-14th-court-civil-docketing-statement",
+    "category": "legal",
+    "relativePath": "legal/tx-14th-court-civil-docketing-statement.pdf",
+    "directPdfUrl": "https://www.txcourts.gov/media/1459226/cv_docketingstatement-092624.pdf",
+    "sourcePageUrl": "https://www.txcourts.gov/14thcoa/practice-before-the-court/forms/",
+    "expectation": "structural_match_old",
+    "notes": "Texas Fourteenth Court civil docketing statement; a close sibling deployment for repeated combo-field regression coverage."
+  },
+  {
+    "id": "tx-generic-civil-docketing-statement",
+    "category": "legal",
+    "relativePath": "legal/tx-generic-civil-docketing-statement.pdf",
+    "directPdfUrl": "https://www.txcourts.gov/media/1441128/cv_docketingstatement_expanded.pdf",
+    "sourcePageUrl": "https://www.txcourts.gov/rules-forms/local-rules-forms-standing-orders/",
+    "expectation": "structural_match_old",
+    "notes": "Statewide civil docketing statement variant with repeated counsel-type and service-method dropdowns."
+  },
+  {
+    "id": "tx-criminal-docketing-statement",
+    "category": "legal",
+    "relativePath": "legal/tx-criminal-docketing-statement.pdf",
+    "directPdfUrl": "https://www.txcourts.gov/media/1443024/cr_docketingstatement.pdf",
+    "sourcePageUrl": "https://www.txcourts.gov/rules-forms/local-rules-forms-standing-orders/",
+    "expectation": "structural_match_old",
+    "notes": "Criminal docketing statement with appellate-court, plea, judgment-type, and service-method dropdowns."
   },
   {
     "id": "illinois-financial-affidavit",

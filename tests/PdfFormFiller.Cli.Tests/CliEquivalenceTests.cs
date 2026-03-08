@@ -308,6 +308,16 @@ public sealed class CliEquivalenceTests
 
         AssertExploratoryFillMatchesOldCli(
             artifacts,
+            GetWorkspacePath("fixtures", "exploratory-downloads", "legal", "b410-proof-of-claim.pdf"),
+            new Dictionary<string, object?>(StringComparer.OrdinalIgnoreCase)
+            {
+                ["Bankruptcy District Information"] = "Middle District of Alabama",
+                ["Creditors Name 1"] = "Jordan Example",
+            }
+        );
+
+        AssertExploratoryFillMatchesOldCli(
+            artifacts,
             GetWorkspacePath("fixtures", "exploratory-downloads", "legal", "illinois-financial-affidavit.pdf"),
             new Dictionary<string, object?>(StringComparer.OrdinalIgnoreCase)
             {
@@ -326,6 +336,29 @@ public sealed class CliEquivalenceTests
                 ["Ant01.Name"] = "Jordan Example",
             }
         );
+
+        AssertExploratoryFillMatchesOldCli(
+            artifacts,
+            GetWorkspacePath("fixtures", "exploratory-downloads", "legal", "tx-1st-court-civil-docketing-statement.pdf"),
+            new Dictionary<string, object?>(StringComparer.OrdinalIgnoreCase)
+            {
+                ["AntAtty01.CounselType"] = "Retained Attorney",
+                ["Other01.MannerServed"] = "Email",
+                ["Ant01.Name"] = "Jordan Example",
+            }
+        );
+
+        AssertExploratoryFillMatchesOldCli(
+            artifacts,
+            GetWorkspacePath("fixtures", "exploratory-downloads", "legal", "tx-criminal-docketing-statement.pdf"),
+            new Dictionary<string, object?>(StringComparer.OrdinalIgnoreCase)
+            {
+                ["Appellate Court"] = "4th Court of Appeals",
+                ["Judgment Type"] = "Bench Trial",
+                ["Plea"] = "Not Guilty",
+                ["Ant01.Name"] = "Jordan Example",
+            }
+        );
     }
 
     [Fact]
@@ -337,7 +370,7 @@ public sealed class CliEquivalenceTests
             .OrderBy(fixture => fixture.RelativePath, StringComparer.OrdinalIgnoreCase)
             .ToArray();
 
-        Assert.Equal(19, fixtures.Length);
+        Assert.Equal(24, fixtures.Length);
         int exercisedFixtureCount = 0;
 
         foreach (ExploratoryPdfFixture fixture in fixtures)
@@ -354,7 +387,7 @@ public sealed class CliEquivalenceTests
             exercisedFixtureCount++;
         }
 
-        Assert.Equal(7, exercisedFixtureCount);
+        Assert.Equal(12, exercisedFixtureCount);
     }
 
     [Fact]
@@ -366,7 +399,7 @@ public sealed class CliEquivalenceTests
             .OrderBy(fixture => fixture.RelativePath, StringComparer.OrdinalIgnoreCase)
             .ToArray();
 
-        Assert.Equal(19, fixtures.Length);
+        Assert.Equal(24, fixtures.Length);
 
         foreach (ExploratoryPdfFixture fixture in fixtures)
         {
