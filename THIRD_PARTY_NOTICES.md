@@ -30,3 +30,7 @@ Where possible, provenance and source URLs are documented alongside those assets
 - `fixtures/exploratory-downloads/catalog.json`
 
 These artifacts are for testing and validation, not runtime distribution dependencies.
+
+## Privacy note
+
+Project history and metadata were intentionally scrubbed of personal institutional identifiers before public release.
