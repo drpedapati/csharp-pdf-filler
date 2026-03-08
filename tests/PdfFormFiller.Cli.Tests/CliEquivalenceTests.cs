@@ -309,7 +309,7 @@ public sealed class CliEquivalenceTests
             .OrderBy(entry => entry.RelativePath, StringComparer.OrdinalIgnoreCase)
             .ToArray();
 
-        Assert.Equal(9, fixtures.Length);
+        Assert.Equal(11, fixtures.Length);
 
         foreach (ExploratoryPdfFixture fixture in fixtures)
         {

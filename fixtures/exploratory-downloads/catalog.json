@@ -216,6 +216,24 @@
     "notes": "Large VA disability benefits application delivered as XFA with a dense hierarchical field tree."
   },
   {
+    "id": "dol-ca-17-duty-status-report",
+    "category": "insurance",
+    "relativePath": "insurance/dol-ca-17-duty-status-report.pdf",
+    "directPdfUrl": "https://www.dol.gov/sites/dolgov/files/owcp/regs/compliance/ca-17.pdf",
+    "sourcePageUrl": "https://www.dol.gov/agencies/owcp/FECA/regs/compliance/forms",
+    "expectation": "new_rejects_xfa",
+    "notes": "Department of Labor duty status report delivered as encrypted XFA with a moderate field tree."
+  },
+  {
+    "id": "dol-ca-7-claim-for-compensation",
+    "category": "insurance",
+    "relativePath": "insurance/dol-ca-7-claim-for-compensation.pdf",
+    "directPdfUrl": "https://www.dol.gov/sites/dolgov/files/owcp/regs/compliance/ca-7.pdf",
+    "sourcePageUrl": "https://www.dol.gov/agencies/owcp/FECA/regs/compliance/forms",
+    "expectation": "new_rejects_xfa",
+    "notes": "Department of Labor compensation claim form delivered as encrypted XFA with a larger multi-page field tree."
+  },
+  {
     "id": "cms1500-health-insurance-claim-form",
     "category": "insurance",
     "relativePath": "insurance/cms1500-health-insurance-claim-form.pdf",

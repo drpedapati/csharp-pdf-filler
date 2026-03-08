@@ -144,6 +144,18 @@ The machine-readable manifest for this folder is:
   - Why it is useful: large VA disability benefits application delivered as XFA with a dense field tree
   - Important note: the new implementation should reject this as XFA even though the old Syncfusion snapshot currently treats it as supported
 
+- `insurance/dol-ca-17-duty-status-report.pdf`
+  - Direct PDF: `https://www.dol.gov/sites/dolgov/files/owcp/regs/compliance/ca-17.pdf`
+  - Source page: `https://www.dol.gov/agencies/owcp/FECA/regs/compliance/forms`
+  - Why it is useful: Department of Labor duty status report delivered as encrypted XFA with a moderate field tree
+  - Important note: the new implementation should reject this as XFA even though the old Syncfusion snapshot currently treats it as supported
+
+- `insurance/dol-ca-7-claim-for-compensation.pdf`
+  - Direct PDF: `https://www.dol.gov/sites/dolgov/files/owcp/regs/compliance/ca-7.pdf`
+  - Source page: `https://www.dol.gov/agencies/owcp/FECA/regs/compliance/forms`
+  - Why it is useful: Department of Labor compensation claim form delivered as encrypted XFA with a larger field tree
+  - Important note: the new implementation should reject this as XFA even though the old Syncfusion snapshot currently treats it as supported
+
 - `insurance/cms1500-health-insurance-claim-form.pdf`
   - Direct PDF: `https://www.cms.gov/medicare/cms-forms/cms-forms/downloads/cms1500.pdf`
   - Source page: `https://www.cms.gov/medicare/cms-forms/cms-forms/cms-forms-items/cms026905`
