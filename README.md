@@ -85,7 +85,9 @@ Live old-vs-new equivalence tests:
 Public release guidance:
 - [CONTRIBUTING.md](CONTRIBUTING.md)
 - [SECURITY.md](SECURITY.md)
+- [SUPPORT.md](SUPPORT.md)
 - [CHANGELOG.md](CHANGELOG.md)
+- [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)
 - [docs/RELEASING.md](docs/RELEASING.md)
 
 ## Repository Layout
@@ -98,6 +100,8 @@ Public release guidance:
   - frozen compatibility corpus, reference fills, and exploratory public forms
 - [docs/COMPATIBILITY_CONTRACT.md](docs/COMPATIBILITY_CONTRACT.md)
   - exact behavioral contract for the replacement
+- [docs/README.md](docs/README.md)
+  - docs index and maintainer-reference guide
 - [reference-src/](reference-src)
   - vendored reference material only; not part of runtime build
 - [notes/](notes)
