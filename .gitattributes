@@ -1,0 +1,11 @@
+# Keep GitHub language stats focused on the replacement implementation.
+reference-src/** linguist-vendored
+docs/** linguist-documentation
+notes/** linguist-documentation
+plans/** linguist-documentation
+README.md linguist-documentation
+
+# Treat copied binary assets as binary in diffs.
+*.pdf binary
+*.zip binary
+*.sha512 text eol=lf
