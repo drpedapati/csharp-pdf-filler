@@ -1,0 +1,209 @@
+[
+  {
+    "id": "ao240-ifp-short-form",
+    "category": "legal",
+    "relativePath": "legal/ao240-ifp-short-form.pdf",
+    "directPdfUrl": "https://www.uscourts.gov/sites/default/files/ao240_0.pdf",
+    "sourcePageUrl": "https://www.uscourts.gov/forms-rules/forms/application-proceed-district-court-without-prepaying-fees-or-costs-short-form",
+    "expectation": "structural_match_old",
+    "notes": "Short-form in forma pauperis application with yes/no sections, read-only labels, and signature areas."
+  },
+  {
+    "id": "ao399-waiver-of-service",
+    "category": "legal",
+    "relativePath": "legal/ao399-waiver-of-service.pdf",
+    "directPdfUrl": "https://www.uscourts.gov/sites/default/files/ao399.pdf",
+    "sourcePageUrl": "https://www.uscourts.gov/forms-rules/forms/waiver-service-summons",
+    "expectation": "structural_match_old",
+    "notes": "Caption-heavy court form with repeated court-location choice values."
+  },
+  {
+    "id": "ao440-civil-summons",
+    "category": "legal",
+    "relativePath": "legal/ao440-civil-summons.pdf",
+    "directPdfUrl": "https://www.uscourts.gov/sites/default/files/ao440.pdf",
+    "sourcePageUrl": "https://www.uscourts.gov/forms-rules/forms/summons-civil-action",
+    "expectation": "structural_match_old",
+    "notes": "Court caption, clerk/date/signature blocks, and push-button widgets."
+  },
+  {
+    "id": "js044-civil-cover-sheet",
+    "category": "legal",
+    "relativePath": "legal/js044-civil-cover-sheet.pdf",
+    "directPdfUrl": "https://www.uscourts.gov/sites/default/files/js044.pdf",
+    "sourcePageUrl": "https://www.uscourts.gov/forms-rules/forms/civil-cover-sheet",
+    "expectation": "structural_match_old",
+    "notes": "Dense checkbox matrix and federal court classification fields."
+  },
+  {
+    "id": "n400-naturalization-application",
+    "category": "legal",
+    "relativePath": "legal/n400-naturalization-application.pdf",
+    "directPdfUrl": "https://www.uscis.gov/sites/default/files/document/forms/n-400.pdf",
+    "sourcePageUrl": "https://www.uscis.gov/n-400",
+    "expectation": "new_rejects_xfa",
+    "notes": "Real XFA government form with a large field tree; the new implementation should reject it."
+  },
+  {
+    "id": "ao239-ifp-long-form",
+    "category": "legal",
+    "relativePath": "legal/ao239-ifp-long-form.pdf",
+    "directPdfUrl": "https://www.uscourts.gov/sites/default/files/ao239_1.pdf",
+    "sourcePageUrl": "https://www.uscourts.gov/forms-rules/forms/application-proceed-district-court-without-prepaying-fees-or-costs-long-form",
+    "expectation": "structural_match_old",
+    "notes": "Long-form in forma pauperis application with dense financial sections, many yes/no boxes, and repeated spouse fields."
+  },
+  {
+    "id": "ao088b-subpoena-produce-documents",
+    "category": "legal",
+    "relativePath": "legal/ao088b-subpoena-produce-documents.pdf",
+    "directPdfUrl": "https://www.uscourts.gov/sites/default/files/ao088b.pdf",
+    "sourcePageUrl": "https://www.uscourts.gov/forms-rules/forms/subpoena-produce-documents-information-or-objects-or-permit-inspection-premises-a-civil-action",
+    "expectation": "structural_match_old",
+    "notes": "Multi-page subpoena with caption blocks, delivery details, and combo-box court selections."
+  },
+  {
+    "id": "texas-15th-court-civil-docketing-statement",
+    "category": "legal",
+    "relativePath": "legal/texas-15th-court-civil-docketing-statement.pdf",
+    "directPdfUrl": "https://www.txcourts.gov/media/1459205/cv_docketingstatement_expanded092024.pdf",
+    "sourcePageUrl": "https://www.txcourts.gov/15thcoa/practice-before-the-court/",
+    "expectation": "structural_match_old",
+    "notes": "Large appellate court form with a very dense field tree and many repeated legal metadata sections."
+  },
+  {
+    "id": "illinois-financial-affidavit",
+    "category": "legal",
+    "relativePath": "legal/illinois-financial-affidavit.pdf",
+    "directPdfUrl": "https://ilcourtsaudio.blob.core.windows.net/antilles-resources/resources/2cb2c0ce-20f8-4eb5-9d23-05664d7f4404/FA%20Financial%20Affidavit.pdf",
+    "sourcePageUrl": "https://www.illinoiscourts.gov/forms/approved-forms/forms-approved-statewide/divorce-child-support-maintenance/",
+    "expectation": "structural_match_old",
+    "notes": "Large multi-page affidavit with many numeric fields, repeated sections, and signature-heavy structure."
+  },
+  {
+    "id": "i589-asylum-application",
+    "category": "legal",
+    "relativePath": "legal/i589-asylum-application.pdf",
+    "directPdfUrl": "https://www.uscis.gov/sites/default/files/document/forms/i-589.pdf",
+    "sourcePageUrl": "https://www.uscis.gov/i-589",
+    "expectation": "new_rejects_xfa",
+    "notes": "Large USCIS XFA form with many repeated sections; the new implementation should reject it."
+  },
+  {
+    "id": "ca-gc110-temp-guardianship-petition",
+    "category": "legal",
+    "relativePath": "legal/ca-gc110-temp-guardianship-petition.pdf",
+    "directPdfUrl": "https://courts.ca.gov/documents/gc110.pdf",
+    "sourcePageUrl": "https://selfhelp.courts.ca.gov/jcc-form/GC-110",
+    "expectation": "structural_match_old",
+    "notes": "California temporary guardianship petition with mixed text, checkbox, and signature-style petitioner blocks."
+  },
+  {
+    "id": "ca-gc248-duties-acknowledgment",
+    "category": "legal",
+    "relativePath": "legal/ca-gc248-duties-acknowledgment.pdf",
+    "directPdfUrl": "https://courts.ca.gov/documents/gc248.pdf",
+    "sourcePageUrl": "https://selfhelp.courts.ca.gov/jcc-form/GC-248",
+    "expectation": "structural_match_old",
+    "notes": "Guardianship duties acknowledgment with a mostly boilerplate layout and a small editable acknowledgment/signature area."
+  },
+  {
+    "id": "ca-gc210-guardianship-petition-minor",
+    "category": "legal",
+    "relativePath": "legal/ca-gc210-guardianship-petition-minor.pdf",
+    "directPdfUrl": "https://courts.ca.gov/documents/gc210.pdf",
+    "sourcePageUrl": "https://selfhelp.courts.ca.gov/jcc-form/GC-210",
+    "expectation": "new_rejects_xfa",
+    "notes": "California guardianship-of-minor petition delivered as an XFA form with dense checkbox-driven sections; the new implementation should reject it."
+  },
+  {
+    "id": "ca-gc310-conservatorship-petition",
+    "category": "legal",
+    "relativePath": "legal/ca-gc310-conservatorship-petition.pdf",
+    "directPdfUrl": "https://courts.ca.gov/documents/gc310.pdf",
+    "sourcePageUrl": "https://selfhelp.courts.ca.gov/jcc-form/GC-310",
+    "expectation": "new_rejects_xfa",
+    "notes": "California conservatorship petition delivered as an XFA form with large repeated person-and-estate sections; the new implementation should reject it."
+  },
+  {
+    "id": "cms1490s-patient-request-medical-payment",
+    "category": "insurance",
+    "relativePath": "insurance/cms1490s-patient-request-medical-payment.pdf",
+    "directPdfUrl": "https://www.cms.gov/medicare/cms-forms/cms-forms/downloads/cms1490s-english.pdf",
+    "sourcePageUrl": "https://www.cms.gov/medicare/cms-forms/cms-forms/cms-forms-items/cms012949",
+    "expectation": "structural_match_old",
+    "notes": "Official Medicare beneficiary claim form with long radio choice labels and mixed read-only fields."
+  },
+  {
+    "id": "cms-40b-part-b-enrollment",
+    "category": "insurance",
+    "relativePath": "insurance/cms-40b-part-b-enrollment.pdf",
+    "directPdfUrl": "https://www.cms.gov/Medicare/CMS-Forms/CMS-Forms/Downloads/CMS40B-E.pdf",
+    "sourcePageUrl": "https://www.cms.gov/medicare/cms-forms/cms-forms/cms40b-application-enrollment-part-b",
+    "expectation": "structural_match_old",
+    "notes": "Official CMS enrollment form with comb-style inputs, JavaScript formatting, and signature-heavy layout."
+  },
+  {
+    "id": "cms-l564-employment-info",
+    "category": "insurance",
+    "relativePath": "insurance/cms-l564-employment-info.pdf",
+    "directPdfUrl": "https://www.cms.gov/Medicare/CMS-Forms/CMS-Forms/Downloads/CMS-L564E.pdf",
+    "sourcePageUrl": "https://www.cms.gov/cms-l564-request-employment-information",
+    "expectation": "structural_match_old",
+    "notes": "Official CMS employer information form with checkboxes, segmented identifiers, and signature fields."
+  },
+  {
+    "id": "va-5655-financial-status-report",
+    "category": "insurance",
+    "relativePath": "insurance/va-5655-financial-status-report.pdf",
+    "directPdfUrl": "https://www.va.gov/vaforms/va/pdf/VA5655.pdf",
+    "sourcePageUrl": "https://www.va.gov/find-forms/about-form-5655/",
+    "expectation": "new_rejects_xfa",
+    "notes": "VA financial status report; a non-USCIS government XFA form with dense financial sections."
+  },
+  {
+    "id": "vha-10-0426-release-of-information",
+    "category": "insurance",
+    "relativePath": "insurance/vha-10-0426-release-of-information.pdf",
+    "directPdfUrl": "https://www.va.gov/vaforms/medical/pdf/vha-10-0426-fill.pdf",
+    "sourcePageUrl": "https://www.va.gov/find-forms/about-form-10-0426/",
+    "expectation": "new_rejects_xfa",
+    "notes": "VA healthcare release form; a non-USCIS government XFA case with medical authorization semantics."
+  },
+  {
+    "id": "cms1500-health-insurance-claim-form",
+    "category": "insurance",
+    "relativePath": "insurance/cms1500-health-insurance-claim-form.pdf",
+    "directPdfUrl": "https://www.cms.gov/medicare/cms-forms/cms-forms/downloads/cms1500.pdf",
+    "sourcePageUrl": "https://www.cms.gov/medicare/cms-forms/cms-forms/cms-forms-items/cms026905",
+    "expectation": "structural_match_old",
+    "notes": "Official claim form packet that both implementations classify as unsupported despite an AcroForm shell."
+  },
+  {
+    "id": "marketplace-employer-appeal-form",
+    "category": "insurance",
+    "relativePath": "insurance/marketplace-employer-appeal-form.pdf",
+    "directPdfUrl": "https://www.cms.gov/files/document/marketplace-employer-appeal-form-static.pdf",
+    "sourcePageUrl": "https://www.cms.gov/cciio/resources/forms-reports-and-other-resources/appeals/forms",
+    "expectation": "structural_match_old",
+    "notes": "Appeal workflow form with checkbox, radio, and text mixtures."
+  },
+  {
+    "id": "indiana-cshcs-request-for-authorization",
+    "category": "insurance",
+    "relativePath": "insurance/indiana-cshcs-request-for-authorization.pdf",
+    "directPdfUrl": "https://forms.in.gov/Download.aspx?id=12032",
+    "sourcePageUrl": "https://www.in.gov/health/cshcs/prior-authorization/",
+    "expectation": "structural_match_old",
+    "notes": "State authorization form with many fields and insurance-style approval workflow structure."
+  },
+  {
+    "id": "indiana-workers-comp-physicians-report-form-2118",
+    "category": "insurance",
+    "relativePath": "insurance/indiana-workers-comp-physicians-report-form-2118.pdf",
+    "directPdfUrl": "https://forms.in.gov/Download.aspx?id=8502",
+    "sourcePageUrl": "https://www.in.gov/idoi/wcb/board-forms",
+    "expectation": "structural_match_old",
+    "notes": "Workers-comp medical form with many fields, read-only labels, and push-button widgets."
+  }
+]

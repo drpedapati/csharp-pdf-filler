@@ -331,6 +331,7 @@ public sealed class PdfFormService : IPdfFormService
         PdfListBoxField => "list",
         PdfRadioButtonField => "radio",
         PdfSignatureField => "signature",
+        PdfPushButtonField => "PdfLoadedButtonField",
         _ => field.GetType().Name,
     };
 
@@ -341,7 +342,7 @@ public sealed class PdfFormService : IPdfFormService
     {
         "text" => ((PdfTextField)field).Text,
         "checkbox" => ((PdfCheckBoxField)field).Checked,
-        "combo" => NormalizeScalarValue(((PdfComboBoxField)field).Value?.ToString()),
+        "combo" => GetChoiceCurrentValue(field),
         "list" => GetFieldValue(field),
         "radio" => GetFieldValue(field),
         _ => null,
@@ -351,7 +352,7 @@ public sealed class PdfFormService : IPdfFormService
     {
         if (field is PdfChoiceField)
         {
-            return ReadOptions(TryGetArray(field.Elements, "/Opt"));
+            return ReadOptionsForDisplay(TryGetArray(field.Elements, "/Opt"));
         }
 
         if (field is PdfRadioButtonField radio)
@@ -362,7 +363,7 @@ public sealed class PdfFormService : IPdfFormService
                 return options;
             }
 
-            options = ReadOptions(TryGetArray(field.Elements, "/Opt"));
+            options = ReadOptionsForDisplay(TryGetArray(field.Elements, "/Opt"));
             if (options.Count > 0)
             {
                 return options;
@@ -410,6 +411,62 @@ public sealed class PdfFormService : IPdfFormService
         }
 
         return options.Distinct(StringComparer.OrdinalIgnoreCase).ToArray();
+    }
+
+    private static IReadOnlyList<string> ReadOptionsForDisplay(PdfArray? optionsArray)
+    {
+        if (optionsArray is null)
+        {
+            return [];
+        }
+
+        List<string> options = [];
+        for (int i = 0; i < optionsArray.Elements.Count; i++)
+        {
+            PdfArray? optionPair = SafeGetArray(optionsArray, i);
+            if (optionPair is not null)
+            {
+                string exportValue = GetArrayStringOrName(optionPair, 0, preserveStringWhitespace: true);
+                string displayValue = optionPair.Elements.Count > 1
+                    ? GetArrayStringOrName(optionPair, 1, preserveStringWhitespace: true)
+                    : string.Empty;
+                string selectedValue = !string.IsNullOrEmpty(exportValue) ? exportValue : displayValue;
+                if (!string.IsNullOrWhiteSpace(selectedValue))
+                {
+                    options.Add(selectedValue);
+                }
+
+                continue;
+            }
+
+            string option = GetArrayStringOrName(optionsArray, i, preserveStringWhitespace: true);
+            if (!string.IsNullOrWhiteSpace(option))
+            {
+                options.Add(option);
+            }
+        }
+
+        return options.Distinct(StringComparer.OrdinalIgnoreCase).ToArray();
+    }
+
+    private static object? GetChoiceCurrentValue(PdfAcroField field)
+    {
+        object? rawValue = TryGetItem(field.Elements, "/V");
+        string? resolvedValue = TryResolvePdfItemString(rawValue, preserveWhitespace: true);
+        if (resolvedValue is not null)
+        {
+            if (resolvedValue.Length == 0)
+            {
+                return null;
+            }
+
+            return resolvedValue.StartsWith("/", StringComparison.Ordinal)
+                ? NormalizeNameValue(resolvedValue)
+                : resolvedValue;
+        }
+
+        string fallbackValue = NormalizeScalarValue(((PdfComboBoxField)field).Value?.ToString());
+        return string.IsNullOrWhiteSpace(fallbackValue) ? null : fallbackValue;
     }
 
     private static IReadOnlyList<string> ReadWidgetAppearanceNames(PdfAcroField field)
@@ -503,6 +560,11 @@ public sealed class PdfFormService : IPdfFormService
         }
 
         string fallbackValue = NormalizeScalarValue(field.Value?.ToString());
+        if (string.IsNullOrWhiteSpace(fallbackValue))
+        {
+            return null;
+        }
+
         return fallbackValue.StartsWith("/", StringComparison.Ordinal)
             ? NormalizeNameValue(fallbackValue)
             : fallbackValue;
@@ -581,7 +643,25 @@ public sealed class PdfFormService : IPdfFormService
             return false;
         }
 
-        field.Checked = parsed;
+        IReadOnlyList<CheckboxStateTarget> targets = ReadCheckboxStateTargets(field);
+        if (targets.Count == 0)
+        {
+            field.Checked = parsed;
+            return true;
+        }
+
+        string fieldStateName = targets[0].StateName;
+        field.Elements.SetName("/V", parsed ? fieldStateName : "Off");
+        field.Elements.SetName("/AS", parsed ? fieldStateName : "Off");
+
+        foreach (CheckboxStateTarget target in targets)
+        {
+            if (target.Widget is not null)
+            {
+                target.Widget.Elements.SetName("/AS", parsed ? target.StateName : "Off");
+            }
+        }
+
         return true;
     }
 
@@ -653,9 +733,10 @@ public sealed class PdfFormService : IPdfFormService
 
     private static int FindChoiceIndex(IReadOnlyList<string> choices, string requestedValue)
     {
+        string normalizedRequestedValue = NormalizeScalarValue(requestedValue);
         for (int i = 0; i < choices.Count; i++)
         {
-            if (StringComparer.OrdinalIgnoreCase.Equals(choices[i], requestedValue))
+            if (StringComparer.OrdinalIgnoreCase.Equals(NormalizeScalarValue(choices[i]), normalizedRequestedValue))
             {
                 return i;
             }
@@ -693,6 +774,40 @@ public sealed class PdfFormService : IPdfFormService
         foreach (string stateName in ReadAppearanceStateNames(field))
         {
             targets.Add(new RadioStateTarget(stateName, null));
+        }
+
+        return targets;
+    }
+
+    private static IReadOnlyList<CheckboxStateTarget> ReadCheckboxStateTargets(PdfCheckBoxField field)
+    {
+        List<CheckboxStateTarget> targets = [];
+        PdfArray? kids = TryGetArray(field.Elements, "/Kids");
+        if (kids is not null)
+        {
+            for (int i = 0; i < kids.Elements.Count; i++)
+            {
+                PdfDictionary? widget = SafeGetDictionary(kids, i);
+                if (widget is null)
+                {
+                    continue;
+                }
+
+                foreach (string stateName in ReadAppearanceStateNames(widget))
+                {
+                    targets.Add(new CheckboxStateTarget(stateName, widget));
+                }
+            }
+
+            if (targets.Count > 0)
+            {
+                return targets;
+            }
+        }
+
+        foreach (string stateName in ReadAppearanceStateNames(field))
+        {
+            targets.Add(new CheckboxStateTarget(stateName, null));
         }
 
         return targets;
@@ -1068,6 +1183,18 @@ public sealed class PdfFormService : IPdfFormService
         }
     }
 
+    private static PdfItem? TryGetItem(PdfDictionary.DictionaryElements elements, string key)
+    {
+        try
+        {
+            return elements.ContainsKey(key) ? elements[key] : null;
+        }
+        catch (KeyNotFoundException)
+        {
+            return null;
+        }
+    }
+
     private static string TryGetString(PdfDictionary.DictionaryElements elements, string key)
     {
         try
@@ -1078,8 +1205,9 @@ public sealed class PdfFormService : IPdfFormService
         }
         catch (InvalidCastException)
         {
-            return string.Empty;
         }
+
+        return TryResolvePdfItemString(TryGetItem(elements, key), preserveWhitespace: false) ?? string.Empty;
     }
 
     private static string TryGetName(PdfDictionary.DictionaryElements elements, string key)
@@ -1090,8 +1218,15 @@ public sealed class PdfFormService : IPdfFormService
         }
         catch (InvalidCastException)
         {
+        }
+
+        string? value = TryResolvePdfItemString(TryGetItem(elements, key), preserveWhitespace: true);
+        if (string.IsNullOrWhiteSpace(value))
+        {
             return string.Empty;
         }
+
+        return value.StartsWith("/", StringComparison.Ordinal) ? value : $"/{value}";
     }
 
     private static PdfArray? TryGetArray(PdfDictionary.DictionaryElements elements, string key)
@@ -1132,14 +1267,16 @@ public sealed class PdfFormService : IPdfFormService
 
     private sealed record RadioStateTarget(string StateName, PdfDictionary? Widget);
 
-    private static string GetArrayStringOrName(PdfArray array, int index)
+    private sealed record CheckboxStateTarget(string StateName, PdfDictionary? Widget);
+
+    private static string GetArrayStringOrName(PdfArray array, int index, bool preserveStringWhitespace = false)
     {
         try
         {
             string stringValue = array.Elements.GetString(index);
-            if (!string.IsNullOrWhiteSpace(stringValue))
+            if (!string.IsNullOrEmpty(stringValue))
             {
-                return stringValue;
+                return preserveStringWhitespace ? stringValue : NormalizeScalarValue(stringValue);
             }
         }
         catch (InvalidCastException)
@@ -1158,6 +1295,47 @@ public sealed class PdfFormService : IPdfFormService
         {
         }
 
-        return NormalizeScalarValue(array.Elements[index]?.ToString());
+        string? resolvedValue = TryResolvePdfItemString(array.Elements[index], preserveStringWhitespace);
+        if (resolvedValue is not null)
+        {
+            return resolvedValue;
+        }
+
+        string fallbackValue = array.Elements[index]?.ToString() ?? string.Empty;
+        return preserveStringWhitespace ? fallbackValue : NormalizeScalarValue(fallbackValue);
+    }
+
+    private static string? TryResolvePdfItemString(object? item, bool preserveWhitespace)
+    {
+        if (item is null)
+        {
+            return null;
+        }
+
+        PdfReference.Dereference(ref item);
+        if (item is null)
+        {
+            return null;
+        }
+
+        if (item is string rawString)
+        {
+            return preserveWhitespace ? rawString : NormalizeScalarValue(rawString);
+        }
+
+        object? valueProperty = GetProperty(item, "Value");
+        if (valueProperty is string stringValue)
+        {
+            return preserveWhitespace ? stringValue : NormalizeScalarValue(stringValue);
+        }
+
+        if (valueProperty is not null)
+        {
+            string scalarValue = valueProperty.ToString() ?? string.Empty;
+            return preserveWhitespace ? scalarValue : NormalizeScalarValue(scalarValue);
+        }
+
+        string fallbackValue = item.ToString() ?? string.Empty;
+        return preserveWhitespace ? fallbackValue : NormalizeScalarValue(fallbackValue);
     }
 }

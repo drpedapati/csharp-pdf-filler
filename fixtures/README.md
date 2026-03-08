@@ -10,6 +10,8 @@ This folder contains the concrete artifacts the replacement must use as its comp
   - original payer PDFs that the current tool intentionally rejects
 - `reference-fills/<slug>/`
   - per-form reference package for each currently passing form
+- `exploratory-downloads/`
+  - additional public-source legal and insurance PDFs used for edge-case hardening outside the frozen compatibility baseline
 - `llm-harness-sanity/bcbsks-qwen9b-simple/`
   - a small end-to-end LLM mapping example on `qwen3.5:9b`
 - `corpus-report.csv`
@@ -32,6 +34,16 @@ Each `reference-fills/<slug>/` folder contains:
 - `source-metadata.json`
 
 Use these to validate the replacement against the current behavior.
+
+## Exploratory downloads
+
+The `exploratory-downloads/` folder is intentionally separate from the compatibility corpus.
+Use it to probe new edge cases without silently changing the frozen acceptance target in:
+- `corpus-originals/`
+- `reference-fills/`
+
+Some exploratory forms are expected to surface intentional improvements over the old Syncfusion tool.
+For example, real XFA government forms belong here first, not in the compatibility baseline.
 
 ## Important interpretation note
 
