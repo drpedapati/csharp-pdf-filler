@@ -1,0 +1,39 @@
+name: Bug report
+description: Report a reproducible problem with the CLI, fill behavior, or release artifacts.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use sanitized or public PDFs only. Do not attach real patient, member, or regulated documents.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What is broken?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction
+      description: Include the exact command, input fixture, and expected vs actual behavior.
+      placeholder: |
+        pdf-form-filler inspect --pdf ...
+        pdf-form-filler fill --pdf ... --values ... --out ...
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, architecture, and how the tool was installed.
+    validations:
+      required: true
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Sanitized artifacts
+      description: Link or describe any sanitized sample PDFs, values JSON, or output snapshots.

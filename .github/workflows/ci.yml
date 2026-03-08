@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-test-pack:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Restore
+        run: dotnet restore PdfFormFiller.slnx
+
+      - name: Build
+        run: dotnet build PdfFormFiller.slnx -c Release --no-restore
+
+      - name: Test
+        run: dotnet test PdfFormFiller.slnx -c Release --no-build
+
+      - name: Pack Tool
+        run: dotnet pack src/PdfFormFiller.Cli/PdfFormFiller.Cli.csproj -c Release --no-build -o ./artifacts/packages

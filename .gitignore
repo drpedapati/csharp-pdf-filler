@@ -1,5 +1,15 @@
 bin/
 obj/
+artifacts/
+TestResults/
+.vs/
+.vscode/
+.idea/
+*.user
+*.rsuser
+*.suo
+*.nupkg
+*.snupkg
 .DS_Store
 .env.local
 notes/generated/

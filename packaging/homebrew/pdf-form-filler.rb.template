@@ -1,0 +1,25 @@
+class PdfFormFiller < Formula
+  desc "Inspect and fill true AcroForm PDFs from the command line"
+  homepage "__HOMEPAGE__"
+  version "__VERSION__"
+  license "MIT"
+
+  on_macos do
+    if Hardware::CPU.arm?
+      url "__URL_OSX_ARM64__"
+      sha256 "__SHA256_OSX_ARM64__"
+    else
+      url "__URL_OSX_X64__"
+      sha256 "__SHA256_OSX_X64__"
+    end
+  end
+
+  def install
+    bin.install "pdf-form-filler"
+    license "LICENSE"
+  end
+
+  test do
+    assert_match "pdf-form-filler", shell_output("#{bin}/pdf-form-filler --help")
+  end
+end
