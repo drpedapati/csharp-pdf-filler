@@ -19,9 +19,6 @@ class PdfFormFiller < Formula
     raise "pdf-form-filler binary not found in archive" unless binary
 
     bin.install binary => "pdf-form-filler"
-
-    bundled_license = Dir["**/LICENSE"].find { |path| File.file?(path) }
-    license bundled_license if bundled_license
   end
 
   test do
