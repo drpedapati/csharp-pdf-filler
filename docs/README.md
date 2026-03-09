@@ -1,5 +1,12 @@
 # Docs Index
 
+## Start here
+
+- [QUICKSTART.md](QUICKSTART.md)
+  - fastest path from install to a filled public sample PDF
+- [CLI.md](CLI.md)
+  - user-facing command guide with fill rules and failure cases
+
 ## Public and release-facing docs
 
 - [RELEASING.md](RELEASING.md)
@@ -18,5 +25,7 @@
 
 - [../fixtures/README.md](../fixtures/README.md)
   - frozen corpus, reference fills, and exploratory public-form coverage
+- [examples/ao399-values.json](examples/ao399-values.json)
+  - real sample values file used in the quickstart
 - [../notes/xfa-experimental/README.md](../notes/xfa-experimental/README.md)
   - experimental XFA comparison workflow, separate from the production contract
