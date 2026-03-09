@@ -21,6 +21,8 @@ ARCHIVE_PATH="$DIST_DIR/pdf-form-filler-v$VERSION-$RID.tar.gz"
 rm -rf "$PUBLISH_DIR" "$STAGING_DIR"
 mkdir -p "$PUBLISH_DIR" "$STAGING_DIR" "$DIST_DIR"
 
+dotnet restore "$PROJECT_PATH" -r "$RID"
+
 dotnet publish "$PROJECT_PATH" \
   -c Release \
   -r "$RID" \

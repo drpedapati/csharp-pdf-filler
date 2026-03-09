@@ -3,7 +3,7 @@
 This repo is set up for three release surfaces:
 - GitHub source and release artifacts
 - NuGet tool package
-- Homebrew tap formula maintained in a separate tap repository
+- Homebrew tap formula maintained in `drpedapati/homebrew-tools`
 
 ## Pre-release Checks
 
@@ -54,7 +54,10 @@ Each run writes:
 
 ## Homebrew Tap Checklist
 
-The actual formula should live in a separate tap repository.
+The actual formula should live in:
+
+- repo: `drpedapati/homebrew-tools`
+- tap name: `drpedapati/tools`
 
 1. Build the release tarballs.
 2. Copy [packaging/homebrew/pdf-form-filler.rb.template](../packaging/homebrew/pdf-form-filler.rb.template) into the tap repo as `Formula/pdf-form-filler.rb`.

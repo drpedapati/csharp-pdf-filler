@@ -46,8 +46,10 @@ dotnet tool install --tool-path ./.tools/pdf-form-filler \
 
 ### Homebrew tap
 
-The tap itself should live in a separate tap repository.
-This repo includes release instructions and a formula template in:
+The canonical tap should live in [`drpedapati/homebrew-tools`](https://github.com/drpedapati/homebrew-tools)
+as `brew tap drpedapati/tools`.
+
+This repo includes the release instructions and formula source material used to publish there:
 - [docs/RELEASING.md](docs/RELEASING.md)
 - [packaging/homebrew/README.md](packaging/homebrew/README.md)
 - [packaging/homebrew/pdf-form-filler.rb.template](packaging/homebrew/pdf-form-filler.rb.template)
