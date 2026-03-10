@@ -112,6 +112,26 @@ The machine-readable manifest for this folder is:
   - Why it is useful: large California conservatorship petition delivered as XFA with repeated person-and-estate sections
   - Important note: the new implementation should reject this as XFA even though the old Syncfusion snapshot currently treats it as supported
 
+- `legal/ao085-notice-consent.pdf`
+  - Direct PDF: `https://www.uscourts.gov/sites/default/files/ao085.pdf`
+  - Source page: `https://www.uscourts.gov/forms-rules/forms/notice-consent-and-reference-a-civil-action-a-magistrate-judge`
+  - Why it is useful: moderate-size consent form with signature areas, address blocks, and court-routing metadata
+
+- `legal/ao120-patent-trademark-report.pdf`
+  - Direct PDF: `https://www.uscourts.gov/sites/default/files/ao120.pdf`
+  - Source page: `https://www.uscourts.gov/forms-rules/forms/report-filing-patent-trademark`
+  - Why it is useful: patent and trademark filing report with repeated case metadata fields and court-routing values
+
+- `legal/ao133-bill-of-costs.pdf`
+  - Direct PDF: `https://www.uscourts.gov/sites/default/files/ao133.pdf`
+  - Source page: `https://www.uscourts.gov/forms-rules/forms/bill-costs-district-court`
+  - Why it is useful: district court bill-of-costs form with many monetary text fields and signature-related widgets
+
+- `legal/ao435-transcript-order.pdf`
+  - Direct PDF: `https://www.uscourts.gov/sites/default/files/ao_435.pdf`
+  - Source page: `https://www.uscourts.gov/forms-rules/forms/transcript-order`
+  - Why it is useful: large transcript-order packet with dense checkbox sections, delivery options, and repeated party metadata
+
 ## Insurance forms
 
 - `insurance/cms1490s-patient-request-medical-payment.pdf`
@@ -128,6 +148,16 @@ The machine-readable manifest for this folder is:
   - Direct PDF: `https://www.cms.gov/Medicare/CMS-Forms/CMS-Forms/Downloads/CMS-L564E.pdf`
   - Source page: `https://www.cms.gov/cms-l564-request-employment-information`
   - Why it is useful: official CMS employer information form with checkboxes, segmented identifiers, and signature fields
+
+- `insurance/cms-855i-medicare-enrollment.pdf`
+  - Direct PDF: `https://www.cms.gov/medicare/cms-forms/cms-forms/downloads/cms855i.pdf`
+  - Source page: `https://www.cms.gov/medicare/regulations-guidance/legislation/paperwork-reduction-act-1995/pra-listing/cms-855i`
+  - Why it is useful: very large Medicare enrollment application with a deep AcroForm field tree and many repeated provider sections
+
+- `insurance/cms-460-participating-physician-agreement.pdf`
+  - Direct PDF: `https://www.cms.gov/medicare/cms-forms/cms-forms/downloads/cms460.pdf`
+  - Source page: `https://www.cms.gov/regulations-and-guidance/legislation/paperworkreductionactof1995/pra-listing-items/cms-460`
+  - Why it is useful: compact physician participation agreement with small but clean signature, date, and identifier fields
 
 - `insurance/ca-dwc-form1.pdf`
   - Direct PDF: `https://www.dir.ca.gov/dwc/DWCForm1.pdf`
@@ -167,6 +197,24 @@ The machine-readable manifest for this folder is:
   - Direct PDF: `https://www.vba.va.gov/pubs/forms/VBA-21-526EZ-ARE.pdf`
   - Source page: `https://www.va.gov/forms/21-526ez/`
   - Why it is useful: large VA disability benefits application delivered as XFA with a dense field tree
+  - Important note: the new implementation should reject this as XFA even though the old Syncfusion snapshot currently treats it as supported
+
+- `insurance/va-21-4138-statement-support-claim.pdf`
+  - Direct PDF: `https://www.vba.va.gov/pubs/forms/VBA-21-4138-ARE.pdf`
+  - Source page: `https://www.va.gov/find-forms/about-form-21-4138/`
+  - Why it is useful: VA statement in support of claim delivered as XFA
+  - Important note: the new implementation should reject this as XFA even though the old Syncfusion snapshot currently treats it as supported
+
+- `insurance/va-21-10210-lay-witness-statement.pdf`
+  - Direct PDF: `https://www.vba.va.gov/pubs/forms/VBA-21-10210-ARE.pdf`
+  - Source page: `https://www.va.gov/find-forms/about-form-21-10210/`
+  - Why it is useful: VA lay or witness statement delivered as XFA with repeated narrative sections
+  - Important note: the new implementation should reject this as XFA even though the old Syncfusion snapshot currently treats it as supported
+
+- `insurance/va-20-10207-priority-processing.pdf`
+  - Direct PDF: `https://www.vba.va.gov/pubs/forms/VBA-20-10207-ARE.pdf`
+  - Source page: `https://www.va.gov/find-forms/about-form-20-10207/`
+  - Why it is useful: VA priority processing request delivered as XFA with many checkbox and statement sections
   - Important note: the new implementation should reject this as XFA even though the old Syncfusion snapshot currently treats it as supported
 
 - `insurance/dol-ca-17-duty-status-report.pdf`

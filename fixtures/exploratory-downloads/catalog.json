@@ -313,5 +313,86 @@
     "sourcePageUrl": "https://www.in.gov/idoi/wcb/board-forms",
     "expectation": "structural_match_old",
     "notes": "Workers-comp medical form with many fields, read-only labels, and push-button widgets."
+  },
+  {
+    "id": "ao085-notice-consent",
+    "category": "legal",
+    "relativePath": "legal/ao085-notice-consent.pdf",
+    "directPdfUrl": "https://www.uscourts.gov/sites/default/files/ao085.pdf",
+    "sourcePageUrl": "https://www.uscourts.gov/forms-rules/forms/notice-consent-and-reference-a-civil-action-a-magistrate-judge",
+    "expectation": "structural_match_old",
+    "notes": "Moderate-size consent form with signature areas, address blocks, and court-routing metadata."
+  },
+  {
+    "id": "ao120-patent-trademark-report",
+    "category": "legal",
+    "relativePath": "legal/ao120-patent-trademark-report.pdf",
+    "directPdfUrl": "https://www.uscourts.gov/sites/default/files/ao120.pdf",
+    "sourcePageUrl": "https://www.uscourts.gov/forms-rules/forms/report-filing-patent-trademark",
+    "expectation": "structural_match_old",
+    "notes": "Patent and trademark filing report with repeated case metadata fields and court-routing values."
+  },
+  {
+    "id": "ao133-bill-of-costs",
+    "category": "legal",
+    "relativePath": "legal/ao133-bill-of-costs.pdf",
+    "directPdfUrl": "https://www.uscourts.gov/sites/default/files/ao133.pdf",
+    "sourcePageUrl": "https://www.uscourts.gov/forms-rules/forms/bill-costs-district-court",
+    "expectation": "structural_match_old",
+    "notes": "District court bill-of-costs form with many monetary text fields and signature-related widgets."
+  },
+  {
+    "id": "ao435-transcript-order",
+    "category": "legal",
+    "relativePath": "legal/ao435-transcript-order.pdf",
+    "directPdfUrl": "https://www.uscourts.gov/sites/default/files/ao_435.pdf",
+    "sourcePageUrl": "https://www.uscourts.gov/forms-rules/forms/transcript-order",
+    "expectation": "structural_match_old",
+    "notes": "Large transcript-order packet with dense checkbox sections, delivery options, and repeated party metadata."
+  },
+  {
+    "id": "cms-855i-medicare-enrollment",
+    "category": "insurance",
+    "relativePath": "insurance/cms-855i-medicare-enrollment.pdf",
+    "directPdfUrl": "https://www.cms.gov/medicare/cms-forms/cms-forms/downloads/cms855i.pdf",
+    "sourcePageUrl": "https://www.cms.gov/medicare/regulations-guidance/legislation/paperwork-reduction-act-1995/pra-listing/cms-855i",
+    "expectation": "structural_match_old",
+    "notes": "Very large Medicare enrollment application with a deep AcroForm field tree and many repeated provider sections."
+  },
+  {
+    "id": "cms-460-participating-physician-agreement",
+    "category": "insurance",
+    "relativePath": "insurance/cms-460-participating-physician-agreement.pdf",
+    "directPdfUrl": "https://www.cms.gov/medicare/cms-forms/cms-forms/downloads/cms460.pdf",
+    "sourcePageUrl": "https://www.cms.gov/regulations-and-guidance/legislation/paperworkreductionactof1995/pra-listing-items/cms-460",
+    "expectation": "structural_match_old",
+    "notes": "Compact physician participation agreement with small but clean signature, date, and identifier fields."
+  },
+  {
+    "id": "va-21-4138-statement-support-claim",
+    "category": "insurance",
+    "relativePath": "insurance/va-21-4138-statement-support-claim.pdf",
+    "directPdfUrl": "https://www.vba.va.gov/pubs/forms/VBA-21-4138-ARE.pdf",
+    "sourcePageUrl": "https://www.va.gov/find-forms/about-form-21-4138/",
+    "expectation": "new_rejects_xfa",
+    "notes": "VA statement in support of claim delivered as XFA; the new implementation should reject it as non-AcroForm."
+  },
+  {
+    "id": "va-21-10210-lay-witness-statement",
+    "category": "insurance",
+    "relativePath": "insurance/va-21-10210-lay-witness-statement.pdf",
+    "directPdfUrl": "https://www.vba.va.gov/pubs/forms/VBA-21-10210-ARE.pdf",
+    "sourcePageUrl": "https://www.va.gov/find-forms/about-form-21-10210/",
+    "expectation": "new_rejects_xfa",
+    "notes": "VA lay or witness statement delivered as XFA with repeated narrative sections; the new implementation should reject it."
+  },
+  {
+    "id": "va-20-10207-priority-processing",
+    "category": "insurance",
+    "relativePath": "insurance/va-20-10207-priority-processing.pdf",
+    "directPdfUrl": "https://www.vba.va.gov/pubs/forms/VBA-20-10207-ARE.pdf",
+    "sourcePageUrl": "https://www.va.gov/find-forms/about-form-20-10207/",
+    "expectation": "new_rejects_xfa",
+    "notes": "VA priority processing request delivered as XFA with many checkbox and statement sections; the new implementation should reject it."
   }
 ]

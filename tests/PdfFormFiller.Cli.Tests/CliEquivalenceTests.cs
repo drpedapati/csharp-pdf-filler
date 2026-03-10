@@ -370,7 +370,7 @@ public sealed class CliEquivalenceTests
             .OrderBy(fixture => fixture.RelativePath, StringComparer.OrdinalIgnoreCase)
             .ToArray();
 
-        Assert.Equal(24, fixtures.Length);
+        Assert.Equal(30, fixtures.Length);
         int exercisedFixtureCount = 0;
 
         foreach (ExploratoryPdfFixture fixture in fixtures)
@@ -387,7 +387,7 @@ public sealed class CliEquivalenceTests
             exercisedFixtureCount++;
         }
 
-        Assert.Equal(12, exercisedFixtureCount);
+        Assert.Equal(14, exercisedFixtureCount);
     }
 
     [Fact]
@@ -399,7 +399,7 @@ public sealed class CliEquivalenceTests
             .OrderBy(fixture => fixture.RelativePath, StringComparer.OrdinalIgnoreCase)
             .ToArray();
 
-        Assert.Equal(24, fixtures.Length);
+        Assert.Equal(30, fixtures.Length);
 
         foreach (ExploratoryPdfFixture fixture in fixtures)
         {
@@ -469,7 +469,7 @@ public sealed class CliEquivalenceTests
             .OrderBy(entry => entry.RelativePath, StringComparer.OrdinalIgnoreCase)
             .ToArray();
 
-        Assert.Equal(11, fixtures.Length);
+        Assert.Equal(14, fixtures.Length);
 
         foreach (ExploratoryPdfFixture fixture in fixtures)
         {
