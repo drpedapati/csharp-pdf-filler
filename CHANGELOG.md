@@ -6,6 +6,11 @@ All notable changes to this project should be recorded here.
 
 - Improved public-facing docs, quickstart coverage, and command guide.
 
+## 0.2.1 - 2026-05-03
+
+- Fixed Linux font resolution so AcroForm inspection and filling no longer crash when PDFsharp materializes text fields in containerized runtimes.
+- Added cross-platform fallback font lookup for macOS, Linux DejaVu/Liberation fonts, and Windows fonts.
+
 ## 0.1.0 - 2026-03-09
 
 - First public release of the Syncfusion-free `pdf-form-filler` CLI for true AcroForm workflows.
